@@ -701,29 +701,29 @@ function App() {
         <ContactSection activeSection={activeSection} />
       </main>
 
+      {/* Floating Toggle - always visible */}
+      <div className="floating-toggle" data-testid="floating-toggle">
+        <button 
+          className={`floating-toggle-btn ${activeSection === 'compugrafic' ? 'active' : ''}`}
+          onClick={() => { setActiveSection('compugrafic'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+          data-testid="footer-toggle-compugrafic"
+        >
+          Compugrafic<br /><small>GRAN FORMATO</small>
+        </button>
+        <button 
+          className={`floating-toggle-btn ${activeSection === 'dp' ? 'dp-active' : ''}`}
+          onClick={() => { setActiveSection('dp'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+          data-testid="footer-toggle-dp"
+        >
+          d+p<br /><small>SEÑALÉTICA / WAYFINDING</small>
+        </button>
+      </div>
+
       {/* Footer */}
       <footer className="footer" data-testid="footer">
         <div className="footer-left">
           compugrafic | d+p · Zapopan, Jalisco
         </div>
-        
-        <div className="footer-toggle">
-          <button 
-            className={`toggle-btn ${activeSection === 'compugrafic' ? 'active' : ''}`}
-            onClick={() => { setActiveSection('compugrafic'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-            data-testid="footer-toggle-compugrafic"
-          >
-            Compugrafic<br /><small>GRAN FORMATO</small>
-          </button>
-          <button 
-            className={`toggle-btn ${activeSection === 'dp' ? 'dp-active' : ''}`}
-            onClick={() => { setActiveSection('dp'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-            data-testid="footer-toggle-dp"
-          >
-            d+p<br /><small>SEÑALÉTICA / WAYFINDING</small>
-          </button>
-        </div>
-        
         <div className="footer-right">
           <p>(33) 3813 1707</p>
           <a href="mailto:operaciones@compugrafic.com">operaciones@compugrafic.com</a>
