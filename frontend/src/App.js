@@ -19,6 +19,8 @@ const IMAGES = {
     valleImperial: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/1qkb6f09_514683bb-041b-46c8-b3ad-7d77f479ea45.JPG",
     puntoSur: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/l7tzhgi6_edd5ba9a-747c-4095-af0f-0afd52e7eb17.JPG",
     panamericanos: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/efng1og7_8522423918_f93c7f742a_w.jpg",
+    pisaCentroDatos: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/4btsnqr9_8c38498c-3f81-4cea-820f-08fb32c3264e.JPG",
+    sneakers: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/l9dm8p82_2b206da1-5ff1-4313-99c6-b2e5852888c3.jpg",
   },
   dp: {
     senaletica: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/dsrfcfz1_30dfbbc9-f4cf-4a73-924b-3d4934a0928f.jpg",
@@ -174,6 +176,22 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
                 <span className="gallery-category">Marketing Gran Escala</span>
                 <h4 className="gallery-title">Vivo47</h4>
                 <p className="gallery-desc">Backdrop para evento</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="gallery-item-10">
+              <img src={IMAGES.compugrafic.pisaCentroDatos} alt="PiSA Centro de Datos - Mural" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Visual Merchandising</span>
+                <h4 className="gallery-title">PiSA Centro de Datos</h4>
+                <p className="gallery-desc">Mural corporativo</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="gallery-item-11">
+              <img src={IMAGES.compugrafic.sneakers} alt="Sneakers - Letrero iluminado" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Fachadas Comerciales</span>
+                <h4 className="gallery-title">Sneakers</h4>
+                <p className="gallery-desc">Letrero neón iluminado</p>
               </div>
             </div>
           </div>
