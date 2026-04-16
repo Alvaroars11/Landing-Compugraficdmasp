@@ -400,13 +400,17 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 <rect x="50" y="100" width="25" height="25" fill="#E8391A" opacity="0.15"/>
                 <rect x="150" y="100" width="25" height="25" fill="#E8391A" opacity="0.1"/>
                 <rect x="100" y="150" width="25" height="25" fill="#E8391A" opacity="0.12"/>
-                {/* Stick figure */}
-                <circle cx="110" cy="65" r="10" stroke="#3A3835" strokeWidth="2" fill="none" opacity="0.5"/>
-                <line x1="110" y1="75" x2="110" y2="130" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                <line x1="110" y1="95" x2="90" y2="115" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                <line x1="110" y1="95" x2="130" y2="115" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                <line x1="110" y1="130" x2="92" y2="165" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                <line x1="110" y1="130" x2="128" y2="165" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                {/* Walking stick figure */}
+                <g className="walking-figure">
+                  <circle cx="110" cy="55" r="10" stroke="#3A3835" strokeWidth="2" fill="none" opacity="0.5"/>
+                  <line x1="110" y1="65" x2="110" y2="120" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                  {/* Arms */}
+                  <line x1="110" y1="85" x2="90" y2="105" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-arm-left"/>
+                  <line x1="110" y1="85" x2="130" y2="105" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-arm-right"/>
+                  {/* Legs */}
+                  <line x1="110" y1="120" x2="92" y2="155" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-leg-left"/>
+                  <line x1="110" y1="120" x2="128" y2="155" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-leg-right"/>
+                </g>
               </svg>
             </div>
           </div>

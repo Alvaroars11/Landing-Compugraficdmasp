@@ -1026,7 +1026,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   height: 100%;
 }
@@ -1045,6 +1045,56 @@ body {
 .dp-grid-pictogram svg {
   width: 100%;
   height: auto;
+}
+
+/* Walking animation */
+.walking-figure {
+  animation: walk-bounce 1.2s ease-in-out infinite;
+}
+
+@keyframes walk-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.walk-arm-left {
+  animation: swing-arm-left 0.8s ease-in-out infinite;
+  transform-origin: 110px 85px;
+}
+
+.walk-arm-right {
+  animation: swing-arm-right 0.8s ease-in-out infinite;
+  transform-origin: 110px 85px;
+}
+
+.walk-leg-left {
+  animation: swing-leg-left 0.8s ease-in-out infinite;
+  transform-origin: 110px 120px;
+}
+
+.walk-leg-right {
+  animation: swing-leg-right 0.8s ease-in-out infinite;
+  transform-origin: 110px 120px;
+}
+
+@keyframes swing-arm-left {
+  0%, 100% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+}
+
+@keyframes swing-arm-right {
+  0%, 100% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+}
+
+@keyframes swing-leg-left {
+  0%, 100% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+}
+
+@keyframes swing-leg-right {
+  0%, 100% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
 }
 
 .dp-title {
