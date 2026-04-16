@@ -163,11 +163,11 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
               </div>
             </div>
             <div className="gallery-item" data-testid="gallery-item-8">
-              <img src={IMAGES.compugrafic.impresosGranFormato} alt="Estructura Tecnosur" />
+              <img src={IMAGES.compugrafic.impresosGranFormato} alt="Rotulación de Camper Tecnosur" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Impresos Gran Formato</span>
-                <h4 className="gallery-title">Tecnosur</h4>
-                <p className="gallery-desc">Parque Industrial</p>
+                <h4 className="gallery-title">Rotulación de Camper</h4>
+                <p className="gallery-desc">Tecnosur</p>
               </div>
             </div>
             <div className="gallery-item wide" data-testid="gallery-item-9">
