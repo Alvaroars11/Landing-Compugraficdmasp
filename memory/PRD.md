@@ -30,8 +30,9 @@ Construir página web para empresa de gran formato (Compugrafic) con departament
 - [x] Diseño responsive móvil y desktop
 - [x] Marquee banner con capacidades
 - [x] Tipografía Playfair Display + Inter
-- [x] **Galería de proyectos reales** con 4 imágenes (Tecnosur, Click&Collect, Display retail, Vivo47)
-- [x] **Imágenes de fondo en tarjetas de servicios** 
+- [x] **Galería collage de 9 proyectos reales** (Panamericanos, URREA, Terminal Zapopan, Click&Collect, Display Retail, Punto Sur, Valle Imperial, Tecnosur, Vivo47)
+- [x] **Overlay naranja translúcido** al hover en galería
+- [x] **Tarjetas de servicios sin imágenes de fondo** (colores sólidos)
 - [x] **Sección proyecto destacado D+P** con imagen señalética "HOMBRE"
 
 ## Prioritized Backlog

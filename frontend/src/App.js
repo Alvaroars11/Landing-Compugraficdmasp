@@ -8,10 +8,17 @@ const API = `${BACKEND_URL}/api`;
 // Project Images
 const IMAGES = {
   compugrafic: {
+    // Tarjetas de servicios (hero)
     visualMerchandising: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/13bw6zwc_e2ce6ee1-bf52-4772-a31a-740cff29e843.jpg",
     fachadasComerciales: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/d75v2aw3_63c20153-8210-4195-9147-a3f9fdbb6517.jpg",
     marketingGranEscala: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/zaicytlt_987ed7dc-f65e-4a79-82f1-3226e0de0d48.jpg",
     impresosGranFormato: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/lnrdr06c_88eaedf2-085a-4ede-a818-a9ff8ada4160.JPG",
+    // Galería de proyectos
+    urreaStand: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/2ugmvrzf_IMG_8841.jpg",
+    terminalZapopan: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/hvx2gudu_66ec8de1-bf5e-4ba6-b590-60fa1caf9686.JPG",
+    valleImperial: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/1qkb6f09_514683bb-041b-46c8-b3ad-7d77f479ea45.JPG",
+    puntoSur: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/l7tzhgi6_edd5ba9a-747c-4095-af0f-0afd52e7eb17.JPG",
+    panamericanos: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/efng1og7_8522423918_f93c7f742a_w.jpg",
   },
   dp: {
     senaletica: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/dsrfcfz1_30dfbbc9-f4cf-4a73-924b-3d4934a0928f.jpg",
@@ -42,22 +49,22 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
         </div>
         
         <div className="services-grid">
-          <div className="service-card with-image" data-testid="service-visual" style={{ backgroundImage: `linear-gradient(rgba(232, 93, 4, 0.85), rgba(232, 93, 4, 0.85)), url(${IMAGES.compugrafic.visualMerchandising})` }}>
+          <div className="service-card orange-1" data-testid="service-visual">
             <span className="service-number">01</span>
             <h3 className="service-title">Visual<br />Merchandising</h3>
             <span className="service-arrow">→</span>
           </div>
-          <div className="service-card with-image" data-testid="service-fachadas" style={{ backgroundImage: `linear-gradient(rgba(244, 162, 97, 0.85), rgba(244, 162, 97, 0.85)), url(${IMAGES.compugrafic.fachadasComerciales})` }}>
+          <div className="service-card orange-2" data-testid="service-fachadas">
             <span className="service-number">02</span>
             <h3 className="service-title">Fachadas<br />Comerciales</h3>
             <span className="service-arrow">→</span>
           </div>
-          <div className="service-card with-image" data-testid="service-marketing" style={{ backgroundImage: `linear-gradient(rgba(220, 76, 4, 0.85), rgba(220, 76, 4, 0.85)), url(${IMAGES.compugrafic.marketingGranEscala})` }}>
+          <div className="service-card orange-3" data-testid="service-marketing">
             <span className="service-number">03</span>
             <h3 className="service-title">Marketing<br />Gran Escala</h3>
             <span className="service-arrow">→</span>
           </div>
-          <div className="service-card with-image" data-testid="service-impresos" style={{ backgroundImage: `linear-gradient(rgba(255, 172, 67, 0.85), rgba(255, 172, 67, 0.85)), url(${IMAGES.compugrafic.impresosGranFormato})` }}>
+          <div className="service-card orange-4" data-testid="service-impresos">
             <span className="service-number">04</span>
             <h3 className="service-title">Impresos<br />Gran Formato</h3>
             <span className="service-arrow">→</span>
@@ -96,33 +103,77 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
             ideas en realidades tangibles de alto impacto visual.
           </p>
           
-          <div className="gallery-grid">
-            <div className="gallery-item large" data-testid="gallery-item-1">
-              <img src={IMAGES.compugrafic.impresosGranFormato} alt="Estructura Tecnosur - Parque Industrial" />
+          <div className="gallery-grid-large">
+            <div className="gallery-item featured" data-testid="gallery-item-1">
+              <img src={IMAGES.compugrafic.panamericanos} alt="Lona Panamericanos 2011 - Arcos del Milenio" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Impresos Gran Formato</span>
-                <h4 className="gallery-title">Tecnosur Parque Industrial</h4>
+                <h4 className="gallery-title">Panamericanos 2011</h4>
+                <p className="gallery-desc">Lona espectacular en edificio - Guadalajara</p>
               </div>
             </div>
             <div className="gallery-item" data-testid="gallery-item-2">
+              <img src={IMAGES.compugrafic.urreaStand} alt="Stand URREA - Expo" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Marketing Gran Escala</span>
+                <h4 className="gallery-title">URREA</h4>
+                <p className="gallery-desc">Stand para exposición</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="gallery-item-3">
+              <img src={IMAGES.compugrafic.terminalZapopan} alt="Tótem Terminal Zapopan" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Fachadas Comerciales</span>
+                <h4 className="gallery-title">Terminal Zapopan</h4>
+                <p className="gallery-desc">Tótem espectacular iluminado</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="gallery-item-4">
               <img src={IMAGES.compugrafic.fachadasComerciales} alt="Click & Collect - Letrero iluminado" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Fachadas Comerciales</span>
                 <h4 className="gallery-title">Click & Collect</h4>
+                <p className="gallery-desc">Letrero interior iluminado</p>
               </div>
             </div>
-            <div className="gallery-item" data-testid="gallery-item-3">
+            <div className="gallery-item" data-testid="gallery-item-5">
               <img src={IMAGES.compugrafic.visualMerchandising} alt="Display Visual Merchandising" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Visual Merchandising</span>
                 <h4 className="gallery-title">Display Retail</h4>
+                <p className="gallery-desc">Material POP para tienda</p>
               </div>
             </div>
-            <div className="gallery-item wide" data-testid="gallery-item-4">
+            <div className="gallery-item wide" data-testid="gallery-item-6">
+              <img src={IMAGES.compugrafic.puntoSur} alt="Vallas Punto Sur" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Marketing Gran Escala</span>
+                <h4 className="gallery-title">Punto Sur Apartments</h4>
+                <p className="gallery-desc">Serie de vallas publicitarias</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="gallery-item-7">
+              <img src={IMAGES.compugrafic.valleImperial} alt="Banners Valle Imperial" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Impresos Gran Formato</span>
+                <h4 className="gallery-title">Valle Imperial</h4>
+                <p className="gallery-desc">Banners Maples</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="gallery-item-8">
+              <img src={IMAGES.compugrafic.impresosGranFormato} alt="Estructura Tecnosur" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Impresos Gran Formato</span>
+                <h4 className="gallery-title">Tecnosur</h4>
+                <p className="gallery-desc">Parque Industrial</p>
+              </div>
+            </div>
+            <div className="gallery-item wide" data-testid="gallery-item-9">
               <img src={IMAGES.compugrafic.marketingGranEscala} alt="Backdrop Vivo47" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Marketing Gran Escala</span>
-                <h4 className="gallery-title">Vivo47 Backdrop</h4>
+                <h4 className="gallery-title">Vivo47</h4>
+                <p className="gallery-desc">Backdrop para evento</p>
               </div>
             </div>
           </div>
