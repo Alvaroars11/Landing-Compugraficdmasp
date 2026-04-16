@@ -905,7 +905,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  background: var(--text-dark);
+  background: #3A3A3A;
   border-radius: 50px;
   overflow: hidden;
   z-index: 100;
