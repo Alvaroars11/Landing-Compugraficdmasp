@@ -400,16 +400,36 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 <rect x="50" y="100" width="25" height="25" fill="#E8391A" opacity="0.15"/>
                 <rect x="150" y="100" width="25" height="25" fill="#E8391A" opacity="0.1"/>
                 <rect x="100" y="150" width="25" height="25" fill="#E8391A" opacity="0.12"/>
-                {/* Walking stick figure */}
+                {/* Walking stick figure with joints */}
                 <g className="walking-figure">
-                  <circle cx="110" cy="55" r="10" stroke="#3A3835" strokeWidth="2" fill="none" opacity="0.5"/>
-                  <line x1="110" y1="65" x2="110" y2="120" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                  {/* Arms */}
-                  <line x1="110" y1="85" x2="90" y2="105" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-arm-left"/>
-                  <line x1="110" y1="85" x2="130" y2="105" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-arm-right"/>
-                  {/* Legs */}
-                  <line x1="110" y1="120" x2="92" y2="155" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-leg-left"/>
-                  <line x1="110" y1="120" x2="128" y2="155" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-leg-right"/>
+                  {/* Head */}
+                  <circle cx="100" cy="35" r="10" stroke="#3A3835" strokeWidth="2" fill="none" opacity="0.5"/>
+                  {/* Torso */}
+                  <line x1="100" y1="45" x2="100" y2="100" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                  {/* Left arm: shoulder to elbow */}
+                  <line x1="100" y1="60" x2="82" y2="75" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-upper-arm-left"/>
+                  {/* Left arm: elbow to hand */}
+                  <line x1="82" y1="75" x2="78" y2="92" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-forearm-left"/>
+                  {/* Elbow joint left */}
+                  <circle cx="82" cy="75" r="2" fill="#3A3835" opacity="0.4"/>
+                  {/* Right arm: shoulder to elbow */}
+                  <line x1="100" y1="60" x2="118" y2="75" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-upper-arm-right"/>
+                  {/* Right arm: elbow to hand */}
+                  <line x1="118" y1="75" x2="122" y2="92" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-forearm-right"/>
+                  {/* Elbow joint right */}
+                  <circle cx="118" cy="75" r="2" fill="#3A3835" opacity="0.4"/>
+                  {/* Left leg: hip to knee */}
+                  <line x1="100" y1="100" x2="85" y2="130" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-upper-leg-left"/>
+                  {/* Left leg: knee to foot */}
+                  <line x1="85" y1="130" x2="80" y2="160" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-lower-leg-left"/>
+                  {/* Knee joint left */}
+                  <circle cx="85" cy="130" r="2" fill="#3A3835" opacity="0.4"/>
+                  {/* Right leg: hip to knee */}
+                  <line x1="100" y1="100" x2="115" y2="130" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-upper-leg-right"/>
+                  {/* Right leg: knee to foot */}
+                  <line x1="115" y1="130" x2="120" y2="160" stroke="#3A3835" strokeWidth="2" opacity="0.5" className="walk-lower-leg-right"/>
+                  {/* Knee joint right */}
+                  <circle cx="115" cy="130" r="2" fill="#3A3835" opacity="0.4"/>
                 </g>
               </svg>
             </div>
