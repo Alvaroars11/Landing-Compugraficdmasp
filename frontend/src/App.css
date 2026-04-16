@@ -1024,22 +1024,25 @@ body {
 
 .dp-hero-right {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
+  height: 100%;
 }
 
 .dp-logo-center {
   text-align: center;
 }
 
-.dp-pictogram {
-  width: 80px;
-  align-self: flex-end;
+.dp-grid-pictogram {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  width: 180px;
 }
 
-.dp-pictogram svg {
+.dp-grid-pictogram svg {
   width: 100%;
   height: auto;
 }

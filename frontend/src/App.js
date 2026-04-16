@@ -384,14 +384,29 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
               </div>
               <p className="dp-tagline">SEÑALÉTICA / WAYFINDING</p>
             </div>
-            <div className="dp-pictogram">
-              <svg viewBox="0 0 120 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="60" cy="30" r="18" stroke="#3A3835" strokeWidth="3" fill="none" opacity="0.5"/>
-                <line x1="60" y1="48" x2="60" y2="180" stroke="#3A3835" strokeWidth="3" opacity="0.5"/>
-                <line x1="60" y1="90" x2="20" y2="140" stroke="#3A3835" strokeWidth="3" opacity="0.5"/>
-                <line x1="60" y1="90" x2="100" y2="140" stroke="#3A3835" strokeWidth="3" opacity="0.5"/>
-                <line x1="60" y1="180" x2="25" y2="270" stroke="#3A3835" strokeWidth="3" opacity="0.5"/>
-                <line x1="60" y1="180" x2="95" y2="270" stroke="#3A3835" strokeWidth="3" opacity="0.5"/>
+            <div className="dp-grid-pictogram">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* Grid lines */}
+                {[...Array(9)].map((_, i) => (
+                  <line key={`h${i}`} x1="0" y1={i * 25} x2="200" y2={i * 25} stroke="#3A3835" strokeWidth="0.5" opacity="0.2"/>
+                ))}
+                {[...Array(9)].map((_, i) => (
+                  <line key={`v${i}`} x1={i * 25} y1="0" x2={i * 25} y2="200" stroke="#3A3835" strokeWidth="0.5" opacity="0.2"/>
+                ))}
+                {/* Red accent squares */}
+                <rect x="25" y="25" width="25" height="25" fill="#E8391A" opacity="0.15"/>
+                <rect x="75" y="50" width="25" height="25" fill="#E8391A" opacity="0.12"/>
+                <rect x="125" y="25" width="25" height="25" fill="#E8391A" opacity="0.1"/>
+                <rect x="50" y="100" width="25" height="25" fill="#E8391A" opacity="0.15"/>
+                <rect x="150" y="100" width="25" height="25" fill="#E8391A" opacity="0.1"/>
+                <rect x="100" y="150" width="25" height="25" fill="#E8391A" opacity="0.12"/>
+                {/* Stick figure */}
+                <circle cx="110" cy="65" r="10" stroke="#3A3835" strokeWidth="2" fill="none" opacity="0.5"/>
+                <line x1="110" y1="75" x2="110" y2="130" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                <line x1="110" y1="95" x2="90" y2="115" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                <line x1="110" y1="95" x2="130" y2="115" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                <line x1="110" y1="130" x2="92" y2="165" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                <line x1="110" y1="130" x2="128" y2="165" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
               </svg>
             </div>
           </div>
