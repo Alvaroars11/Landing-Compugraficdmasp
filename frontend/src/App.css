@@ -986,8 +986,8 @@ body {
 /* D+P Section Styles */
 .dp-hero {
   background: var(--dp-beige);
-  min-height: 100vh;
-  padding: 8rem 3rem 4rem;
+  min-height: auto;
+  padding: 7rem 3rem 4rem;
 }
 
 .dp-hero-inner {
@@ -1000,11 +1000,12 @@ body {
 }
 
 .dp-logo-large {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 10rem;
   font-weight: 300;
   color: var(--dp-red);
   line-height: 1;
+  opacity: 0.25;
 }
 
 .dp-logo-large span {
@@ -1018,6 +1019,29 @@ body {
   color: var(--dp-text);
   margin-top: 1rem;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  opacity: 0.4;
+}
+
+.dp-hero-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.dp-logo-center {
+  text-align: center;
+}
+
+.dp-pictogram {
+  width: 80px;
+  align-self: flex-end;
+}
+
+.dp-pictogram svg {
+  width: 100%;
+  height: auto;
 }
 
 .dp-title {

@@ -377,11 +377,23 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
             </p>
           </div>
           
-          <div style={{ textAlign: 'center' }}>
-            <div className="dp-logo-large">
-              d<span>+</span>p
+          <div className="dp-hero-right">
+            <div className="dp-logo-center">
+              <div className="dp-logo-large">
+                d<span>+</span>p
+              </div>
+              <p className="dp-tagline">SEÑALÉTICA / WAYFINDING</p>
             </div>
-            <p className="dp-tagline">SEÑALÉTICA / WAYFINDING</p>
+            <div className="dp-pictogram">
+              <svg viewBox="0 0 120 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="30" r="18" stroke="#3A3835" strokeWidth="3" fill="none" opacity="0.5"/>
+                <line x1="60" y1="48" x2="60" y2="180" stroke="#3A3835" strokeWidth="3" opacity="0.5"/>
+                <line x1="60" y1="90" x2="20" y2="140" stroke="#3A3835" strokeWidth="3" opacity="0.5"/>
+                <line x1="60" y1="90" x2="100" y2="140" stroke="#3A3835" strokeWidth="3" opacity="0.5"/>
+                <line x1="60" y1="180" x2="25" y2="270" stroke="#3A3835" strokeWidth="3" opacity="0.5"/>
+                <line x1="60" y1="180" x2="95" y2="270" stroke="#3A3835" strokeWidth="3" opacity="0.5"/>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
