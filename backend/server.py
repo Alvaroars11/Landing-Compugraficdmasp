@@ -38,7 +38,7 @@ class ContactMessage(BaseModel):
 
 class ContactMessageCreate(BaseModel):
     nombre: str
-    email: str
+    email: EmailStr
     empresa: Optional[str] = None
     mensaje: str
     seccion: str = "compugrafic"
