@@ -657,7 +657,7 @@ function App() {
       {/* Header */}
       <header className={`header ${scrolled ? 'scrolled' : ''} ${activeSection === 'dp' ? 'dp-mode' : ''}`} data-testid="header">
         <a href="/" className="logo">
-          d+p <span>| compugrafic</span>
+          compugrafic <span>| d+p</span>
         </a>
         
         <nav className="nav-links">
@@ -704,7 +704,7 @@ function App() {
       {/* Footer */}
       <footer className="footer" data-testid="footer">
         <div className="footer-left">
-          d+p | compugrafic · Zapopan, Jalisco
+          compugrafic | d+p · Zapopan, Jalisco
         </div>
         
         <div className="footer-toggle">
