@@ -228,7 +228,7 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
       {/* 4. Nuestros Proyectos */}
       <section className="projects-gallery" id="proyectos" data-testid="projects-gallery">
         <div className="projects-inner">
-          <span className="section-label">NUESTROS PROYECTOS</span>
+          <span className="section-label">ALGUNOS PROYECTOS</span>
           <h2 className="section-title-dark">Proyectos que hablan<br />por nosotros</h2>
           <p className="section-description-dark">
             Cada proyecto es una oportunidad para demostrar nuestra capacidad de transformar
