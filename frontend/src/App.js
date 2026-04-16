@@ -677,14 +677,15 @@ function App() {
         <nav className="nav-links">
           {activeSection === 'compugrafic' ? (
             <>
-              <a href="#servicios" onClick={(e) => { e.preventDefault(); scrollToSection('servicios'); }} className="nav-link">SERVICIOS</a>
               <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="nav-link">NOSOTROS</a>
+              <a href="#servicios" onClick={(e) => { e.preventDefault(); scrollToSection('servicios'); }} className="nav-link">SERVICIOS</a>
+              <a href="#proyectos" onClick={(e) => { e.preventDefault(); scrollToSection('proyectos'); }} className="nav-link">PROYECTOS</a>
               <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="nav-link">CONTACTO</a>
             </>
           ) : (
             <>
-              <a href="#proceso" onClick={(e) => { e.preventDefault(); scrollToSection('proceso'); }} className="nav-link">PROCESO</a>
               <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="nav-link">QUIÉNES SOMOS</a>
+              <a href="#proceso" onClick={(e) => { e.preventDefault(); scrollToSection('proceso'); }} className="nav-link">PROCESO</a>
               <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="nav-link">CONTACTO</a>
             </>
           )}
