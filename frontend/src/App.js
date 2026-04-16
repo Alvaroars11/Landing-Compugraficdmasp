@@ -95,7 +95,137 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
         </div>
       </div>
 
-      {/* Projects Gallery */}
+      {/* 2. Quiénes Somos - Orange Section */}
+      <section className="quienes-somos" id="nosotros" data-testid="about-section">
+        <div className="quienes-inner">
+          <div className="quienes-content">
+            <span className="quienes-label">QUIÉNES SOMOS</span>
+            <h2 className="quienes-title">Más de 25 años dentro del retail</h2>
+            <p className="quienes-text">
+              Empresa dedicada a la impresión y publicidad principalmente en gran
+              formato de material de punto de venta, banners, lonas, vallas, anuncios y cajas
+              de luz. Contamos con maquinaria de tecnología de punta para impresión de
+              solvente y ultravioleta, especializados en alta definición y desarrollo de
+              tecnología en aplicación a POP.
+            </p>
+            <p className="quienes-text">
+              Nuestro fuerte espíritu de servir a los clientes nos hace estar reactivos al
+              rápido movimiento del mundo del retail. Diseñamos, producimos y
+              entregamos asegurándonos que cada proyecto cumpla con el estándar más
+              alto posible.
+            </p>
+          </div>
+          
+          <div className="quienes-stats">
+            <div className="stats-grid">
+              <div className="stat-item">
+                <span className="stat-number">25+</span>
+                <span className="stat-label">AÑOS DE EXPERIENCIA</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">100%</span>
+                <span className="stat-label">SERVICIO INTEGRAL</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">MX</span>
+                <span className="stat-label">COBERTURA NACIONAL</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number">&infin;</span>
+                <span className="stat-label">COMPROMISO DE CALIDAD</span>
+              </div>
+            </div>
+            <span className="stats-watermark">25</span>
+          </div>
+        </div>
+        
+        <div className="porque-naranja">
+          <span className="porque-label">¿POR QUÉ EL NARANJA?</span>
+          <p className="porque-text">
+            El naranja es el color de la felicidad, la atracción, la creatividad, el
+            entusiasmo, el estímulo, la fortaleza y la resistencia. Su visión produce la
+            sensación de mayor aporte de oxígeno al cerebro, generando un efecto
+            vigorizante y de estimulación de la actividad mental. Valores y energía que
+            definen nuestra forma de trabajar y de conectar con cada cliente y cada
+            proyecto.
+          </p>
+        </div>
+      </section>
+
+      {/* 3. Nuestros Servicios */}
+      <section className="services-detail" id="servicios" data-testid="services-section">
+        <div className="services-detail-inner">
+          <span className="section-label">NUESTROS SERVICIOS</span>
+          <h2 className="section-title">
+            Soluciones que mejoran<br />el impacto de tu marca
+          </h2>
+          <p className="section-description">
+            Constantemente desarrollamos y enfocamos nuestro servicio para asegurar
+            que cada proyecto sea diseñado, producido y entregado con el más alto
+            estándar posible.
+          </p>
+          
+          <div className="services-cards">
+            <div className="detail-card">
+              <div className="detail-card-icon">📋</div>
+              <h4 className="detail-card-title">Visual Merchandising</h4>
+              <p className="detail-card-text">
+                Desarrollamos estrategias visuales de alto impacto para puntos de venta,
+                diseñando y produciendo materiales que guían la decisión de compra.
+              </p>
+              <ul className="detail-card-list">
+                <li>Material de display y POP</li>
+                <li>Banners y lonas comerciales</li>
+                <li>Utilería efímera para temporadas</li>
+              </ul>
+            </div>
+            
+            <div className="detail-card">
+              <div className="detail-card-icon">🏢</div>
+              <h4 className="detail-card-title">Fachadas Comerciales</h4>
+              <p className="detail-card-text">
+                Transformamos la imagen exterior de tu negocio integrando materiales
+                de vanguardia, acabados premium y elementos volumétricos.
+              </p>
+              <ul className="detail-card-list">
+                <li>Letras volumétricas iluminadas</li>
+                <li>Revestimientos y texturas combinadas</li>
+                <li>Lonas de alta resolución UV</li>
+              </ul>
+            </div>
+            
+            <div className="detail-card">
+              <div className="detail-card-icon">📊</div>
+              <h4 className="detail-card-title">Marketing a Gran Escala</h4>
+              <p className="detail-card-text">
+                Gestionamos de forma integral la producción de espacios comerciales
+                y de exhibición, desde el concepto creativo hasta la instalación final.
+              </p>
+              <ul className="detail-card-list">
+                <li>Showrooms y espacios de exhibición</li>
+                <li>Producción para expos y ferias</li>
+                <li>Cobertura en toda la República</li>
+              </ul>
+            </div>
+            
+            <div className="detail-card">
+              <div className="detail-card-icon">🖨️</div>
+              <h4 className="detail-card-title">Impresos Gran Formato</h4>
+              <p className="detail-card-text">
+                Producimos impresiones de gran formato con tecnología UV y solvente
+                de última generación, garantizando colores precisos y alta definición.
+              </p>
+              <ul className="detail-card-list">
+                <li>Vinilos, espectaculares y anuncios</li>
+                <li>Banners, lonas y cenefas interior</li>
+                <li>Foam boards y material rígido</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Nuestros Proyectos */}
       <section className="projects-gallery" id="proyectos" data-testid="projects-gallery">
         <div className="projects-inner">
           <span className="section-label">NUESTROS PROYECTOS</span>
@@ -195,136 +325,6 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Services Detail */}
-      <section className="services-detail" id="servicios" data-testid="services-section">
-        <div className="services-detail-inner">
-          <span className="section-label">NUESTROS SERVICIOS</span>
-          <h2 className="section-title">
-            Soluciones que mejoran<br />el impacto de tu marca
-          </h2>
-          <p className="section-description">
-            Constantemente desarrollamos y enfocamos nuestro servicio para asegurar
-            que cada proyecto sea diseñado, producido y entregado con el más alto
-            estándar posible.
-          </p>
-          
-          <div className="services-cards">
-            <div className="detail-card">
-              <div className="detail-card-icon">📋</div>
-              <h4 className="detail-card-title">Visual Merchandising</h4>
-              <p className="detail-card-text">
-                Desarrollamos estrategias visuales de alto impacto para puntos de venta,
-                diseñando y produciendo materiales que guían la decisión de compra.
-              </p>
-              <ul className="detail-card-list">
-                <li>Material de display y POP</li>
-                <li>Banners y lonas comerciales</li>
-                <li>Utilería efímera para temporadas</li>
-              </ul>
-            </div>
-            
-            <div className="detail-card">
-              <div className="detail-card-icon">🏢</div>
-              <h4 className="detail-card-title">Fachadas Comerciales</h4>
-              <p className="detail-card-text">
-                Transformamos la imagen exterior de tu negocio integrando materiales
-                de vanguardia, acabados premium y elementos volumétricos.
-              </p>
-              <ul className="detail-card-list">
-                <li>Letras volumétricas iluminadas</li>
-                <li>Revestimientos y texturas combinadas</li>
-                <li>Lonas de alta resolución UV</li>
-              </ul>
-            </div>
-            
-            <div className="detail-card">
-              <div className="detail-card-icon">📊</div>
-              <h4 className="detail-card-title">Marketing a Gran Escala</h4>
-              <p className="detail-card-text">
-                Gestionamos de forma integral la producción de espacios comerciales
-                y de exhibición, desde el concepto creativo hasta la instalación final.
-              </p>
-              <ul className="detail-card-list">
-                <li>Showrooms y espacios de exhibición</li>
-                <li>Producción para expos y ferias</li>
-                <li>Cobertura en toda la República</li>
-              </ul>
-            </div>
-            
-            <div className="detail-card">
-              <div className="detail-card-icon">🖨️</div>
-              <h4 className="detail-card-title">Impresos Gran Formato</h4>
-              <p className="detail-card-text">
-                Producimos impresiones de gran formato con tecnología UV y solvente
-                de última generación, garantizando colores precisos y alta definición.
-              </p>
-              <ul className="detail-card-list">
-                <li>Vinilos, espectaculares y anuncios</li>
-                <li>Banners, lonas y cenefas interior</li>
-                <li>Foam boards y material rígido</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Quiénes Somos - Orange Section */}
-      <section className="quienes-somos" id="nosotros" data-testid="about-section">
-        <div className="quienes-inner">
-          <div className="quienes-content">
-            <span className="quienes-label">QUIÉNES SOMOS</span>
-            <h2 className="quienes-title">Más de 25 años dentro del retail</h2>
-            <p className="quienes-text">
-              Empresa dedicada a la impresión y publicidad principalmente en gran
-              formato de material de punto de venta, banners, lonas, vallas, anuncios y cajas
-              de luz. Contamos con maquinaria de tecnología de punta para impresión de
-              solvente y ultravioleta, especializados en alta definición y desarrollo de
-              tecnología en aplicación a POP.
-            </p>
-            <p className="quienes-text">
-              Nuestro fuerte espíritu de servir a los clientes nos hace estar reactivos al
-              rápido movimiento del mundo del retail. Diseñamos, producimos y
-              entregamos asegurándonos que cada proyecto cumpla con el estándar más
-              alto posible.
-            </p>
-          </div>
-          
-          <div className="quienes-stats">
-            <div className="stats-grid">
-              <div className="stat-item">
-                <span className="stat-number">25+</span>
-                <span className="stat-label">AÑOS DE EXPERIENCIA</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">100%</span>
-                <span className="stat-label">SERVICIO INTEGRAL</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">MX</span>
-                <span className="stat-label">COBERTURA NACIONAL</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">&infin;</span>
-                <span className="stat-label">COMPROMISO DE CALIDAD</span>
-              </div>
-            </div>
-            <span className="stats-watermark">25</span>
-          </div>
-        </div>
-        
-        <div className="porque-naranja">
-          <span className="porque-label">¿POR QUÉ EL NARANJA?</span>
-          <p className="porque-text">
-            El naranja es el color de la felicidad, la atracción, la creatividad, el
-            entusiasmo, el estímulo, la fortaleza y la resistencia. Su visión produce la
-            sensación de mayor aporte de oxígeno al cerebro, generando un efecto
-            vigorizante y de estimulación de la actividad mental. Valores y energía que
-            definen nuestra forma de trabajar y de conectar con cada cliente y cada
-            proyecto.
-          </p>
         </div>
       </section>
     </div>
