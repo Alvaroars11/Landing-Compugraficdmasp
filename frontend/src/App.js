@@ -5,6 +5,19 @@ import axios from "axios";
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
+// Project Images
+const IMAGES = {
+  compugrafic: {
+    visualMerchandising: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/13bw6zwc_e2ce6ee1-bf52-4772-a31a-740cff29e843.jpg",
+    fachadasComerciales: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/d75v2aw3_63c20153-8210-4195-9147-a3f9fdbb6517.jpg",
+    marketingGranEscala: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/zaicytlt_987ed7dc-f65e-4a79-82f1-3226e0de0d48.jpg",
+    impresosGranFormato: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/lnrdr06c_88eaedf2-085a-4ede-a818-a9ff8ada4160.JPG",
+  },
+  dp: {
+    senaletica: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/dsrfcfz1_30dfbbc9-f4cf-4a73-924b-3d4934a0928f.jpg",
+  }
+};
+
 // Compugrafic Section Component
 const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
   return (
@@ -29,22 +42,22 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
         </div>
         
         <div className="services-grid">
-          <div className="service-card orange-1" data-testid="service-visual">
+          <div className="service-card with-image" data-testid="service-visual" style={{ backgroundImage: `linear-gradient(rgba(232, 93, 4, 0.85), rgba(232, 93, 4, 0.85)), url(${IMAGES.compugrafic.visualMerchandising})` }}>
             <span className="service-number">01</span>
             <h3 className="service-title">Visual<br />Merchandising</h3>
             <span className="service-arrow">→</span>
           </div>
-          <div className="service-card orange-2" data-testid="service-fachadas">
+          <div className="service-card with-image" data-testid="service-fachadas" style={{ backgroundImage: `linear-gradient(rgba(244, 162, 97, 0.85), rgba(244, 162, 97, 0.85)), url(${IMAGES.compugrafic.fachadasComerciales})` }}>
             <span className="service-number">02</span>
             <h3 className="service-title">Fachadas<br />Comerciales</h3>
             <span className="service-arrow">→</span>
           </div>
-          <div className="service-card orange-3" data-testid="service-marketing">
+          <div className="service-card with-image" data-testid="service-marketing" style={{ backgroundImage: `linear-gradient(rgba(220, 76, 4, 0.85), rgba(220, 76, 4, 0.85)), url(${IMAGES.compugrafic.marketingGranEscala})` }}>
             <span className="service-number">03</span>
             <h3 className="service-title">Marketing<br />Gran Escala</h3>
             <span className="service-arrow">→</span>
           </div>
-          <div className="service-card orange-4" data-testid="service-impresos">
+          <div className="service-card with-image" data-testid="service-impresos" style={{ backgroundImage: `linear-gradient(rgba(255, 172, 67, 0.85), rgba(255, 172, 67, 0.85)), url(${IMAGES.compugrafic.impresosGranFormato})` }}>
             <span className="service-number">04</span>
             <h3 className="service-title">Impresos<br />Gran Formato</h3>
             <span className="service-arrow">→</span>
@@ -72,6 +85,49 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
           ))}
         </div>
       </div>
+
+      {/* Projects Gallery */}
+      <section className="projects-gallery" id="proyectos" data-testid="projects-gallery">
+        <div className="projects-inner">
+          <span className="section-label">NUESTROS PROYECTOS</span>
+          <h2 className="section-title-dark">Proyectos que hablan<br />por nosotros</h2>
+          <p className="section-description-dark">
+            Cada proyecto es una oportunidad para demostrar nuestra capacidad de transformar
+            ideas en realidades tangibles de alto impacto visual.
+          </p>
+          
+          <div className="gallery-grid">
+            <div className="gallery-item large" data-testid="gallery-item-1">
+              <img src={IMAGES.compugrafic.impresosGranFormato} alt="Estructura Tecnosur - Parque Industrial" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Impresos Gran Formato</span>
+                <h4 className="gallery-title">Tecnosur Parque Industrial</h4>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="gallery-item-2">
+              <img src={IMAGES.compugrafic.fachadasComerciales} alt="Click & Collect - Letrero iluminado" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Fachadas Comerciales</span>
+                <h4 className="gallery-title">Click & Collect</h4>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="gallery-item-3">
+              <img src={IMAGES.compugrafic.visualMerchandising} alt="Display Visual Merchandising" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Visual Merchandising</span>
+                <h4 className="gallery-title">Display Retail</h4>
+              </div>
+            </div>
+            <div className="gallery-item wide" data-testid="gallery-item-4">
+              <img src={IMAGES.compugrafic.marketingGranEscala} alt="Backdrop Vivo47" />
+              <div className="gallery-overlay">
+                <span className="gallery-category">Marketing Gran Escala</span>
+                <h4 className="gallery-title">Vivo47 Backdrop</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Services Detail */}
       <section className="services-detail" id="servicios" data-testid="services-section">
@@ -202,6 +258,30 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
               d<span>+</span>p
             </div>
             <p className="dp-tagline">SEÑALÉTICA / WAYFINDING</p>
+          </div>
+        </div>
+      </section>
+
+      {/* D+P Project Showcase */}
+      <section className="dp-showcase" data-testid="dp-showcase">
+        <div className="dp-showcase-inner">
+          <div className="dp-showcase-image">
+            <img src={IMAGES.dp.senaletica} alt="Señalética HOMBRE - Letrero iluminado" />
+          </div>
+          <div className="dp-showcase-content">
+            <span className="section-label">PROYECTO DESTACADO</span>
+            <h3 className="dp-showcase-title">Señalética Iluminada</h3>
+            <p className="dp-showcase-text">
+              Diseño y fabricación de señalética con iluminación LED integrada. 
+              Combinamos materiales como OSB y acrílico para crear piezas únicas 
+              que destacan en cualquier espacio comercial.
+            </p>
+            <ul className="dp-showcase-list">
+              <li>Diseño personalizado</li>
+              <li>Iluminación LED de bajo consumo</li>
+              <li>Materiales sustentables</li>
+              <li>Instalación profesional</li>
+            </ul>
           </div>
         </div>
       </section>
