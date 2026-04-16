@@ -1024,9 +1024,9 @@ body {
 
 .dp-hero-right {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
   position: relative;
   height: 100%;
 }
@@ -1036,6 +1036,9 @@ body {
 }
 
 .dp-grid-pictogram {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
   width: 180px;
 }
 
@@ -1054,84 +1057,44 @@ body {
   50% { transform: translateY(-2px); }
 }
 
-.walk-upper-arm-left {
-  animation: swing-upper-arm-l 0.8s ease-in-out infinite;
+.walk-arm-l-group {
+  animation: swing-arm-l 0.8s ease-in-out infinite;
   transform-origin: 100px 60px;
 }
 
-.walk-forearm-left {
-  animation: swing-forearm-l 0.8s ease-in-out infinite;
-  transform-origin: 82px 75px;
-}
-
-.walk-upper-arm-right {
-  animation: swing-upper-arm-r 0.8s ease-in-out infinite;
+.walk-arm-r-group {
+  animation: swing-arm-r 0.8s ease-in-out infinite;
   transform-origin: 100px 60px;
 }
 
-.walk-forearm-right {
-  animation: swing-forearm-r 0.8s ease-in-out infinite;
-  transform-origin: 118px 75px;
-}
-
-.walk-upper-leg-left {
-  animation: swing-upper-leg-l 0.8s ease-in-out infinite;
+.walk-leg-l-group {
+  animation: swing-leg-l 0.8s ease-in-out infinite;
   transform-origin: 100px 100px;
 }
 
-.walk-lower-leg-left {
-  animation: swing-lower-leg-l 0.8s ease-in-out infinite;
-  transform-origin: 85px 130px;
-}
-
-.walk-upper-leg-right {
-  animation: swing-upper-leg-r 0.8s ease-in-out infinite;
+.walk-leg-r-group {
+  animation: swing-leg-r 0.8s ease-in-out infinite;
   transform-origin: 100px 100px;
 }
 
-.walk-lower-leg-right {
-  animation: swing-lower-leg-r 0.8s ease-in-out infinite;
-  transform-origin: 115px 130px;
-}
-
-@keyframes swing-upper-arm-l {
+@keyframes swing-arm-l {
   0%, 100% { transform: rotate(-12deg); }
   50% { transform: rotate(12deg); }
 }
 
-@keyframes swing-forearm-l {
-  0%, 100% { transform: rotate(-8deg); }
-  50% { transform: rotate(8deg); }
-}
-
-@keyframes swing-upper-arm-r {
+@keyframes swing-arm-r {
   0%, 100% { transform: rotate(12deg); }
   50% { transform: rotate(-12deg); }
 }
 
-@keyframes swing-forearm-r {
-  0%, 100% { transform: rotate(8deg); }
-  50% { transform: rotate(-8deg); }
-}
-
-@keyframes swing-upper-leg-l {
+@keyframes swing-leg-l {
   0%, 100% { transform: rotate(15deg); }
   50% { transform: rotate(-15deg); }
 }
 
-@keyframes swing-lower-leg-l {
-  0%, 100% { transform: rotate(-10deg); }
-  50% { transform: rotate(10deg); }
-}
-
-@keyframes swing-upper-leg-r {
+@keyframes swing-leg-r {
   0%, 100% { transform: rotate(-15deg); }
   50% { transform: rotate(15deg); }
-}
-
-@keyframes swing-lower-leg-r {
-  0%, 100% { transform: rotate(10deg); }
-  50% { transform: rotate(-10deg); }
 }
 
 .dp-title {
