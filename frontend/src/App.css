@@ -1000,7 +1000,7 @@ body {
 }
 
 .dp-logo-large {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 10rem;
   font-weight: 300;
   color: var(--dp-red);
