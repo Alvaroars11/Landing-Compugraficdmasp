@@ -335,8 +335,8 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
                 <p className="gallery-desc">Rotulación de trailer</p>
               </div>
             </div>
-            <div className="gallery-item" data-testid="gallery-item-13">
-              <img src={IMAGES.compugrafic.caliente} alt="Caliente.mx - Letrero iluminado" />
+            <div className="gallery-item" data-testid="gallery-item-13" style={{ background: '#f0f0f0' }}>
+              <img src={IMAGES.compugrafic.caliente} alt="Caliente.mx - Letrero iluminado" style={{ objectFit: 'contain', padding: '0.5rem' }} />
               <div className="gallery-overlay">
                 <span className="gallery-category">Fachadas Comerciales</span>
                 <h4 className="gallery-title">Caliente.mx</h4>
