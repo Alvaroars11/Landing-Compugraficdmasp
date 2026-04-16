@@ -276,7 +276,7 @@ body {
 
 /* Marquee Banner */
 .marquee-banner {
-  background: var(--bg-dark);
+  background: var(--orange-primary);
   padding: 1rem 0;
   overflow: hidden;
   position: relative;
@@ -293,7 +293,7 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--orange-primary);
+  color: var(--white);
   padding: 0 3rem;
 }
 
