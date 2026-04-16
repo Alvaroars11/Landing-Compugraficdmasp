@@ -15,7 +15,7 @@ const IMAGES = {
     impresosGranFormato: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/lnrdr06c_88eaedf2-085a-4ede-a818-a9ff8ada4160.JPG",
     // Galería de proyectos
     urreaStand: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/2ugmvrzf_IMG_8841.jpg",
-    terminalZapopan: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/hvx2gudu_66ec8de1-bf5e-4ba6-b590-60fa1caf9686.JPG",
+    terminalZapopan: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/0zdxzzh6_f90c283e-9ce2-4b6d-abc8-76ec790c8923.jpg",
     valleImperial: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/1qkb6f09_514683bb-041b-46c8-b3ad-7d77f479ea45.JPG",
     puntoSur: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/l7tzhgi6_edd5ba9a-747c-4095-af0f-0afd52e7eb17.JPG",
     panamericanos: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/efng1og7_8522423918_f93c7f742a_w.jpg",
@@ -123,11 +123,11 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
               </div>
             </div>
             <div className="gallery-item" data-testid="gallery-item-3">
-              <img src={IMAGES.compugrafic.terminalZapopan} alt="Tótem Terminal Zapopan" />
+              <img src={IMAGES.compugrafic.terminalZapopan} alt="Liverpool - Letrero iluminado" />
               <div className="gallery-overlay">
                 <span className="gallery-category">Fachadas Comerciales</span>
-                <h4 className="gallery-title">Terminal Zapopan</h4>
-                <p className="gallery-desc">Tótem espectacular iluminado</p>
+                <h4 className="gallery-title">Liverpool</h4>
+                <p className="gallery-desc">Letrero volumétrico iluminado</p>
               </div>
             </div>
             <div className="gallery-item" data-testid="gallery-item-4">
