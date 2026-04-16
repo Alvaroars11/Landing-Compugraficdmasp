@@ -34,7 +34,7 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
       {/* Hero */}
       <section className="hero" data-testid="compugrafic-hero">
         <div className="hero-content">
-          <p className="location">GUADALAJARA, JALISCO · MÉXICO</p>
+          <p className="location">ZAPOPAN, JALISCO · MÉXICO</p>
           <h1 className="hero-title">
             <span className="watermark">compugrafic</span>
             Hacemos<br />que las<br />ideas<br />
