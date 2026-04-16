@@ -8,8 +8,9 @@
   --orange-light: #FFAC43;
   
   /* D+P Colors */
-  --dp-red: #C4423F;
-  --dp-beige: #C4B5A0;
+  --dp-red: #E8391A;
+  --dp-beige: #C8C4BB;
+  --dp-text: #3A3835;
   
   /* Neutrals */
   --bg-cream: #F5F0E8;
@@ -1013,9 +1014,10 @@ body {
 .dp-tagline {
   font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  color: var(--text-dark);
+  letter-spacing: 5px;
+  color: var(--dp-text);
   margin-top: 1rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .dp-title {
