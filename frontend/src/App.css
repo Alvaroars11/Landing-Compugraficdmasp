@@ -90,6 +90,46 @@ body {
   color: var(--text-light);
 }
 
+.logo-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-btn {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.logo-btn:hover {
+  opacity: 0.8;
+}
+
+.logo-btn.logo-active-cg {
+  background: var(--orange-primary);
+  color: var(--white);
+}
+
+.logo-btn.logo-active-dp {
+  background: var(--dp-red);
+  color: var(--white);
+}
+
+.logo-divider {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
 .nav-links {
   display: flex;
   gap: 2.5rem;

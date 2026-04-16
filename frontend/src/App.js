@@ -656,9 +656,23 @@ function App() {
     <div className="App" data-testid="app-container">
       {/* Header */}
       <header className={`header ${scrolled ? 'scrolled' : ''} ${activeSection === 'dp' ? 'dp-mode' : ''}`} data-testid="header">
-        <a href="/" className="logo">
-          compugrafic <span>| d+p</span>
-        </a>
+        <div className="logo-toggle">
+          <button 
+            className={`logo-btn ${activeSection === 'compugrafic' ? 'logo-active-cg' : ''}`}
+            onClick={() => { setActiveSection('compugrafic'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+            data-testid="logo-compugrafic"
+          >
+            compugrafic
+          </button>
+          <span className="logo-divider">|</span>
+          <button 
+            className={`logo-btn ${activeSection === 'dp' ? 'logo-active-dp' : ''}`}
+            onClick={() => { setActiveSection('dp'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+            data-testid="logo-dp"
+          >
+            d+p
+          </button>
+        </div>
         
         <nav className="nav-links">
           {activeSection === 'compugrafic' ? (
@@ -666,18 +680,12 @@ function App() {
               <a href="#servicios" onClick={(e) => { e.preventDefault(); scrollToSection('servicios'); }} className="nav-link">SERVICIOS</a>
               <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="nav-link">NOSOTROS</a>
               <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="nav-link">CONTACTO</a>
-              <button onClick={() => setActiveSection('dp')} className="nav-link dp-toggle" data-testid="switch-to-dp">
-                D+P →
-              </button>
             </>
           ) : (
             <>
               <a href="#proceso" onClick={(e) => { e.preventDefault(); scrollToSection('proceso'); }} className="nav-link">PROCESO</a>
               <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="nav-link">QUIÉNES SOMOS</a>
               <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="nav-link">CONTACTO</a>
-              <button onClick={() => setActiveSection('compugrafic')} className="nav-link dp-toggle" data-testid="switch-to-compugrafic">
-                ← COMPUGRAFIC
-              </button>
             </>
           )}
         </nav>
