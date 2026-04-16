@@ -921,7 +921,7 @@ body {
   transition: all 0.3s ease;
   background: transparent;
   color: rgba(255, 255, 255, 0.5);
-  min-width: 180px;
+  width: 200px;
   text-align: center;
   line-height: 1.4;
 }
