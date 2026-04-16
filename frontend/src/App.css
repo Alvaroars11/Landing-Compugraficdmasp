@@ -1047,39 +1047,38 @@ body {
   height: auto;
 }
 
-/* Walking animation with joints */
+/* Walking animation */
 .walking-figure {
-  /* No vertical bounce - just a subtle sway */
 }
 
 .walk-arm-l-group {
   animation: walk-arm-forward 1.2s ease-in-out infinite;
-  transform-origin: 100px 55px;
+  transform-origin: 100px 60px;
 }
 
 .walk-arm-r-group {
   animation: walk-arm-back 1.2s ease-in-out infinite;
-  transform-origin: 100px 55px;
+  transform-origin: 100px 60px;
 }
 
 .walk-leg-l-group {
   animation: walk-leg-back 1.2s ease-in-out infinite;
-  transform-origin: 103px 100px;
+  transform-origin: 100px 105px;
 }
 
 .walk-leg-r-group {
   animation: walk-leg-forward 1.2s ease-in-out infinite;
-  transform-origin: 103px 100px;
+  transform-origin: 100px 105px;
 }
 
 @keyframes walk-arm-forward {
-  0%, 100% { transform: rotate(15deg); }
-  50% { transform: rotate(-15deg); }
+  0%, 100% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
 }
 
 @keyframes walk-arm-back {
-  0%, 100% { transform: rotate(-15deg); }
-  50% { transform: rotate(15deg); }
+  0%, 100% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
 }
 
 @keyframes walk-leg-forward {

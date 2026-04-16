@@ -386,51 +386,41 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
             </div>
             <div className="dp-grid-pictogram">
               <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {/* Grid lines */}
-                {[...Array(9)].map((_, i) => (
-                  <line key={`h${i}`} x1="0" y1={i * 25} x2="200" y2={i * 25} stroke="#3A3835" strokeWidth="0.5" opacity="0.2"/>
+                {/* Dense grid lines */}
+                {[...Array(17)].map((_, i) => (
+                  <line key={`h${i}`} x1="0" y1={i * 12.5} x2="200" y2={i * 12.5} stroke="#9E9A93" strokeWidth="0.5" opacity="0.35"/>
                 ))}
-                {[...Array(9)].map((_, i) => (
-                  <line key={`v${i}`} x1={i * 25} y1="0" x2={i * 25} y2="200" stroke="#3A3835" strokeWidth="0.5" opacity="0.2"/>
+                {[...Array(17)].map((_, i) => (
+                  <line key={`v${i}`} x1={i * 12.5} y1="0" x2={i * 12.5} y2="200" stroke="#9E9A93" strokeWidth="0.5" opacity="0.35"/>
                 ))}
-                {/* Red accent squares */}
-                <rect x="25" y="25" width="25" height="25" fill="#E8391A" opacity="0.15"/>
-                <rect x="75" y="50" width="25" height="25" fill="#E8391A" opacity="0.12"/>
-                <rect x="125" y="25" width="25" height="25" fill="#E8391A" opacity="0.1"/>
-                <rect x="50" y="100" width="25" height="25" fill="#E8391A" opacity="0.15"/>
-                <rect x="150" y="100" width="25" height="25" fill="#E8391A" opacity="0.1"/>
-                <rect x="100" y="150" width="25" height="25" fill="#E8391A" opacity="0.12"/>
-                {/* Walking stick figure with joints */}
+                {/* Red accent blocks - larger like reference */}
+                <rect x="0" y="25" width="37.5" height="25" fill="#E8391A" opacity="0.2"/>
+                <rect x="62.5" y="12.5" width="25" height="12.5" fill="#E8391A" opacity="0.15"/>
+                <rect x="87.5" y="50" width="37.5" height="37.5" fill="#E8391A" opacity="0.18"/>
+                <rect x="150" y="0" width="25" height="12.5" fill="#E8391A" opacity="0.12"/>
+                <rect x="0" y="150" width="37.5" height="37.5" fill="#E8391A" opacity="0.2"/>
+                <rect x="162.5" y="137.5" width="37.5" height="25" fill="#E8391A" opacity="0.18"/>
+                {/* Walking stick figure - matching reference */}
                 <g className="walking-figure">
-                  {/* Head */}
-                  <circle cx="100" cy="30" r="9" stroke="#3A3835" strokeWidth="2" fill="none" opacity="0.5"/>
-                  {/* Neck */}
-                  <line x1="100" y1="39" x2="100" y2="48" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                  {/* Torso - slight forward lean */}
-                  <line x1="100" y1="48" x2="103" y2="100" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                  {/* Left arm group */}
+                  {/* Head - filled solid */}
+                  <circle cx="100" cy="32" r="14" fill="#8A8580" opacity="0.7"/>
+                  {/* Neck + Torso - thick stroke */}
+                  <line x1="100" y1="46" x2="100" y2="105" stroke="#8A8580" strokeWidth="5" strokeLinecap="round" opacity="0.7"/>
+                  {/* Left arm - down close to body */}
                   <g className="walk-arm-l-group">
-                    <line x1="100" y1="55" x2="86" y2="74" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                    <circle cx="86" cy="74" r="1.8" fill="#3A3835" opacity="0.45"/>
-                    <line x1="86" y1="74" x2="83" y2="90" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                    <line x1="100" y1="60" x2="88" y2="95" stroke="#8A8580" strokeWidth="4" strokeLinecap="round" opacity="0.7"/>
                   </g>
-                  {/* Right arm group */}
+                  {/* Right arm - down close to body */}
                   <g className="walk-arm-r-group">
-                    <line x1="100" y1="55" x2="114" y2="74" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                    <circle cx="114" cy="74" r="1.8" fill="#3A3835" opacity="0.45"/>
-                    <line x1="114" y1="74" x2="117" y2="90" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                    <line x1="100" y1="60" x2="112" y2="95" stroke="#8A8580" strokeWidth="4" strokeLinecap="round" opacity="0.7"/>
                   </g>
-                  {/* Left leg group */}
+                  {/* Left leg - stride */}
                   <g className="walk-leg-l-group">
-                    <line x1="103" y1="100" x2="90" y2="128" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                    <circle cx="90" cy="128" r="1.8" fill="#3A3835" opacity="0.45"/>
-                    <line x1="90" y1="128" x2="85" y2="158" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                    <line x1="100" y1="105" x2="80" y2="170" stroke="#8A8580" strokeWidth="4" strokeLinecap="round" opacity="0.7"/>
                   </g>
-                  {/* Right leg group */}
+                  {/* Right leg - stride */}
                   <g className="walk-leg-r-group">
-                    <line x1="103" y1="100" x2="116" y2="128" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
-                    <circle cx="116" cy="128" r="1.8" fill="#3A3835" opacity="0.45"/>
-                    <line x1="116" y1="128" x2="121" y2="158" stroke="#3A3835" strokeWidth="2" opacity="0.5"/>
+                    <line x1="100" y1="105" x2="120" y2="170" stroke="#8A8580" strokeWidth="4" strokeLinecap="round" opacity="0.7"/>
                   </g>
                 </g>
               </svg>
