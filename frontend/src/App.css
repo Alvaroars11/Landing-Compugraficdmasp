@@ -1038,8 +1038,8 @@ body {
 .dp-grid-pictogram {
   position: absolute;
   bottom: -2rem;
-  right: 0;
-  width: 180px;
+  right: -3rem;
+  width: 200px;
 }
 
 .dp-grid-pictogram svg {
@@ -1049,52 +1049,58 @@ body {
 
 /* Walking animation with joints */
 .walking-figure {
-  animation: walk-bounce 0.8s ease-in-out infinite;
+  animation: walk-bounce 0.6s ease-in-out infinite;
 }
 
 @keyframes walk-bounce {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-2px); }
+  25% { transform: translateY(-1px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-1px); }
 }
 
 .walk-arm-l-group {
-  animation: swing-arm-l 0.8s ease-in-out infinite;
-  transform-origin: 100px 60px;
+  animation: swing-arm-l 0.6s ease-in-out infinite;
+  transform-origin: 100px 55px;
 }
 
 .walk-arm-r-group {
-  animation: swing-arm-r 0.8s ease-in-out infinite;
-  transform-origin: 100px 60px;
+  animation: swing-arm-r 0.6s ease-in-out infinite;
+  transform-origin: 100px 55px;
 }
 
 .walk-leg-l-group {
-  animation: swing-leg-l 0.8s ease-in-out infinite;
-  transform-origin: 100px 100px;
+  animation: swing-leg-l 0.6s ease-in-out infinite;
+  transform-origin: 103px 100px;
 }
 
 .walk-leg-r-group {
-  animation: swing-leg-r 0.8s ease-in-out infinite;
-  transform-origin: 100px 100px;
+  animation: swing-leg-r 0.6s ease-in-out infinite;
+  transform-origin: 103px 100px;
 }
 
 @keyframes swing-arm-l {
-  0%, 100% { transform: rotate(-12deg); }
-  50% { transform: rotate(12deg); }
+  0% { transform: rotate(-20deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(-20deg); }
 }
 
 @keyframes swing-arm-r {
-  0%, 100% { transform: rotate(12deg); }
-  50% { transform: rotate(-12deg); }
+  0% { transform: rotate(20deg); }
+  50% { transform: rotate(-20deg); }
+  100% { transform: rotate(20deg); }
 }
 
 @keyframes swing-leg-l {
-  0%, 100% { transform: rotate(15deg); }
-  50% { transform: rotate(-15deg); }
+  0% { transform: rotate(20deg); }
+  50% { transform: rotate(-20deg); }
+  100% { transform: rotate(20deg); }
 }
 
 @keyframes swing-leg-r {
-  0%, 100% { transform: rotate(-15deg); }
-  50% { transform: rotate(15deg); }
+  0% { transform: rotate(-20deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(-20deg); }
 }
 
 .dp-title {
