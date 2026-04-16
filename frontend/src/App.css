@@ -864,11 +864,12 @@ body {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  background: var(--text-dark);
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(12px);
   border-radius: 50px;
   overflow: hidden;
   z-index: 100;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .floating-toggle-btn {
