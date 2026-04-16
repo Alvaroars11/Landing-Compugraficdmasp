@@ -115,13 +115,13 @@ body {
 }
 
 .logo-btn.logo-active-cg {
-  background: var(--orange-primary);
-  color: var(--white);
+  color: var(--orange-primary);
+  background: none;
 }
 
 .logo-btn.logo-active-dp {
-  background: var(--dp-red);
-  color: var(--white);
+  color: var(--dp-red);
+  background: none;
 }
 
 .logo-divider {
