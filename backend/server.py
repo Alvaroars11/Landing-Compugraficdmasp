@@ -9,6 +9,7 @@ from pydantic import BaseModel, Field, ConfigDict, EmailStr
 from typing import List, Optional
 import uuid
 from datetime import datetime, timezone
+import requests as http_requests
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -61,6 +62,26 @@ async def submit_contact(input: ContactMessageCreate):
         doc['timestamp'] = doc['timestamp'].isoformat()
         
         await db.contact_messages.insert_one(doc)
+        
+        # Send email via Web3Forms
+        web3forms_key = os.environ.get('WEB3FORMS_KEY')
+        if web3forms_key:
+            try:
+                seccion_label = "D+P Señalética" if input.seccion == "dp" else "Compugrafic Gran Formato"
+                web3_data = {
+                    "access_key": web3forms_key,
+                    "subject": f"Nuevo contacto desde {seccion_label}",
+                    "from_name": "Sitio Web compugrafic | d+p",
+                    "name": input.nombre,
+                    "email": input.email,
+                    "message": input.mensaje,
+                    "Empresa": input.empresa or "No especificada",
+                    "Sección": seccion_label,
+                    "to": input.destinoEmail,
+                }
+                http_requests.post("https://api.web3forms.com/submit", data=web3_data, timeout=10)
+            except Exception as e:
+                logging.error(f"Web3Forms error: {e}")
         
         return ContactResponse(
             success=True,
