@@ -566,6 +566,12 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
             Un proceso estructurado en 7 etapas que garantiza resultados precisos,
             durables y alineados a la identidad de tu espacio.
           </p>
+          <p className="process-note">
+            Este proceso aplica para proyectos integrales que inician desde cero. 
+            Si tu proyecto ya cuenta con un diseño definido y únicamente requieres 
+            fabricación e instalación, también podemos ayudarte — contáctanos 
+            para una cotización directa.
+          </p>
           
           <div className="process-steps">
             <div className="process-step">
