@@ -411,38 +411,54 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 <rect x="0" y="175" width="25" height="25" fill="#E8391A" opacity="0.1"/>
                 <rect x="187.5" y="25" width="25" height="12.5" fill="#E8391A" opacity="0.12"/>
                 
-                {/* Large red circle background accent */}
-                <circle cx="105" cy="105" r="70" fill="#E8391A" opacity="0.06"/>
+                {/* Subtle circle accent */}
+                <circle cx="100" cy="110" r="70" fill="#E8391A" opacity="0.04"/>
                 
-                {/* Modern geometric person - standing, pointing right */}
-                {/* Head - perfect circle */}
-                <circle cx="100" cy="38" r="18" fill="#4A4845"/>
+                {/* One-piece solid person pointing right */}
+                <path d="
+                  M100,20 
+                  m-16,0 
+                  a16,16 0 1,1 32,0 
+                  a16,16 0 1,1 -32,0 
+                  Z
+                " fill="#3A3835"/>
                 
-                {/* Torso - tapered rectangle */}
-                <path d="M90 58 L110 58 L108 120 L92 120 Z" fill="#4A4845" rx="4"/>
+                {/* Body - single solid silhouette shape */}
+                <path d="
+                  M88,38 
+                  L112,38
+                  L114,65
+                  L130,58
+                  L155,50
+                  L175,50
+                  L175,62
+                  L152,62
+                  L128,72
+                  L114,78
+                  L114,120
+                  L120,120
+                  L120,195
+                  L106,195
+                  L106,130
+                  L94,130
+                  L94,195
+                  L80,195
+                  L80,120
+                  L86,120
+                  L86,78
+                  L72,88
+                  L60,105
+                  L60,115
+                  L48,115
+                  L48,100
+                  L64,76
+                  L86,65
+                  Z
+                " fill="#3A3835"/>
                 
-                {/* Right arm pointing RIGHT - strong horizontal */}
-                <rect x="108" y="62" width="35" height="11" rx="5.5" fill="#4A4845" transform="rotate(-5, 108, 67)"/>
-                <rect x="140" y="58" width="40" height="10" rx="5" fill="#E8391A" transform="rotate(-5, 140, 63)"/>
-                {/* Pointing hand - triangle */}
-                <polygon points="182,56 192,61 182,66" fill="#E8391A"/>
-                
-                {/* Left arm - relaxed down */}
-                <rect x="65" y="65" width="28" height="10" rx="5" fill="#4A4845" transform="rotate(60, 90, 70)"/>
-                <rect x="55" y="88" width="22" height="9" rx="4.5" fill="#4A4845" transform="rotate(80, 66, 92)"/>
-                
-                {/* Left leg - slightly apart */}
-                <rect x="88" y="118" width="12" height="50" rx="6" fill="#4A4845" transform="rotate(5, 94, 118)"/>
-                <rect x="85" y="164" width="11" height="30" rx="5.5" fill="#4A4845" transform="rotate(-2, 90, 164)"/>
-                
-                {/* Right leg - slightly apart */}
-                <rect x="102" y="118" width="12" height="50" rx="6" fill="#4A4845" transform="rotate(-5, 108, 118)"/>
-                <rect x="105" y="164" width="11" height="30" rx="5.5" fill="#4A4845" transform="rotate(2, 110, 164)"/>
-                
-                {/* Small red dot accents */}
-                <circle cx="192" cy="61" r="3" fill="#E8391A" opacity="0.9"/>
-                <circle cx="200" cy="55" r="1.5" fill="#E8391A" opacity="0.5"/>
-                <circle cx="198" cy="68" r="1.5" fill="#E8391A" opacity="0.5"/>
+                {/* Red arrow at pointing hand */}
+                <polygon points="180,52 190,56 180,60" fill="#E8391A"/>
+                <circle cx="193" cy="56" r="2.5" fill="#E8391A" opacity="0.8"/>
               </svg>
             </div>
           </div>
