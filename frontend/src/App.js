@@ -395,38 +395,19 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
               </div>
               <p className="dp-tagline">SEÑALÉTICA / WAYFINDING</p>
             </div>
-            <div className="dp-grid-pictogram">
-              <svg viewBox="0 0 180 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {/* Grid lines */}
-                {[...Array(23)].map((_, i) => (
-                  <line key={`h${i}`} x1="0" y1={i * 12.5} x2="180" y2={i * 12.5} stroke="#9E9A93" strokeWidth="0.4" opacity="0.25"/>
-                ))}
-                {[...Array(15)].map((_, i) => (
-                  <line key={`v${i}`} x1={i * 12.5} y1="0" x2={i * 12.5} y2="280" stroke="#9E9A93" strokeWidth="0.4" opacity="0.25"/>
-                ))}
-                
-                {/* Arrow pointing down with "ONE WAY" text */}
-                <g className="arrow-bounce">
-                  <path d="
-                    M50,10 
-                    L130,10 
-                    L130,160 
-                    L165,160 
-                    L90,260 
-                    L15,160 
-                    L50,160 
-                    Z
-                  " fill="#3A3835"/>
-                  <text x="90" y="60" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">O</text>
-                  <text x="90" y="80" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">N</text>
-                  <text x="90" y="100" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">E</text>
-                  <text x="90" y="125" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">W</text>
-                  <text x="90" y="145" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">A</text>
-                  <text x="90" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">Y</text>
-                </g>
-              </svg>
-            </div>
           </div>
+        </div>
+        
+        <div className="dp-arrow-track">
+          <svg className="dp-arrow-mover" viewBox="0 0 180 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50,10 L130,10 L130,160 L165,160 L90,260 L15,160 L50,160 Z" fill="#3A3835"/>
+            <text x="90" y="60" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">O</text>
+            <text x="90" y="80" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">N</text>
+            <text x="90" y="100" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">E</text>
+            <text x="90" y="125" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">W</text>
+            <text x="90" y="145" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">A</text>
+            <text x="90" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">Y</text>
+          </svg>
         </div>
       </section>
 

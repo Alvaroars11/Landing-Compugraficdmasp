@@ -1225,6 +1225,31 @@ body {
   background: var(--dp-beige);
   min-height: auto;
   padding: 7rem 3rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Arrow track */
+.dp-arrow-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5%;
+  width: 100px;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.dp-arrow-mover {
+  width: 100%;
+  animation: arrow-full-scroll 4s linear infinite;
+}
+
+@keyframes arrow-full-scroll {
+  0% { transform: translateY(-200px); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(calc(100vh - 100px)); opacity: 0; }
 }
 
 .dp-hero-inner {
@@ -1271,33 +1296,6 @@ body {
 
 .dp-logo-center {
   text-align: center;
-}
-
-.dp-grid-pictogram {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -10rem;
-  width: 120px;
-  opacity: 0.5;
-  overflow: hidden;
-}
-
-.dp-grid-pictogram svg {
-  width: 100%;
-  height: auto;
-}
-
-/* Arrow scroll animation */
-.arrow-bounce {
-  animation: arrow-scroll 4s linear infinite;
-}
-
-@keyframes arrow-scroll {
-  0% { transform: translateY(-150px); opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { transform: translateY(500px); opacity: 0; }
 }
 
 .dp-title {
