@@ -528,7 +528,7 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
       </div>
 
       {/* Misión y Visión D+P */}
-      <section className="dp-mision-vision" data-testid="dp-mision-vision">
+      <section className="dp-mision-vision" id="mision-vision" data-testid="dp-mision-vision">
         <div className="dp-mv-inner">
           <div className="dp-mv-card dp-mv-mision">
             <span className="dp-mv-label">MISIÓN</span>
@@ -608,7 +608,7 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
       </section>
 
       {/* Deliverables */}
-      <section className="dp-deliverables" data-testid="deliverables-section">
+      <section className="dp-deliverables" id="entregables" data-testid="deliverables-section">
         <div className="dp-deliverables-inner">
           <div className="dp-deliverables-left">
             <span className="dp-del-label">ENTREGABLES</span>
@@ -961,8 +961,11 @@ function App() {
             </>
           ) : (
             <>
-              <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="nav-link">QUIÉNES SOMOS</a>
+              <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="nav-link">NOSOTROS</a>
+              <a href="#mision-vision" onClick={(e) => { e.preventDefault(); scrollToSection('mision-vision'); }} className="nav-link">MISIÓN Y VISIÓN</a>
               <a href="#proceso" onClick={(e) => { e.preventDefault(); scrollToSection('proceso'); }} className="nav-link">PROCESO</a>
+              <a href="#entregables" onClick={(e) => { e.preventDefault(); scrollToSection('entregables'); }} className="nav-link">ENTREGABLES</a>
+              <a href="#proyectos-dp" onClick={(e) => { e.preventDefault(); scrollToSection('proyectos-dp'); }} className="nav-link">PROYECTOS</a>
               <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="nav-link">CONTACTO</a>
               <button onClick={() => { setActiveSection('compugrafic'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="nav-link nav-switch-cg" data-testid="switch-to-compugrafic">
                 ← COMPUGRAFIC
