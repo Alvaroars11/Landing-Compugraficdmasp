@@ -400,31 +400,31 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 <rect x="150" y="0" width="25" height="12.5" fill="#E8391A" opacity="0.12"/>
                 <rect x="0" y="150" width="37.5" height="37.5" fill="#E8391A" opacity="0.2"/>
                 <rect x="162.5" y="137.5" width="37.5" height="25" fill="#E8391A" opacity="0.18"/>
-                {/* Walking stick figure - mid-stride pose */}
+                {/* Running stick figure */}
                 <g className="walking-figure">
-                  {/* Head - filled solid */}
-                  <circle cx="95" cy="25" r="16" fill="#7A7670" opacity="0.7"/>
-                  {/* Torso - slight forward lean */}
-                  <line x1="95" y1="41" x2="100" y2="100" stroke="#7A7670" strokeWidth="7" strokeLinecap="round" opacity="0.7"/>
-                  {/* Left arm - bent at elbow, swinging back */}
+                  {/* Head - filled solid, leaning forward */}
+                  <circle cx="88" cy="22" r="15" fill="#7A7670" opacity="0.7"/>
+                  {/* Torso - strong forward lean */}
+                  <line x1="90" y1="37" x2="105" y2="95" stroke="#7A7670" strokeWidth="7" strokeLinecap="round" opacity="0.7"/>
+                  {/* Left arm - pumping back hard */}
                   <g className="walk-arm-l-group">
-                    <line x1="97" y1="55" x2="112" y2="72" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
-                    <line x1="112" y1="72" x2="105" y2="58" stroke="#7A7670" strokeWidth="5.5" strokeLinecap="round" opacity="0.6"/>
+                    <line x1="95" y1="50" x2="115" y2="60" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
+                    <line x1="115" y1="60" x2="120" y2="42" stroke="#7A7670" strokeWidth="5.5" strokeLinecap="round" opacity="0.65"/>
                   </g>
-                  {/* Right arm - bent at elbow, swinging forward */}
+                  {/* Right arm - pumping forward */}
                   <g className="walk-arm-r-group">
-                    <line x1="97" y1="55" x2="82" y2="72" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
-                    <line x1="82" y1="72" x2="78" y2="58" stroke="#7A7670" strokeWidth="5.5" strokeLinecap="round" opacity="0.6"/>
+                    <line x1="95" y1="50" x2="75" y2="55" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
+                    <line x1="75" y1="55" x2="65" y2="42" stroke="#7A7670" strokeWidth="5.5" strokeLinecap="round" opacity="0.65"/>
                   </g>
-                  {/* Left leg - bent knee stepping forward */}
+                  {/* Left leg - knee high, pushing forward */}
                   <g className="walk-leg-l-group">
-                    <line x1="100" y1="100" x2="82" y2="125" stroke="#7A7670" strokeWidth="6.5" strokeLinecap="round" opacity="0.7"/>
-                    <line x1="82" y1="125" x2="78" y2="168" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
+                    <line x1="105" y1="95" x2="85" y2="118" stroke="#7A7670" strokeWidth="6.5" strokeLinecap="round" opacity="0.7"/>
+                    <line x1="85" y1="118" x2="75" y2="160" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
                   </g>
-                  {/* Right leg - bent knee pushing back */}
+                  {/* Right leg - extended back, pushing off */}
                   <g className="walk-leg-r-group">
-                    <line x1="100" y1="100" x2="118" y2="125" stroke="#7A7670" strokeWidth="6.5" strokeLinecap="round" opacity="0.7"/>
-                    <line x1="118" y1="125" x2="132" y2="165" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
+                    <line x1="105" y1="95" x2="125" y2="115" stroke="#7A7670" strokeWidth="6.5" strokeLinecap="round" opacity="0.7"/>
+                    <line x1="125" y1="115" x2="145" y2="155" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
                   </g>
                 </g>
               </svg>

@@ -1048,54 +1048,54 @@ body {
   height: auto;
 }
 
-/* Walking animation */
+/* Running animation */
 .walking-figure {
-  animation: walk-translate 4s linear infinite;
+  animation: run-translate 3s linear infinite;
 }
 
-@keyframes walk-translate {
-  0% { transform: translateX(-30px); }
-  100% { transform: translateX(30px); }
+@keyframes run-translate {
+  0% { transform: translateX(-40px); }
+  100% { transform: translateX(40px); }
 }
 
 .walk-arm-l-group {
-  animation: walk-arm-l 0.7s ease-in-out infinite alternate;
-  transform-origin: 97px 55px;
+  animation: run-arm-l 0.4s ease-in-out infinite alternate;
+  transform-origin: 95px 50px;
 }
 
 .walk-arm-r-group {
-  animation: walk-arm-r 0.7s ease-in-out infinite alternate;
-  transform-origin: 97px 55px;
+  animation: run-arm-r 0.4s ease-in-out infinite alternate;
+  transform-origin: 95px 50px;
 }
 
 .walk-leg-l-group {
-  animation: walk-leg-l 0.7s ease-in-out infinite alternate;
-  transform-origin: 100px 100px;
+  animation: run-leg-l 0.4s ease-in-out infinite alternate;
+  transform-origin: 105px 95px;
 }
 
 .walk-leg-r-group {
-  animation: walk-leg-r 0.7s ease-in-out infinite alternate;
-  transform-origin: 100px 100px;
+  animation: run-leg-r 0.4s ease-in-out infinite alternate;
+  transform-origin: 105px 95px;
 }
 
-@keyframes walk-arm-l {
-  0% { transform: rotate(35deg); }
-  100% { transform: rotate(-35deg); }
+@keyframes run-arm-l {
+  0% { transform: rotate(40deg); }
+  100% { transform: rotate(-40deg); }
 }
 
-@keyframes walk-arm-r {
-  0% { transform: rotate(-35deg); }
-  100% { transform: rotate(35deg); }
+@keyframes run-arm-r {
+  0% { transform: rotate(-40deg); }
+  100% { transform: rotate(40deg); }
 }
 
-@keyframes walk-leg-l {
-  0% { transform: rotate(25deg); }
-  100% { transform: rotate(-25deg); }
+@keyframes run-leg-l {
+  0% { transform: rotate(30deg); }
+  100% { transform: rotate(-30deg); }
 }
 
-@keyframes walk-leg-r {
-  0% { transform: rotate(-25deg); }
-  100% { transform: rotate(25deg); }
+@keyframes run-leg-r {
+  0% { transform: rotate(-30deg); }
+  100% { transform: rotate(30deg); }
 }
 
 .dp-title {
