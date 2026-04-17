@@ -417,8 +417,12 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                     L50,160 
                     Z
                   " fill="#3A3835"/>
-                  <text x="90" y="75" textAnchor="middle" fontSize="20" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">ONE</text>
-                  <text x="90" y="105" textAnchor="middle" fontSize="20" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">WAY</text>
+                  <text x="90" y="60" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">O</text>
+                  <text x="90" y="80" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">N</text>
+                  <text x="90" y="100" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">E</text>
+                  <text x="90" y="125" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">W</text>
+                  <text x="90" y="145" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">A</text>
+                  <text x="90" y="165" textAnchor="middle" fontSize="18" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">Y</text>
                 </g>
               </svg>
             </div>
