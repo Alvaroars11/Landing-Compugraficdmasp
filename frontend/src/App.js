@@ -37,6 +37,7 @@ const IMAGES = {
     pisoIluminado: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/xkox8gf7_7cbe2c33-5e4c-428b-9858-06a5c4123b58.JPG",
     paloAlto: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/poj89vy6_7da6f1e1-80e8-40ec-bab3-d1b15bbbde39.JPG",
     worldHotelsRoof: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/ysd6l7te_a6aa1006-f7e1-463d-8d92-ed7395fdb654.JPG",
+    miMacro: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/kbxi1wgl_Screenshot%202026-04-15%20at%205.25.28%E2%80%AFp.m..png",
   }
 };
 
@@ -698,6 +699,14 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 <span className="gallery-category">Hotelero</span>
                 <h4 className="gallery-title">WorldHotels</h4>
                 <p className="gallery-desc">Letras volumétricas en azotea</p>
+              </div>
+            </div>
+            <div className="gallery-item wide" data-testid="dp-gallery-12">
+              <img src={IMAGES.dp.miMacro} alt="Mi Macro Periférico - Estación Los Conejos" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Movilidad Urbana</span>
+                <h4 className="gallery-title">Mi Macro Periférico</h4>
+                <p className="gallery-desc">Estación Los Conejos - Wayfinding</p>
               </div>
             </div>
           </div>
