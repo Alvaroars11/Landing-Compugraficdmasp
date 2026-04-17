@@ -1672,6 +1672,33 @@ body {
   }
 }
 
+/* D+P Contact overrides */
+.dp-active-contact .section-label {
+  color: var(--dp-red);
+}
+
+.dp-active-contact .contact-phone,
+.dp-active-contact .contact-email {
+  color: var(--dp-red);
+}
+
+.dp-active-contact .contact-phone:hover,
+.dp-active-contact .contact-email:hover {
+  color: #c42f15;
+}
+
+.dp-active-contact .form-input:focus {
+  box-shadow: 0 0 0 2px var(--dp-red);
+}
+
+.dp-active-contact .form-button {
+  background: var(--dp-red);
+}
+
+.dp-active-contact .form-button:hover {
+  background: #c42f15;
+}
+
 /* Toast Notification */
 .toast {
   position: fixed;

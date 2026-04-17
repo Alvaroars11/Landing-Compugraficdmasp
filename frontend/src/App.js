@@ -801,7 +801,7 @@ const ContactSection = ({ activeSection }) => {
   }, [toast]);
 
   return (
-    <section className="contact-section" id="contacto" data-testid="contact-section">
+    <section className={`contact-section ${activeSection === 'dp' ? 'dp-active-contact' : ''}`} id="contacto" data-testid="contact-section">
       <div className="contact-inner">
         <div className="contact-info">
           <span className="section-label">CONTACTO</span>
