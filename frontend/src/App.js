@@ -411,54 +411,57 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 <rect x="0" y="175" width="25" height="25" fill="#E8391A" opacity="0.1"/>
                 <rect x="187.5" y="25" width="25" height="12.5" fill="#E8391A" opacity="0.12"/>
                 
-                {/* Subtle circle accent */}
-                <circle cx="100" cy="110" r="70" fill="#E8391A" opacity="0.04"/>
-                
-                {/* One-piece solid person pointing right */}
+                {/* Person pointing - solid black like reference */}
+                {/* Head - wide oval */}
+                <ellipse cx="120" cy="28" rx="18" ry="15" fill="#3A3835"/>
+                {/* Body - single solid shape */}
                 <path d="
-                  M100,20 
-                  m-16,0 
-                  a16,16 0 1,1 32,0 
-                  a16,16 0 1,1 -32,0 
+                  M104,45 
+                  L136,45 
+                  C140,45 142,48 142,52
+                  L142,90
+                  L135,90
+                  L135,55
+                  L128,55
+                  L128,90
+                  L128,95
+                  L130,195
+                  L118,195
+                  L116,95
+                  L116,95
+                  L122,195
+                  L110,195
+                  L108,95
+                  L108,90
+                  L108,55
+                  L102,55
+                  L102,90
+                  L98,90
+                  L98,52
+                  C98,48 100,45 104,45
                   Z
                 " fill="#3A3835"/>
-                
-                {/* Body - single solid silhouette shape */}
+                {/* Right arm - pointing left/outward */}
                 <path d="
-                  M88,38 
-                  L112,38
-                  L114,65
-                  L130,58
-                  L155,50
-                  L175,50
-                  L175,62
-                  L152,62
-                  L128,72
-                  L114,78
-                  L114,120
-                  L120,120
-                  L120,195
-                  L106,195
-                  L106,130
-                  L94,130
-                  L94,195
-                  L80,195
-                  L80,120
-                  L86,120
-                  L86,78
-                  L72,88
-                  L60,105
-                  L60,115
-                  L48,115
-                  L48,100
-                  L64,76
-                  L86,65
+                  M98,50
+                  L55,78
+                  L50,82
+                  L48,78
+                  L53,74
+                  L96,46
                   Z
                 " fill="#3A3835"/>
-                
-                {/* Red arrow at pointing hand */}
-                <polygon points="180,52 190,56 180,60" fill="#E8391A"/>
-                <circle cx="193" cy="56" r="2.5" fill="#E8391A" opacity="0.8"/>
+                {/* Left arm - down by side, slightly curved */}
+                <path d="
+                  M142,50
+                  L148,70
+                  L150,85
+                  L147,90
+                  L143,90
+                  L144,72
+                  L138,50
+                  Z
+                " fill="#3A3835"/>
               </svg>
             </div>
           </div>
