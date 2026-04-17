@@ -809,7 +809,7 @@ const ContactSection = ({ activeSection }) => {
       const response = await axios.post(`${API}/contact`, {
         ...formData,
         seccion: activeSection,
-        destinoEmail: activeSection === 'dp' ? 'dmasp.ventas@compugrafic.com' : 'info@compugrafic.com'
+        destinoEmail: activeSection === 'dp' ? 'dmasp.ventas@compugrafic.com' : 'ventas@compugrafic.com'
       });
       
       setToast({ message: response.data.message, type: 'success' });
