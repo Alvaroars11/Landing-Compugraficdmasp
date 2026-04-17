@@ -1242,7 +1242,7 @@ body {
 
 .dp-arrow-mover {
   width: 100%;
-  animation: arrow-full-scroll 4s linear infinite;
+  animation: arrow-full-scroll 6s linear infinite;
 }
 
 @keyframes arrow-full-scroll {
