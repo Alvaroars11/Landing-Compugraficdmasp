@@ -46,6 +46,7 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
   return (
     <div className="section-transition">
       {/* Hero */}
+      <section className="hero-wrapper">
       <section className="hero" data-testid="compugrafic-hero">
         <div className="hero-content">
           <p className="location">ZAPOPAN, JALISCO · MÉXICO</p>
@@ -86,6 +87,7 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
             <span className="service-arrow">→</span>
           </div>
         </div>
+      </section>
       </section>
 
       {/* Marquee Banner */}
