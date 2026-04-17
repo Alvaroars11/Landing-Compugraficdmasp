@@ -528,20 +528,8 @@ body {
 /* D+P Quiénes Somos */
 .dp-quienes {
   padding: 5rem 3rem;
-  background: linear-gradient(to right, rgba(200, 196, 187, 0.92) 45%, rgba(180, 140, 120, 0.3) 100%), url('https://images.unsplash.com/photo-1671573487779-c9274cf1ff82?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=1920') right center/cover no-repeat;
+  background: linear-gradient(to right, rgba(200, 196, 187, 0.93) 45%, transparent 100%), url('https://images.unsplash.com/photo-1766050587826-c075ef1108e3?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=1920') right center/cover no-repeat;
   position: relative;
-}
-
-.dp-quienes::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(160, 80, 50, 0.15);
-  pointer-events: none;
-  mix-blend-mode: multiply;
 }
 
 .dp-quienes-inner {
