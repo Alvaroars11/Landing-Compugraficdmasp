@@ -670,7 +670,7 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
               </div>
             </div>
             <div className="gallery-item wide" data-testid="dp-gallery-8">
-              <img src={IMAGES.dp.worldHotels} alt="WorldHotels Acueducto" />
+              <img src={IMAGES.dp.worldHotels} alt="WorldHotels Acueducto" style={{ objectPosition: 'center top' }} />
               <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
                 <span className="gallery-category">Hotelero</span>
                 <h4 className="gallery-title">WorldHotels Acueducto</h4>
@@ -686,7 +686,7 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
               </div>
             </div>
             <div className="gallery-item" data-testid="dp-gallery-10">
-              <img src={IMAGES.dp.paloAlto} alt="Palo Alto Italoamericano" />
+              <img src={IMAGES.dp.paloAlto} alt="Palo Alto Italoamericano" style={{ objectPosition: 'right center' }} />
               <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
                 <span className="gallery-category">Restaurantero</span>
                 <h4 className="gallery-title">Palo Alto</h4>
