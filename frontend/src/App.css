@@ -471,6 +471,19 @@ body {
   margin-top: 0.25rem;
 }
 
+/* D+P section label override - use D+P red instead of orange */
+[data-testid="dp-section"] .section-label {
+  color: var(--dp-red);
+}
+
+[data-testid="dp-section"] .gallery-category {
+  color: var(--white);
+}
+
+[data-testid="dp-section"] .step-number {
+  color: var(--dp-red);
+}
+
 /* D+P Marquee Banner */
 .dp-marquee-banner {
   background: var(--dp-red);
