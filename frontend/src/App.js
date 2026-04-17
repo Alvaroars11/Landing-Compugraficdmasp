@@ -704,7 +704,7 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
               </div>
             </div>
             <div className="gallery-item" data-testid="dp-gallery-6">
-              <img src={IMAGES.dp.letraM} alt="Letra volumétrica M - Nave industrial" />
+              <img src={IMAGES.dp.letraM} alt="Letra volumétrica M - Nave industrial" style={{ objectPosition: 'center 30%' }} />
               <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
                 <span className="gallery-category">Industrial</span>
                 <h4 className="gallery-title">Identidad de Edificio</h4>
