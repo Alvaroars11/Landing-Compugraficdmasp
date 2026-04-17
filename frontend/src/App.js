@@ -32,6 +32,11 @@ const IMAGES = {
     almacen: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/nnnoz5tr_Screenshot%202026-04-15%20at%205.26.52%E2%80%AFp.m..png",
     jardinBotanico: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/t8mkq38b_Screenshot%202026-04-15%20at%205.26.21%E2%80%AFp.m..png",
     banos: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/dd1gr5mq_Screenshot%202026-04-15%20at%205.25.58%E2%80%AFp.m..png",
+    piso2: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/mos2fmeu_4ecb6cd9-fad3-4205-89b3-203d7475f552.JPG",
+    worldHotels: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/voea28l9_2570e64f-40ca-4186-911c-bebf683b1880.JPG",
+    pisoIluminado: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/xkox8gf7_7cbe2c33-5e4c-428b-9858-06a5c4123b58.JPG",
+    paloAlto: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/poj89vy6_7da6f1e1-80e8-40ec-bab3-d1b15bbbde39.JPG",
+    worldHotelsRoof: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/ysd6l7te_a6aa1006-f7e1-463d-8d92-ed7395fdb654.JPG",
   }
 };
 
@@ -653,6 +658,46 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 <span className="gallery-category">Retail</span>
                 <h4 className="gallery-title">Señalética Iluminada</h4>
                 <p className="gallery-desc">Letrero con iluminación LED</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="dp-gallery-7">
+              <img src={IMAGES.dp.piso2} alt="Piso 2 - Señalización hotelera" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Hotelero</span>
+                <h4 className="gallery-title">Señalización por Nivel</h4>
+                <p className="gallery-desc">Número volumétrico de piso</p>
+              </div>
+            </div>
+            <div className="gallery-item wide" data-testid="dp-gallery-8">
+              <img src={IMAGES.dp.worldHotels} alt="WorldHotels Acueducto" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Hotelero</span>
+                <h4 className="gallery-title">WorldHotels Acueducto</h4>
+                <p className="gallery-desc">Fachada e identidad exterior</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="dp-gallery-9">
+              <img src={IMAGES.dp.pisoIluminado} alt="Señalización de piso iluminada" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Corporativo</span>
+                <h4 className="gallery-title">Señalización en Piso</h4>
+                <p className="gallery-desc">Placa iluminada con LED</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="dp-gallery-10">
+              <img src={IMAGES.dp.paloAlto} alt="Palo Alto Italoamericano" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Restaurantero</span>
+                <h4 className="gallery-title">Palo Alto</h4>
+                <p className="gallery-desc">Letras volumétricas en fachada</p>
+              </div>
+            </div>
+            <div className="gallery-item wide" data-testid="dp-gallery-11">
+              <img src={IMAGES.dp.worldHotelsRoof} alt="WorldHotels - Letrero en azotea" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Hotelero</span>
+                <h4 className="gallery-title">WorldHotels</h4>
+                <p className="gallery-desc">Letras volumétricas en azotea</p>
               </div>
             </div>
           </div>
