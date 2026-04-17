@@ -217,12 +217,16 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
               <h4 className="detail-card-title">Visual Merchandising</h4>
               <p className="detail-card-text">
                 Desarrollamos estrategias visuales de alto impacto para puntos de venta,
-                diseñando y produciendo materiales que guían la decisión de compra.
+                diseñando y produciendo materiales que guían la decisión de compra,
+                refuerzan la identidad de marca y maximizan la experiencia del consumidor
+                en el piso de venta.
               </p>
               <ul className="detail-card-list">
                 <li>Material de display y POP</li>
                 <li>Banners y lonas comerciales</li>
                 <li>Utilería efímera para temporadas</li>
+                <li>Estilismo y ambientación de maniquíes</li>
+                <li>Guías de montaje y planogramas</li>
               </ul>
             </div>
             
@@ -231,12 +235,16 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
               <h4 className="detail-card-title">Fachadas Comerciales</h4>
               <p className="detail-card-text">
                 Transformamos la imagen exterior de tu negocio integrando materiales
-                de vanguardia, acabados premium y elementos volumétricos.
+                de vanguardia, acabados premium y elementos volumétricos que comunican
+                el posicionamiento de tu marca desde la primera impresión, generando
+                diferenciación y presencia en el mercado.
               </p>
               <ul className="detail-card-list">
                 <li>Letras volumétricas iluminadas</li>
                 <li>Revestimientos y texturas combinadas</li>
                 <li>Lonas de alta resolución UV</li>
+                <li>Cajas de luz y anuncios luminosos</li>
+                <li>Aplicación de identidad visual en fachada</li>
               </ul>
             </div>
             
@@ -246,11 +254,15 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
               <p className="detail-card-text">
                 Gestionamos de forma integral la producción de espacios comerciales
                 y de exhibición, desde el concepto creativo hasta la instalación final.
+                Nos encargamos de cada detalle para que tu marca se presente con la
+                mayor profesionalidad en cualquier foro o exposición.
               </p>
               <ul className="detail-card-list">
+                <li>Diseño, fabricación e instalación de stands</li>
                 <li>Showrooms y espacios de exhibición</li>
-                <li>Producción para expos y ferias</li>
-                <li>Cobertura en toda la República</li>
+                <li>Producción para expos y ferias nacionales</li>
+                <li>Cobertura en toda la República Mexicana</li>
+                <li>Proyecto llave en mano</li>
               </ul>
             </div>
             
@@ -259,12 +271,16 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
               <h4 className="detail-card-title">Impresos Gran Formato</h4>
               <p className="detail-card-text">
                 Producimos impresiones de gran formato con tecnología UV y solvente
-                de última generación, garantizando colores precisos y alta definición.
+                de última generación, garantizando colores precisos, alta definición
+                y acabados duraderos. Cada pieza es una herramienta de comunicación
+                que posiciona tu marca con contundencia visual.
               </p>
               <ul className="detail-card-list">
-                <li>Vinilos, espectaculares y anuncios</li>
-                <li>Banners, lonas y cenefas interior</li>
+                <li>Vallas, espectaculares y anuncios exteriores</li>
+                <li>Banners, lonas y cenefas instore</li>
+                <li>Cajas backlight de alta definición</li>
                 <li>Foam boards y material rígido</li>
+                <li>Impresión UV y solvente de alta resolución</li>
               </ul>
             </div>
           </div>
