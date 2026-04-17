@@ -843,8 +843,7 @@ const ContactSection = ({ activeSection }) => {
           <a href="tel:+523338131707" className="contact-phone">(33) 3813 1707</a>
           <a href="tel:+523338131593" className="contact-phone">(33) 3813 1593</a>
           <br />
-          <a href="mailto:operaciones@compugrafic.com" className="contact-email">operaciones@compugrafic.com</a>
-          <a href="mailto:drodriguez@compugrafic.com" className="contact-email">drodriguez@compugrafic.com</a>
+          <a href="mailto:dmasp.ventas@compugrafic.com" className="contact-email">dmasp.ventas@compugrafic.com</a>
         </div>
         
         <form className="contact-form" onSubmit={handleSubmit} data-testid="contact-form">
@@ -1015,7 +1014,7 @@ function App() {
         </div>
         <div className="footer-right">
           <p>(33) 3813 1707</p>
-          <a href="mailto:operaciones@compugrafic.com">operaciones@compugrafic.com</a>
+          <a href="mailto:info@compugrafic.com">info@compugrafic.com</a>
         </div>
       </footer>
     </div>
