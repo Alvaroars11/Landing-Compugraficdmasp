@@ -681,7 +681,7 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
               <img src={IMAGES.dp.pisoIluminado} alt="Señalización de piso iluminada" />
               <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
                 <span className="gallery-category">Corporativo</span>
-                <h4 className="gallery-title">Señalización en Piso</h4>
+                <h4 className="gallery-title">Señalización Sanitaria</h4>
                 <p className="gallery-desc">Placa iluminada con LED</p>
               </div>
             </div>
