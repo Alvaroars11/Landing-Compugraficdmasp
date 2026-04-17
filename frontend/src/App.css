@@ -1050,46 +1050,52 @@ body {
 
 /* Walking animation */
 .walking-figure {
+  animation: walk-translate 4s linear infinite;
+}
+
+@keyframes walk-translate {
+  0% { transform: translateX(-30px); }
+  100% { transform: translateX(30px); }
 }
 
 .walk-arm-l-group {
-  animation: walk-arm-l 1s ease-in-out infinite alternate;
+  animation: walk-arm-l 0.7s ease-in-out infinite alternate;
   transform-origin: 97px 55px;
 }
 
 .walk-arm-r-group {
-  animation: walk-arm-r 1s ease-in-out infinite alternate;
+  animation: walk-arm-r 0.7s ease-in-out infinite alternate;
   transform-origin: 97px 55px;
 }
 
 .walk-leg-l-group {
-  animation: walk-leg-l 1s ease-in-out infinite alternate;
+  animation: walk-leg-l 0.7s ease-in-out infinite alternate;
   transform-origin: 100px 100px;
 }
 
 .walk-leg-r-group {
-  animation: walk-leg-r 1s ease-in-out infinite alternate;
+  animation: walk-leg-r 0.7s ease-in-out infinite alternate;
   transform-origin: 100px 100px;
 }
 
 @keyframes walk-arm-l {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(-30deg); }
+  0% { transform: rotate(35deg); }
+  100% { transform: rotate(-35deg); }
 }
 
 @keyframes walk-arm-r {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(30deg); }
+  0% { transform: rotate(-35deg); }
+  100% { transform: rotate(35deg); }
 }
 
 @keyframes walk-leg-l {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(-22deg); }
+  0% { transform: rotate(25deg); }
+  100% { transform: rotate(-25deg); }
 }
 
 @keyframes walk-leg-r {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(22deg); }
+  0% { transform: rotate(-25deg); }
+  100% { transform: rotate(25deg); }
 }
 
 .dp-title {
