@@ -502,6 +502,28 @@ body {
   color: var(--dp-red);
 }
 
+[data-testid="dp-section"] .contact-phone,
+[data-testid="dp-section"] .contact-email {
+  color: var(--dp-red);
+}
+
+[data-testid="dp-section"] .contact-phone:hover,
+[data-testid="dp-section"] .contact-email:hover {
+  color: #c42f15;
+}
+
+[data-testid="dp-section"] .form-input:focus {
+  box-shadow: 0 0 0 2px var(--dp-red);
+}
+
+[data-testid="dp-section"] .form-button {
+  background: var(--dp-red);
+}
+
+[data-testid="dp-section"] .form-button:hover {
+  background: #c42f15;
+}
+
 /* D+P Misión y Visión */
 .dp-mision-vision {
   padding: 5rem 3rem;
