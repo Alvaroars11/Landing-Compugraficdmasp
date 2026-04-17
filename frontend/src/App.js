@@ -539,38 +539,53 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
       </section>
 
       {/* Deliverables */}
-      <section className="deliverables-section" data-testid="deliverables-section">
-        <div className="deliverables-inner">
-          <div>
-            <span className="section-label">ENTREGABLES</span>
-            <h2 className="deliverables-title">Proyecto Ejecutivo de<br />Señalización</h2>
-            <p className="deliverables-text">
+      <section className="dp-deliverables" data-testid="deliverables-section">
+        <div className="dp-deliverables-inner">
+          <div className="dp-deliverables-left">
+            <span className="dp-del-label">ENTREGABLES</span>
+            <h2 className="dp-del-title">Proyecto Ejecutivo de<br />Señalización</h2>
+            <p className="dp-del-text">
               Cada proyecto se entrega con documentación completa: manual digital,
               archivos editables en tamaño real, sembrado en planos arquitectónicos,
               cuantificación por etapas y cotización de fabricación e instalación.
             </p>
+            
+            <div className="dp-del-reqs">
+              <span className="dp-del-reqs-label">REQUERIMIENTOS DEL CLIENTE</span>
+              <p className="dp-del-text">
+                Planos arquitectónicos / renders actualizados · Sistema contra incendios ·
+                Manual de marca (branding, tipografía, lineamientos de diseño).
+              </p>
+            </div>
           </div>
           
-          <div className="deliverables-grid">
-            <div className="deliverable-item">
-              <span className="deliverable-format">PDF</span>
-              <h4 className="deliverable-name">Manual Digital</h4>
-              <p className="deliverable-desc">Especificaciones técnicas, materialidad, dimensiones y diseño final.</p>
-            </div>
-            <div className="deliverable-item">
-              <span className="deliverable-format">PDF editable</span>
-              <h4 className="deliverable-name">Archivos Editables</h4>
-              <p className="deliverable-desc">En tamaño real para producción directa.</p>
-            </div>
-            <div className="deliverable-item">
-              <span className="deliverable-format">PDF · DWG</span>
-              <h4 className="deliverable-name">Sembrado</h4>
-              <p className="deliverable-desc">Ubicación precisa de señalización en planos arquitectónicos.</p>
-            </div>
-            <div className="deliverable-item">
-              <span className="deliverable-format">PDF · XLS</span>
-              <h4 className="deliverable-name">Cuantificación</h4>
-              <p className="deliverable-desc">Estimación por área y/o etapas de proyecto.</p>
+          <div className="dp-deliverables-right">
+            <div className="dp-del-grid">
+              <div className="dp-del-item">
+                <h4 className="dp-del-item-title">Manual Digital</h4>
+                <span className="dp-del-format">PDF</span>
+                <p className="dp-del-item-text">Especificaciones técnicas, materialidad, dimensiones, cuantificación y diseño final aprobado por cliente.</p>
+              </div>
+              <div className="dp-del-item">
+                <h4 className="dp-del-item-title">Archivos Editables</h4>
+                <span className="dp-del-format">PDF editable</span>
+                <p className="dp-del-item-text">En tamaño real para producción directa.</p>
+              </div>
+              <div className="dp-del-item">
+                <h4 className="dp-del-item-title">Sembrado</h4>
+                <span className="dp-del-format">PDF · DWG</span>
+                <p className="dp-del-item-text">Ubicación precisa de señalización en planos arquitectónicos.</p>
+              </div>
+              <div className="dp-del-item">
+                <h4 className="dp-del-item-title">Cuantificación</h4>
+                <span className="dp-del-format">PDF · XLS</span>
+                <p className="dp-del-item-text">Estimación por área y/o etapas de proyecto.</p>
+              </div>
+              <div className="dp-del-item dp-del-item-full">
+                <h4 className="dp-del-item-title">Cotización de Fabricación e Instalación</h4>
+                <span className="dp-del-format">PDF</span>
+                <p className="dp-del-item-text">Basada en el proyecto ejecutivo aprobado.</p>
+              </div>
             </div>
           </div>
         </div>
