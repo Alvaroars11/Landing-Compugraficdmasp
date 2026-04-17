@@ -1048,54 +1048,23 @@ body {
   height: auto;
 }
 
-/* Running animation */
+/* Pointing animation */
 .walking-figure {
-  animation: run-translate 3s linear infinite;
 }
 
-@keyframes run-translate {
-  0% { transform: translateX(-40px); }
-  100% { transform: translateX(40px); }
+.point-arm {
+  animation: point-gesture 2s ease-in-out infinite;
+  transform-origin: 100px 60px;
 }
 
-.walk-arm-l-group {
-  animation: run-arm-l 0.4s ease-in-out infinite alternate;
-  transform-origin: 95px 50px;
+@keyframes point-gesture {
+  0%, 100% { transform: rotate(0deg); }
+  40% { transform: rotate(-8deg); }
+  60% { transform: rotate(-8deg); }
 }
 
-.walk-arm-r-group {
-  animation: run-arm-r 0.4s ease-in-out infinite alternate;
-  transform-origin: 95px 50px;
-}
-
-.walk-leg-l-group {
-  animation: run-leg-l 0.4s ease-in-out infinite alternate;
-  transform-origin: 105px 95px;
-}
-
-.walk-leg-r-group {
-  animation: run-leg-r 0.4s ease-in-out infinite alternate;
-  transform-origin: 105px 95px;
-}
-
-@keyframes run-arm-l {
-  0% { transform: rotate(40deg); }
-  100% { transform: rotate(-40deg); }
-}
-
-@keyframes run-arm-r {
-  0% { transform: rotate(-40deg); }
-  100% { transform: rotate(40deg); }
-}
-
-@keyframes run-leg-l {
-  0% { transform: rotate(30deg); }
-  100% { transform: rotate(-30deg); }
-}
-
-@keyframes run-leg-r {
-  0% { transform: rotate(-30deg); }
-  100% { transform: rotate(30deg); }
+.walk-arm-l-group, .walk-arm-r-group, .walk-leg-l-group, .walk-leg-r-group {
+  animation: none;
 }
 
 .dp-title {
