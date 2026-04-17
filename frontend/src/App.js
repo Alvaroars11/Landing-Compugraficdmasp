@@ -464,29 +464,27 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
         </div>
       </section>
 
-      {/* D+P Project Showcase */}
-      <section className="dp-showcase" data-testid="dp-showcase">
-        <div className="dp-showcase-inner">
-          <div className="dp-showcase-image">
-            <img src={IMAGES.dp.senaletica} alt="Señalética HOMBRE - Letrero iluminado" />
-          </div>
-          <div className="dp-showcase-content">
-            <span className="section-label">PROYECTO DESTACADO</span>
-            <h3 className="dp-showcase-title">Señalética Iluminada</h3>
-            <p className="dp-showcase-text">
-              Diseño y fabricación de señalética con iluminación LED integrada. 
-              Combinamos materiales como OSB y acrílico para crear piezas únicas 
-              que destacan en cualquier espacio comercial.
-            </p>
-            <ul className="dp-showcase-list">
-              <li>Diseño personalizado</li>
-              <li>Iluminación LED de bajo consumo</li>
-              <li>Materiales sustentables</li>
-              <li>Instalación profesional</li>
-            </ul>
-          </div>
+      {/* D+P Marquee Banner */}
+      <div className="dp-marquee-banner">
+        <div className="dp-marquee-content">
+          {[...Array(2)].map((_, i) => (
+            <div key={i} style={{ display: 'flex' }}>
+              <span className="dp-marquee-item">INTERIOR</span>
+              <span className="dp-marquee-item">ARQUITECTÓNICA</span>
+              <span className="dp-marquee-item">VERTICAL</span>
+              <span className="dp-marquee-item">HABITACIONAL</span>
+              <span className="dp-marquee-item">HORIZONTAL</span>
+              <span className="dp-marquee-item">DIRECCIONAL</span>
+              <span className="dp-marquee-item">IDENTIDAD</span>
+              <span className="dp-marquee-item">INDUSTRIAL</span>
+              <span className="dp-marquee-item">INFORMATIVA</span>
+              <span className="dp-marquee-item">NORMATIVA</span>
+              <span className="dp-marquee-item">RESTRICTIVA</span>
+              <span className="dp-marquee-item">PREVENTIVA</span>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
 
       {/* Process Section */}
       <section className="process-section" id="proceso" data-testid="process-section">

@@ -471,6 +471,29 @@ body {
   margin-top: 0.25rem;
 }
 
+/* D+P Marquee Banner */
+.dp-marquee-banner {
+  background: var(--dp-red);
+  padding: 1rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.dp-marquee-content {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  white-space: nowrap;
+}
+
+.dp-marquee-item {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--white);
+  padding: 0 3rem;
+}
+
 /* D+P Quiénes Somos */
 .dp-quienes {
   padding: 5rem 3rem;
