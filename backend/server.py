@@ -42,6 +42,7 @@ class ContactMessageCreate(BaseModel):
     empresa: Optional[str] = None
     mensaje: str
     seccion: str = "compugrafic"
+    destinoEmail: str = "info@compugrafic.com"
 
 class ContactResponse(BaseModel):
     success: bool

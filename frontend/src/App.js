@@ -808,7 +808,8 @@ const ContactSection = ({ activeSection }) => {
     try {
       const response = await axios.post(`${API}/contact`, {
         ...formData,
-        seccion: activeSection
+        seccion: activeSection,
+        destinoEmail: activeSection === 'dp' ? 'dmasp.ventas@compugrafic.com' : 'info@compugrafic.com'
       });
       
       setToast({ message: response.data.message, type: 'success' });
