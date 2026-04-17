@@ -68,22 +68,22 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
         </div>
         
         <div className="services-grid">
-          <div className="service-card orange-1" data-testid="service-visual">
+          <div className="service-card orange-1" data-testid="service-visual" onClick={() => document.getElementById('servicios').scrollIntoView({ behavior: 'smooth' })}>
             <span className="service-number">01</span>
             <h3 className="service-title">Visual<br />Merchandising</h3>
             <span className="service-arrow">→</span>
           </div>
-          <div className="service-card orange-2" data-testid="service-fachadas">
+          <div className="service-card orange-2" data-testid="service-fachadas" onClick={() => document.getElementById('servicios').scrollIntoView({ behavior: 'smooth' })}>
             <span className="service-number">02</span>
             <h3 className="service-title">Fachadas<br />Comerciales</h3>
             <span className="service-arrow">→</span>
           </div>
-          <div className="service-card orange-3" data-testid="service-marketing">
+          <div className="service-card orange-3" data-testid="service-marketing" onClick={() => document.getElementById('servicios').scrollIntoView({ behavior: 'smooth' })}>
             <span className="service-number">03</span>
             <h3 className="service-title">Marketing<br />Gran Escala</h3>
             <span className="service-arrow">→</span>
           </div>
-          <div className="service-card orange-4" data-testid="service-impresos">
+          <div className="service-card orange-4" data-testid="service-impresos" onClick={() => document.getElementById('servicios').scrollIntoView({ behavior: 'smooth' })}>
             <span className="service-number">04</span>
             <h3 className="service-title">Impresos<br />Gran Formato</h3>
             <span className="service-arrow">→</span>

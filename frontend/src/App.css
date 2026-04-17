@@ -288,23 +288,27 @@ body {
 }
 
 .service-card.orange-1 {
-  background: var(--orange-primary);
+  background: rgba(232, 93, 4, 0.7);
   color: var(--white);
+  cursor: pointer;
 }
 
 .service-card.orange-2 {
-  background: var(--orange-secondary);
+  background: rgba(244, 162, 97, 0.7);
   color: var(--white);
+  cursor: pointer;
 }
 
 .service-card.orange-3 {
-  background: var(--orange-dark);
+  background: rgba(220, 76, 4, 0.7);
   color: var(--white);
+  cursor: pointer;
 }
 
 .service-card.orange-4 {
-  background: var(--orange-light);
+  background: rgba(255, 172, 67, 0.7);
   color: var(--white);
+  cursor: pointer;
 }
 
 .service-number {
