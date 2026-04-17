@@ -170,6 +170,34 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
         </div>
       </section>
 
+      {/* Misión y Visión Compugrafic */}
+      <section className="cg-mision-vision" id="mision-vision-cg" data-testid="cg-mision-vision">
+        <div className="cg-mv-inner">
+          <div className="cg-mv-card">
+            <span className="cg-mv-label">MISIÓN</span>
+            <h3 className="cg-mv-title">Calidad en cada proceso</h3>
+            <p className="cg-mv-text">
+              Proporcionar al mercado nacional productos de comunicación gráfica,
+              buscando de manera continua y permanente la calidad en nuestros
+              procesos, capital humano capacitado, tecnología de punta y la mejor
+              maquinaria; brindando el servicio que satisfaga las necesidades de
+              nuestros clientes tanto internos como externos.
+            </p>
+          </div>
+          <div className="cg-mv-card">
+            <span className="cg-mv-label">VISIÓN</span>
+            <h3 className="cg-mv-title">Líderes en Latinoamérica</h3>
+            <p className="cg-mv-text">
+              Ser la empresa con mejor tecnología y más prestigiada de Latinoamérica
+              en nuestro ramo, entrando de lleno a un mercado de alta definición y alta
+              resolución en gran formato, adquiriendo maquinaria de punta para dar
+              una semejanza de la realidad a través de impresiones de calidad,
+              seleccionando y desarrollando personal de excelencia.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 3. Nuestros Servicios */}
       <section className="services-detail" id="servicios" data-testid="services-section">
         <div className="services-detail-inner">
@@ -370,33 +398,6 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
         </div>
       </section>
 
-      {/* Misión y Visión Compugrafic */}
-      <section className="cg-mision-vision" id="mision-vision-cg" data-testid="cg-mision-vision">
-        <div className="cg-mv-inner">
-          <div className="cg-mv-card">
-            <span className="cg-mv-label">MISIÓN</span>
-            <h3 className="cg-mv-title">Calidad en cada proceso</h3>
-            <p className="cg-mv-text">
-              Proporcionar al mercado nacional productos de comunicación gráfica,
-              buscando de manera continua y permanente la calidad en nuestros
-              procesos, capital humano capacitado, tecnología de punta y la mejor
-              maquinaria; brindando el servicio que satisfaga las necesidades de
-              nuestros clientes tanto internos como externos.
-            </p>
-          </div>
-          <div className="cg-mv-card">
-            <span className="cg-mv-label">VISIÓN</span>
-            <h3 className="cg-mv-title">Líderes en Latinoamérica</h3>
-            <p className="cg-mv-text">
-              Ser la empresa con mejor tecnología y más prestigiada de Latinoamérica
-              en nuestro ramo, entrando de lleno a un mercado de alta definición y alta
-              resolución en gran formato, adquiriendo maquinaria de punta para dar
-              una semejanza de la realidad a través de impresiones de calidad,
-              seleccionando y desarrollando personal de excelencia.
-            </p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
@@ -934,6 +935,7 @@ function App() {
           {activeSection === 'compugrafic' ? (
             <>
               <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="nav-link">NOSOTROS</a>
+              <a href="#mision-vision-cg" onClick={(e) => { e.preventDefault(); scrollToSection('mision-vision-cg'); }} className="nav-link">MISIÓN Y VISIÓN</a>
               <a href="#servicios" onClick={(e) => { e.preventDefault(); scrollToSection('servicios'); }} className="nav-link">SERVICIOS</a>
               <a href="#proyectos" onClick={(e) => { e.preventDefault(); scrollToSection('proyectos'); }} className="nav-link">PROYECTOS</a>
               <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="nav-link">CONTACTO</a>
