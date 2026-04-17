@@ -1074,22 +1074,22 @@ body {
 
 @keyframes walk-arm-l {
   0% { transform: rotate(0deg); }
-  100% { transform: rotate(-25deg); }
+  100% { transform: rotate(-30deg); }
 }
 
 @keyframes walk-arm-r {
   0% { transform: rotate(0deg); }
-  100% { transform: rotate(25deg); }
+  100% { transform: rotate(30deg); }
 }
 
 @keyframes walk-leg-l {
   0% { transform: rotate(0deg); }
-  100% { transform: rotate(-18deg); }
+  100% { transform: rotate(-22deg); }
 }
 
 @keyframes walk-leg-r {
   0% { transform: rotate(0deg); }
-  100% { transform: rotate(18deg); }
+  100% { transform: rotate(22deg); }
 }
 
 .dp-title {

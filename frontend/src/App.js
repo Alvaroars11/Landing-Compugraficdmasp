@@ -403,28 +403,28 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 {/* Walking stick figure - mid-stride pose */}
                 <g className="walking-figure">
                   {/* Head - filled solid */}
-                  <circle cx="95" cy="28" r="13" fill="#8A8580" opacity="0.65"/>
+                  <circle cx="95" cy="25" r="16" fill="#7A7670" opacity="0.7"/>
                   {/* Torso - slight forward lean */}
-                  <line x1="95" y1="41" x2="100" y2="100" stroke="#8A8580" strokeWidth="5" strokeLinecap="round" opacity="0.65"/>
+                  <line x1="95" y1="41" x2="100" y2="100" stroke="#7A7670" strokeWidth="7" strokeLinecap="round" opacity="0.7"/>
                   {/* Left arm - swinging back */}
                   <g className="walk-arm-l-group">
-                    <line x1="97" y1="55" x2="112" y2="80" stroke="#8A8580" strokeWidth="4" strokeLinecap="round" opacity="0.65"/>
-                    <line x1="112" y1="80" x2="118" y2="68" stroke="#8A8580" strokeWidth="3.5" strokeLinecap="round" opacity="0.55"/>
+                    <line x1="97" y1="55" x2="115" y2="78" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
+                    <line x1="115" y1="78" x2="122" y2="65" stroke="#7A7670" strokeWidth="5.5" strokeLinecap="round" opacity="0.6"/>
                   </g>
                   {/* Right arm - swinging forward */}
                   <g className="walk-arm-r-group">
-                    <line x1="97" y1="55" x2="80" y2="78" stroke="#8A8580" strokeWidth="4" strokeLinecap="round" opacity="0.65"/>
-                    <line x1="80" y1="78" x2="75" y2="88" stroke="#8A8580" strokeWidth="3.5" strokeLinecap="round" opacity="0.55"/>
+                    <line x1="97" y1="55" x2="78" y2="76" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
+                    <line x1="78" y1="76" x2="72" y2="88" stroke="#7A7670" strokeWidth="5.5" strokeLinecap="round" opacity="0.6"/>
                   </g>
                   {/* Left leg - stepping forward */}
                   <g className="walk-leg-l-group">
-                    <line x1="100" y1="100" x2="80" y2="135" stroke="#8A8580" strokeWidth="4.5" strokeLinecap="round" opacity="0.65"/>
-                    <line x1="80" y1="135" x2="72" y2="170" stroke="#8A8580" strokeWidth="4" strokeLinecap="round" opacity="0.65"/>
+                    <line x1="100" y1="100" x2="78" y2="132" stroke="#7A7670" strokeWidth="6.5" strokeLinecap="round" opacity="0.7"/>
+                    <line x1="78" y1="132" x2="68" y2="168" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
                   </g>
                   {/* Right leg - pushing back */}
                   <g className="walk-leg-r-group">
-                    <line x1="100" y1="100" x2="118" y2="138" stroke="#8A8580" strokeWidth="4.5" strokeLinecap="round" opacity="0.65"/>
-                    <line x1="118" y1="138" x2="130" y2="168" stroke="#8A8580" strokeWidth="4" strokeLinecap="round" opacity="0.65"/>
+                    <line x1="100" y1="100" x2="120" y2="135" stroke="#7A7670" strokeWidth="6.5" strokeLinecap="round" opacity="0.7"/>
+                    <line x1="120" y1="135" x2="135" y2="166" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
                   </g>
                 </g>
               </svg>
