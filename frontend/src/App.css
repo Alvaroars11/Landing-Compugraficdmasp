@@ -1001,7 +1001,7 @@ body {
 
 .dp-logo-large {
   font-family: 'Playfair Display', serif;
-  font-size: 10rem;
+  font-size: 14rem;
   font-weight: 300;
   color: var(--dp-red);
   line-height: 1;
@@ -1029,6 +1029,7 @@ body {
   justify-content: center;
   position: relative;
   height: 100%;
+  padding-right: 6rem;
 }
 
 .dp-logo-center {
