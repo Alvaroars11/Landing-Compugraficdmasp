@@ -404,30 +404,35 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 {[...Array(17)].map((_, i) => (
                   <line key={`v${i}`} x1={i * 12.5} y1="0" x2={i * 12.5} y2="200" stroke="#9E9A93" strokeWidth="0.5" opacity="0.35"/>
                 ))}
-                {/* Red accent blocks - larger like reference */}
+                {/* Red accent blocks */}
                 <rect x="0" y="25" width="37.5" height="25" fill="#E8391A" opacity="0.2"/>
                 <rect x="62.5" y="12.5" width="25" height="12.5" fill="#E8391A" opacity="0.15"/>
                 <rect x="87.5" y="50" width="37.5" height="37.5" fill="#E8391A" opacity="0.18"/>
                 <rect x="150" y="0" width="25" height="12.5" fill="#E8391A" opacity="0.12"/>
                 <rect x="0" y="150" width="37.5" height="37.5" fill="#E8391A" opacity="0.2"/>
                 <rect x="162.5" y="137.5" width="37.5" height="25" fill="#E8391A" opacity="0.18"/>
-                {/* Stick figure pointing right */}
+                {/* Modern geometric walking person */}
                 <g className="walking-figure">
+                  {/* Red square accent behind head */}
+                  <rect x="82" y="12" width="36" height="36" rx="8" fill="#E8391A" opacity="0.12"/>
                   {/* Head */}
-                  <circle cx="100" cy="30" r="15" fill="#7A7670" opacity="0.7"/>
-                  {/* Torso - standing straight */}
-                  <line x1="100" y1="45" x2="100" y2="105" stroke="#7A7670" strokeWidth="7" strokeLinecap="round" opacity="0.7"/>
-                  {/* Left arm - relaxed at side */}
-                  <line x1="100" y1="60" x2="85" y2="90" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
-                  {/* Right arm - pointing right */}
-                  <g className="point-arm">
-                    <line x1="100" y1="60" x2="130" y2="55" stroke="#7A7670" strokeWidth="6" strokeLinecap="round" opacity="0.7"/>
-                    <line x1="130" y1="55" x2="155" y2="48" stroke="#7A7670" strokeWidth="5.5" strokeLinecap="round" opacity="0.7"/>
-                  </g>
-                  {/* Left leg */}
-                  <line x1="100" y1="105" x2="88" y2="165" stroke="#7A7670" strokeWidth="6.5" strokeLinecap="round" opacity="0.7"/>
-                  {/* Right leg */}
-                  <line x1="100" y1="105" x2="112" y2="165" stroke="#7A7670" strokeWidth="6.5" strokeLinecap="round" opacity="0.7"/>
+                  <circle cx="100" cy="30" r="14" fill="#5A5752" opacity="0.85"/>
+                  {/* Torso - rounded rectangle */}
+                  <rect x="93" y="46" width="14" height="48" rx="7" fill="#5A5752" opacity="0.85"/>
+                  {/* Left arm - bent forward */}
+                  <rect x="70" y="50" width="26" height="10" rx="5" fill="#5A5752" opacity="0.8" transform="rotate(-15, 83, 55)"/>
+                  <rect x="50" y="40" width="24" height="9" rx="4.5" fill="#5A5752" opacity="0.75" transform="rotate(-50, 62, 44)"/>
+                  {/* Right arm - back */}
+                  <rect x="104" y="56" width="24" height="9" rx="4.5" fill="#5A5752" opacity="0.8" transform="rotate(22, 116, 60)"/>
+                  {/* Left leg - forward stride */}
+                  <rect x="80" y="90" width="12" height="44" rx="6" fill="#5A5752" opacity="0.85" transform="rotate(18, 86, 90)"/>
+                  <rect x="72" y="130" width="11" height="40" rx="5.5" fill="#5A5752" opacity="0.8" transform="rotate(-8, 77, 130)"/>
+                  {/* Right leg - back stride */}
+                  <rect x="106" y="90" width="12" height="44" rx="6" fill="#5A5752" opacity="0.85" transform="rotate(-20, 112, 90)"/>
+                  <rect x="118" y="126" width="11" height="40" rx="5.5" fill="#5A5752" opacity="0.8" transform="rotate(10, 123, 126)"/>
+                  {/* Red directional arrow */}
+                  <polygon points="46,28 34,20 34,36" fill="#E8391A" opacity="0.7"/>
+                  <rect x="14" y="25" width="22" height="6" rx="3" fill="#E8391A" opacity="0.7"/>
                 </g>
               </svg>
             </div>
@@ -634,7 +639,7 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
       <section className="dp-sketches" data-testid="dp-sketches">
         <div className="dp-sketches-inner">
           <div className="sketches-image">
-            <img src="https://static.prod-images.emergentagent.com/jobs/aef5e785-14fa-4ce8-b175-568a5f4493cf/images/608c79b2edfb0bd095e4675d24bcb3d2fab9246b249f2fc2fbdc1dcdec9187d6.png" alt="Sistema de señalética - Pictogramas, protección civil, tótems y directorios" />
+            <img src="https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/bp6b5jdi_Screenshot%202026-04-17%20at%2010.36.18%E2%80%AFa.m..png" alt="Sistema de pictogramas - Personas, Accesibilidad, Transporte, Sanitarios, Seguridad, Servicios, Dirección, Naturaleza, Deportes y ocio" />
           </div>
         </div>
       </section>
