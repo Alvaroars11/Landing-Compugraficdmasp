@@ -1286,22 +1286,14 @@ body {
 }
 
 /* Pointing animation */
-.walking-figure {
-}
-
 .point-arm {
-  animation: point-gesture 2s ease-in-out infinite;
-  transform-origin: 100px 60px;
+  animation: point-down 2s ease-in-out infinite;
+  transform-origin: 65px 80px;
 }
 
-@keyframes point-gesture {
+@keyframes point-down {
   0%, 100% { transform: rotate(0deg); }
-  40% { transform: rotate(-8deg); }
-  60% { transform: rotate(-8deg); }
-}
-
-.walk-arm-l-group, .walk-arm-r-group, .walk-leg-l-group, .walk-leg-r-group {
-  animation: none;
+  50% { transform: rotate(20deg); }
 }
 
 .dp-title {
