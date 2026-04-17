@@ -27,6 +27,11 @@ const IMAGES = {
   },
   dp: {
     senaletica: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/dsrfcfz1_30dfbbc9-f4cf-4a73-924b-3d4934a0928f.jpg",
+    navesIndustriales: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/0w1109aq_Screenshot%202026-04-15%20at%205.24.32%E2%80%AFp.m..png",
+    bicicletas: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/s2iymh8q_Screenshot%202026-04-15%20at%205.28.24%E2%80%AFp.m..png",
+    almacen: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/nnnoz5tr_Screenshot%202026-04-15%20at%205.26.52%E2%80%AFp.m..png",
+    jardinBotanico: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/t8mkq38b_Screenshot%202026-04-15%20at%205.26.21%E2%80%AFp.m..png",
+    banos: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/dd1gr5mq_Screenshot%202026-04-15%20at%205.25.58%E2%80%AFp.m..png",
   }
 };
 
@@ -585,6 +590,69 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 <h4 className="dp-del-item-title">Cotización de Fabricación e Instalación</h4>
                 <span className="dp-del-format">PDF</span>
                 <p className="dp-del-item-text">Basada en el proyecto ejecutivo aprobado.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Algunos Proyectos D+P */}
+      <section className="projects-gallery" id="proyectos-dp" data-testid="dp-projects-gallery">
+        <div className="projects-inner">
+          <span className="section-label">ALGUNOS PROYECTOS</span>
+          <h2 className="section-title-dark">Señalética que<br />conecta espacios</h2>
+          <p className="section-description-dark">
+            Proyectos de señalización y wayfinding que integran funcionalidad,
+            identidad de marca y experiencia del usuario.
+          </p>
+          
+          <div className="gallery-grid-large">
+            <div className="gallery-item featured" data-testid="dp-gallery-1">
+              <img src={IMAGES.dp.navesIndustriales} alt="Naves Industriales - Tótem direccional" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Industrial</span>
+                <h4 className="gallery-title">Naves Industriales</h4>
+                <p className="gallery-desc">Tótem direccional exterior</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="dp-gallery-2">
+              <img src={IMAGES.dp.bicicletas} alt="Bicicletas - Señalización estacionamiento" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Habitacional</span>
+                <h4 className="gallery-title">Estacionamiento</h4>
+                <p className="gallery-desc">Señalización vertical en muro</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="dp-gallery-3">
+              <img src={IMAGES.dp.banos} alt="Señalización baños" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Corporativo</span>
+                <h4 className="gallery-title">Sanitarios</h4>
+                <p className="gallery-desc">Señalización tipo bandera</p>
+              </div>
+            </div>
+            <div className="gallery-item wide" data-testid="dp-gallery-4">
+              <img src={IMAGES.dp.jardinBotanico} alt="Jardín Botánico - Tótems de madera" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Espacios Públicos</span>
+                <h4 className="gallery-title">Jardín Botánico</h4>
+                <p className="gallery-desc">Sistema de tótems en madera</p>
+              </div>
+            </div>
+            <div className="gallery-item wide" data-testid="dp-gallery-5">
+              <img src={IMAGES.dp.almacen} alt="Almacén - Señalización de racks" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Industrial</span>
+                <h4 className="gallery-title">Almacén</h4>
+                <p className="gallery-desc">Señalización aérea de racks</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="dp-gallery-6">
+              <img src={IMAGES.dp.senaletica} alt="Señalética HOMBRE" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Retail</span>
+                <h4 className="gallery-title">Señalética Iluminada</h4>
+                <p className="gallery-desc">Letrero con iluminación LED</p>
               </div>
             </div>
           </div>
