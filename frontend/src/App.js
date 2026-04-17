@@ -396,44 +396,53 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
               <p className="dp-tagline">SEÑALÉTICA / WAYFINDING</p>
             </div>
             <div className="dp-grid-pictogram">
-              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {/* Dense grid lines */}
-                {[...Array(17)].map((_, i) => (
-                  <line key={`h${i}`} x1="0" y1={i * 12.5} x2="200" y2={i * 12.5} stroke="#9E9A93" strokeWidth="0.5" opacity="0.35"/>
+              <svg viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* Grid lines */}
+                {[...Array(18)].map((_, i) => (
+                  <line key={`h${i}`} x1="0" y1={i * 12.5} x2="220" y2={i * 12.5} stroke="#9E9A93" strokeWidth="0.4" opacity="0.3"/>
                 ))}
-                {[...Array(17)].map((_, i) => (
-                  <line key={`v${i}`} x1={i * 12.5} y1="0" x2={i * 12.5} y2="200" stroke="#9E9A93" strokeWidth="0.5" opacity="0.35"/>
+                {[...Array(18)].map((_, i) => (
+                  <line key={`v${i}`} x1={i * 12.5} y1="0" x2={i * 12.5} y2="220" stroke="#9E9A93" strokeWidth="0.4" opacity="0.3"/>
                 ))}
                 {/* Red accent blocks */}
-                <rect x="0" y="25" width="37.5" height="25" fill="#E8391A" opacity="0.2"/>
-                <rect x="62.5" y="12.5" width="25" height="12.5" fill="#E8391A" opacity="0.15"/>
-                <rect x="87.5" y="50" width="37.5" height="37.5" fill="#E8391A" opacity="0.18"/>
-                <rect x="150" y="0" width="25" height="12.5" fill="#E8391A" opacity="0.12"/>
-                <rect x="0" y="150" width="37.5" height="37.5" fill="#E8391A" opacity="0.2"/>
-                <rect x="162.5" y="137.5" width="37.5" height="25" fill="#E8391A" opacity="0.18"/>
-                {/* Modern geometric walking person */}
-                <g className="walking-figure">
-                  {/* Red square accent behind head */}
-                  <rect x="82" y="12" width="36" height="36" rx="8" fill="#E8391A" opacity="0.12"/>
-                  {/* Head */}
-                  <circle cx="100" cy="30" r="14" fill="#5A5752" opacity="0.85"/>
-                  {/* Torso - rounded rectangle */}
-                  <rect x="93" y="46" width="14" height="48" rx="7" fill="#5A5752" opacity="0.85"/>
-                  {/* Left arm - bent forward */}
-                  <rect x="70" y="50" width="26" height="10" rx="5" fill="#5A5752" opacity="0.8" transform="rotate(-15, 83, 55)"/>
-                  <rect x="50" y="40" width="24" height="9" rx="4.5" fill="#5A5752" opacity="0.75" transform="rotate(-50, 62, 44)"/>
-                  {/* Right arm - back */}
-                  <rect x="104" y="56" width="24" height="9" rx="4.5" fill="#5A5752" opacity="0.8" transform="rotate(22, 116, 60)"/>
-                  {/* Left leg - forward stride */}
-                  <rect x="80" y="90" width="12" height="44" rx="6" fill="#5A5752" opacity="0.85" transform="rotate(18, 86, 90)"/>
-                  <rect x="72" y="130" width="11" height="40" rx="5.5" fill="#5A5752" opacity="0.8" transform="rotate(-8, 77, 130)"/>
-                  {/* Right leg - back stride */}
-                  <rect x="106" y="90" width="12" height="44" rx="6" fill="#5A5752" opacity="0.85" transform="rotate(-20, 112, 90)"/>
-                  <rect x="118" y="126" width="11" height="40" rx="5.5" fill="#5A5752" opacity="0.8" transform="rotate(10, 123, 126)"/>
-                  {/* Red directional arrow */}
-                  <polygon points="46,28 34,20 34,36" fill="#E8391A" opacity="0.7"/>
-                  <rect x="14" y="25" width="22" height="6" rx="3" fill="#E8391A" opacity="0.7"/>
-                </g>
+                <rect x="0" y="25" width="25" height="25" fill="#E8391A" opacity="0.15"/>
+                <rect x="75" y="0" width="12.5" height="12.5" fill="#E8391A" opacity="0.1"/>
+                <rect x="175" y="175" width="37.5" height="37.5" fill="#E8391A" opacity="0.15"/>
+                <rect x="0" y="175" width="25" height="25" fill="#E8391A" opacity="0.1"/>
+                <rect x="187.5" y="25" width="25" height="12.5" fill="#E8391A" opacity="0.12"/>
+                
+                {/* Large red circle background accent */}
+                <circle cx="105" cy="105" r="70" fill="#E8391A" opacity="0.06"/>
+                
+                {/* Modern geometric person - standing, pointing right */}
+                {/* Head - perfect circle */}
+                <circle cx="100" cy="38" r="18" fill="#4A4845"/>
+                
+                {/* Torso - tapered rectangle */}
+                <path d="M90 58 L110 58 L108 120 L92 120 Z" fill="#4A4845" rx="4"/>
+                
+                {/* Right arm pointing RIGHT - strong horizontal */}
+                <rect x="108" y="62" width="35" height="11" rx="5.5" fill="#4A4845" transform="rotate(-5, 108, 67)"/>
+                <rect x="140" y="58" width="40" height="10" rx="5" fill="#E8391A" transform="rotate(-5, 140, 63)"/>
+                {/* Pointing hand - triangle */}
+                <polygon points="182,56 192,61 182,66" fill="#E8391A"/>
+                
+                {/* Left arm - relaxed down */}
+                <rect x="65" y="65" width="28" height="10" rx="5" fill="#4A4845" transform="rotate(60, 90, 70)"/>
+                <rect x="55" y="88" width="22" height="9" rx="4.5" fill="#4A4845" transform="rotate(80, 66, 92)"/>
+                
+                {/* Left leg - slightly apart */}
+                <rect x="88" y="118" width="12" height="50" rx="6" fill="#4A4845" transform="rotate(5, 94, 118)"/>
+                <rect x="85" y="164" width="11" height="30" rx="5.5" fill="#4A4845" transform="rotate(-2, 90, 164)"/>
+                
+                {/* Right leg - slightly apart */}
+                <rect x="102" y="118" width="12" height="50" rx="6" fill="#4A4845" transform="rotate(-5, 108, 118)"/>
+                <rect x="105" y="164" width="11" height="30" rx="5.5" fill="#4A4845" transform="rotate(2, 110, 164)"/>
+                
+                {/* Small red dot accents */}
+                <circle cx="192" cy="61" r="3" fill="#E8391A" opacity="0.9"/>
+                <circle cx="200" cy="55" r="1.5" fill="#E8391A" opacity="0.5"/>
+                <circle cx="198" cy="68" r="1.5" fill="#E8391A" opacity="0.5"/>
               </svg>
             </div>
           </div>
