@@ -39,6 +39,7 @@ const IMAGES = {
     worldHotelsRoof: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/ysd6l7te_a6aa1006-f7e1-463d-8d92-ed7395fdb654.JPG",
     miMacro: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/kbxi1wgl_Screenshot%202026-04-15%20at%205.25.28%E2%80%AFp.m..png",
     letraM: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/ihtpzc9v_86973a9d-d0de-4f9d-8238-488cca6fe5a2.JPG",
+    letraM2: "https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/np8y8vnp_8ee60643-86e6-4880-a327-679debe61608.JPG",
   }
 };
 
@@ -737,6 +738,14 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 <span className="gallery-category">Industrial</span>
                 <h4 className="gallery-title">Identidad de Edificio</h4>
                 <p className="gallery-desc">Letra volumétrica en nave industrial</p>
+              </div>
+            </div>
+            <div className="gallery-item" data-testid="dp-gallery-14">
+              <img src={IMAGES.dp.letraM2} alt="Letra volumétrica M - Vista lateral" />
+              <div className="gallery-overlay" style={{ background: 'rgba(232, 57, 26, 0.65)' }}>
+                <span className="gallery-category">Industrial</span>
+                <h4 className="gallery-title">Identidad de Edificio</h4>
+                <p className="gallery-desc">Letra volumétrica - Vista lateral</p>
               </div>
             </div>
           </div>
