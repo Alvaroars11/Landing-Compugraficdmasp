@@ -569,8 +569,8 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
           <p className="process-note">
             Este proceso aplica para proyectos integrales que inician desde cero. 
             Si tu proyecto ya cuenta con un diseño definido y únicamente requieres 
-            fabricación e instalación, también podemos ayudarte — contáctanos 
-            para una cotización directa.
+            fabricación e instalación, ¡contáctanos 
+            para una cotización directa!
           </p>
           
           <div className="process-steps">
