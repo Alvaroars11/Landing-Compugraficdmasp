@@ -893,6 +893,7 @@ const ContactSection = ({ activeSection }) => {
 function App() {
   const [activeSection, setActiveSection] = useState('compugrafic');
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -907,6 +908,7 @@ function App() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setMenuOpen(false);
   };
 
   return (
@@ -931,7 +933,11 @@ function App() {
           </button>
         </div>
         
-        <nav className="nav-links">
+        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} data-testid="menu-toggle">
+          <span className={`menu-icon ${menuOpen ? 'open' : ''}`}></span>
+        </button>
+
+        <nav className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
           {activeSection === 'compugrafic' ? (
             <>
               <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="nav-link">NOSOTROS</a>
@@ -939,7 +945,7 @@ function App() {
               <a href="#servicios" onClick={(e) => { e.preventDefault(); scrollToSection('servicios'); }} className="nav-link">SERVICIOS</a>
               <a href="#proyectos" onClick={(e) => { e.preventDefault(); scrollToSection('proyectos'); }} className="nav-link">PROYECTOS</a>
               <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="nav-link">CONTACTO</a>
-              <button onClick={() => { setActiveSection('dp'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="nav-link nav-switch-dp" data-testid="switch-to-dp">
+              <button onClick={() => { setActiveSection('dp'); window.scrollTo({ top: 0, behavior: 'smooth' }); setMenuOpen(false); }} className="nav-link nav-switch-dp" data-testid="switch-to-dp">
                 D+P →
               </button>
             </>
@@ -950,7 +956,7 @@ function App() {
               <a href="#proceso" onClick={(e) => { e.preventDefault(); scrollToSection('proceso'); }} className="nav-link">METODOLOGÍA</a>
               <a href="#proyectos-dp" onClick={(e) => { e.preventDefault(); scrollToSection('proyectos-dp'); }} className="nav-link">PROYECTOS</a>
               <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="nav-link">CONTACTO</a>
-              <button onClick={() => { setActiveSection('compugrafic'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="nav-link nav-switch-cg" data-testid="switch-to-compugrafic">
+              <button onClick={() => { setActiveSection('compugrafic'); window.scrollTo({ top: 0, behavior: 'smooth' }); setMenuOpen(false); }} className="nav-link nav-switch-cg" data-testid="switch-to-compugrafic">
                 ← COMPUGRAFIC
               </button>
             </>
