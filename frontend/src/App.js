@@ -406,62 +406,36 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
                 ))}
                 {/* Red accent blocks */}
                 <rect x="0" y="25" width="25" height="25" fill="#E8391A" opacity="0.15"/>
-                <rect x="75" y="0" width="12.5" height="12.5" fill="#E8391A" opacity="0.1"/>
                 <rect x="175" y="175" width="37.5" height="37.5" fill="#E8391A" opacity="0.15"/>
                 <rect x="0" y="175" width="25" height="25" fill="#E8391A" opacity="0.1"/>
                 <rect x="187.5" y="25" width="25" height="12.5" fill="#E8391A" opacity="0.12"/>
                 
-                {/* Person pointing - solid black like reference */}
-                {/* Head - wide oval */}
-                <ellipse cx="120" cy="28" rx="18" ry="15" fill="#3A3835"/>
-                {/* Body - single solid shape */}
-                <path d="
-                  M104,45 
-                  L136,45 
-                  C140,45 142,48 142,52
-                  L142,90
-                  L135,90
-                  L135,55
-                  L128,55
-                  L128,90
-                  L128,95
-                  L130,195
-                  L118,195
-                  L116,95
-                  L116,95
-                  L122,195
-                  L110,195
-                  L108,95
-                  L108,90
-                  L108,55
-                  L102,55
-                  L102,90
-                  L98,90
-                  L98,52
-                  C98,48 100,45 104,45
-                  Z
-                " fill="#3A3835"/>
-                {/* Right arm - pointing left/outward */}
-                <path d="
-                  M98,50
-                  L55,78
-                  L50,82
-                  L48,78
-                  L53,74
-                  L96,46
-                  Z
-                " fill="#3A3835"/>
-                {/* Left arm - down by side, slightly curved */}
-                <path d="
-                  M142,50
-                  L148,70
-                  L150,85
-                  L147,90
-                  L143,90
-                  L144,72
-                  L138,50
-                  Z
-                " fill="#3A3835"/>
+                {/* Solid person pictogram - like reference */}
+                {/* Head */}
+                <ellipse cx="120" cy="30" rx="16" ry="14" fill="#3A3835"/>
+                
+                {/* Body + arms + legs as single clean path */}
+                {/* Left arm pointing out */}
+                <line x1="105" y1="62" x2="52" y2="90" stroke="#3A3835" strokeWidth="12" strokeLinecap="round"/>
+                
+                {/* Right arm down */}
+                <line x1="135" y1="62" x2="145" y2="100" stroke="#3A3835" strokeWidth="12" strokeLinecap="round"/>
+                
+                {/* Torso */}
+                <rect x="103" y="48" width="34" height="65" rx="8" fill="#3A3835"/>
+                
+                {/* Left leg */}
+                <rect x="105" y="108" width="14" height="80" rx="5" fill="#3A3835"/>
+                
+                {/* Right leg */}
+                <rect x="122" y="108" width="14" height="80" rx="5" fill="#3A3835"/>
+                
+                {/* Gap between legs */}
+                <rect x="117" y="112" width="7" height="50" rx="2" fill="#C8C4BB"/>
+
+                {/* Red arrow */}
+                <line x1="52" y1="90" x2="30" y2="100" stroke="#E8391A" strokeWidth="4" strokeLinecap="round"/>
+                <polygon points="22,98 30,106 32,96" fill="#E8391A"/>
               </svg>
             </div>
           </div>
