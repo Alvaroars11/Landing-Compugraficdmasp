@@ -528,7 +528,7 @@ body {
 /* D+P Quiénes Somos */
 .dp-quienes {
   padding: 5rem 3rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('https://images.unsplash.com/photo-1774021804386-daa60d7a6043?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=1920') center/cover no-repeat;
+  background: linear-gradient(rgba(200, 196, 187, 0.85), rgba(200, 196, 187, 0.85)), url('https://images.unsplash.com/photo-1770109649013-f2df7232bd66?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=1920') center/cover no-repeat;
   position: relative;
 }
 
@@ -576,7 +576,8 @@ body {
 }
 
 .dp-quienes-right {
-  background: var(--bg-cream);
+  background: rgba(245, 240, 232, 0.85);
+  backdrop-filter: blur(4px);
   position: relative;
   border-top: 3px solid var(--dp-red);
 }
