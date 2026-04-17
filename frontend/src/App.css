@@ -873,6 +873,50 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Compugrafic Misión y Visión */
+.cg-mision-vision {
+  padding: 6rem 3rem;
+  background: var(--bg-cream);
+}
+
+.cg-mv-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.cg-mv-card {
+  background: var(--white);
+  padding: 3rem;
+  border-top: 3px solid var(--orange-primary);
+}
+
+.cg-mv-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--orange-primary);
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.cg-mv-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.cg-mv-text {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: var(--text-light);
+}
+
 /* Quiénes Somos - Orange Section */
 .quienes-somos {
   background: var(--orange-primary);
