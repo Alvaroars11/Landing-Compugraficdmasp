@@ -502,6 +502,65 @@ body {
   color: var(--dp-red);
 }
 
+/* D+P Misión y Visión */
+.dp-mision-vision {
+  padding: 5rem 3rem;
+  background: var(--bg-cream);
+}
+
+.dp-mv-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.dp-mv-card {
+  padding: 3rem;
+  border-radius: 4px;
+}
+
+.dp-mv-mision {
+  background: var(--white);
+  border-top: 3px solid var(--dp-red);
+}
+
+.dp-mv-vision {
+  background: var(--dp-red);
+  color: var(--white);
+}
+
+.dp-mv-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.dp-mv-mision .dp-mv-label {
+  color: var(--dp-red);
+}
+
+.dp-mv-vision .dp-mv-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dp-mv-text {
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.dp-mv-mision .dp-mv-text {
+  color: var(--text-light);
+}
+
+.dp-mv-vision .dp-mv-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 /* D+P Marquee Banner */
 .dp-marquee-banner {
   background: var(--dp-red);
