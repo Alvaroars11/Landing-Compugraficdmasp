@@ -1290,14 +1290,14 @@ body {
 
 /* Arrow scroll animation */
 .arrow-bounce {
-  animation: arrow-scroll 3s ease-in-out infinite;
+  animation: arrow-scroll 4s linear infinite;
 }
 
 @keyframes arrow-scroll {
-  0% { transform: translateY(-100%); opacity: 0; }
-  15% { opacity: 1; }
-  85% { opacity: 1; }
-  100% { transform: translateY(200%); opacity: 0; }
+  0% { transform: translateY(-150px); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(500px); opacity: 0; }
 }
 
 .dp-title {
