@@ -396,40 +396,30 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
               <p className="dp-tagline">SEÑALÉTICA / WAYFINDING</p>
             </div>
             <div className="dp-grid-pictogram">
-              <svg viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 180 280" fill="none" xmlns="http://www.w3.org/2000/svg">
                 {/* Grid lines */}
-                {[...Array(18)].map((_, i) => (
-                  <line key={`h${i}`} x1="0" y1={i * 12.5} x2="220" y2={i * 12.5} stroke="#9E9A93" strokeWidth="0.4" opacity="0.3"/>
+                {[...Array(23)].map((_, i) => (
+                  <line key={`h${i}`} x1="0" y1={i * 12.5} x2="180" y2={i * 12.5} stroke="#9E9A93" strokeWidth="0.4" opacity="0.25"/>
                 ))}
-                {[...Array(18)].map((_, i) => (
-                  <line key={`v${i}`} x1={i * 12.5} y1="0" x2={i * 12.5} y2="220" stroke="#9E9A93" strokeWidth="0.4" opacity="0.3"/>
+                {[...Array(15)].map((_, i) => (
+                  <line key={`v${i}`} x1={i * 12.5} y1="0" x2={i * 12.5} y2="280" stroke="#9E9A93" strokeWidth="0.4" opacity="0.25"/>
                 ))}
                 
-                {/* Solid person pictogram */}
-                {/* Head */}
-                <ellipse cx="120" cy="30" rx="16" ry="14" fill="#3A3835"/>
-                
-                {/* Torso */}
-                <rect x="103" y="48" width="34" height="65" rx="8" fill="#3A3835"/>
-                
-                {/* Left arm - upper arm pointing out */}
-                <line x1="105" y1="62" x2="65" y2="80" stroke="#3A3835" strokeWidth="12" strokeLinecap="round"/>
-                {/* Left arm - forearm pointing down */}
-                <g className="point-arm">
-                  <line x1="65" y1="80" x2="55" y2="115" stroke="#3A3835" strokeWidth="11" strokeLinecap="round"/>
+                {/* Arrow pointing down with "ONE WAY" text */}
+                <g className="arrow-bounce">
+                  <path d="
+                    M50,10 
+                    L130,10 
+                    L130,160 
+                    L165,160 
+                    L90,260 
+                    L15,160 
+                    L50,160 
+                    Z
+                  " fill="#3A3835"/>
+                  <text x="90" y="75" textAnchor="middle" fontSize="20" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">ONE</text>
+                  <text x="90" y="105" textAnchor="middle" fontSize="20" fontWeight="700" fill="#C8C4BB" fontFamily="Inter, sans-serif" letterSpacing="3">WAY</text>
                 </g>
-                
-                {/* Right arm down */}
-                <line x1="135" y1="62" x2="145" y2="100" stroke="#3A3835" strokeWidth="12" strokeLinecap="round"/>
-                
-                {/* Left leg */}
-                <rect x="105" y="108" width="14" height="80" rx="5" fill="#3A3835"/>
-                
-                {/* Right leg */}
-                <rect x="122" y="108" width="14" height="80" rx="5" fill="#3A3835"/>
-                
-                {/* Gap between legs */}
-                <rect x="117" y="112" width="7" height="50" rx="2" fill="#C8C4BB"/>
               </svg>
             </div>
           </div>

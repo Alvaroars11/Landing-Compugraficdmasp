@@ -1286,14 +1286,13 @@ body {
 }
 
 /* Pointing animation */
-.point-arm {
-  animation: point-down 2s ease-in-out infinite;
-  transform-origin: 65px 80px;
+.arrow-bounce {
+  animation: arrow-down 2s ease-in-out infinite;
 }
 
-@keyframes point-down {
-  0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(20deg); }
+@keyframes arrow-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
 }
 
 .dp-title {
