@@ -963,8 +963,7 @@ function App() {
             <>
               <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="nav-link">NOSOTROS</a>
               <a href="#mision-vision" onClick={(e) => { e.preventDefault(); scrollToSection('mision-vision'); }} className="nav-link">MISIÓN Y VISIÓN</a>
-              <a href="#proceso" onClick={(e) => { e.preventDefault(); scrollToSection('proceso'); }} className="nav-link">PROCESO</a>
-              <a href="#entregables" onClick={(e) => { e.preventDefault(); scrollToSection('entregables'); }} className="nav-link">ENTREGABLES</a>
+              <a href="#proceso" onClick={(e) => { e.preventDefault(); scrollToSection('proceso'); }} className="nav-link">METODOLOGÍA</a>
               <a href="#proyectos-dp" onClick={(e) => { e.preventDefault(); scrollToSection('proyectos-dp'); }} className="nav-link">PROYECTOS</a>
               <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="nav-link">CONTACTO</a>
               <button onClick={() => { setActiveSection('compugrafic'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="nav-link nav-switch-cg" data-testid="switch-to-compugrafic">
