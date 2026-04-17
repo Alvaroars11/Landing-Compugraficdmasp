@@ -1419,6 +1419,45 @@ body {
   line-height: 1.5;
 }
 
+/* D+P Sketches / Tipologías */
+.dp-sketches {
+  padding: 6rem 3rem;
+  background: var(--white);
+}
+
+.dp-sketches-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sketches-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.sketch-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: 1px dashed rgba(58, 56, 53, 0.15);
+  border-radius: 8px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.sketch-item:hover {
+  border-color: var(--dp-red);
+  transform: translateY(-4px);
+}
+
+.sketch-item svg {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+}
+
 /* D+P Deliverables - Dark Section */
 .dp-deliverables {
   padding: 6rem 3rem;
