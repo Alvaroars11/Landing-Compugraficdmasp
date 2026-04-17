@@ -424,6 +424,46 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
         </div>
       </section>
 
+      {/* Quiénes Somos D+P */}
+      <section className="dp-quienes" id="nosotros" data-testid="dp-about-section">
+        <div className="dp-quienes-inner">
+          <div className="dp-quienes-left">
+            <span className="dp-quienes-label">QUIÉNES SOMOS</span>
+            <h2 className="dp-quienes-title">El departamento<br />especializado en<br /><em>Señalética y Wayfinding</em></h2>
+            <p className="dp-quienes-text">
+              Convertimos la señalización en una experiencia visual única. Nos
+              enfocamos en soluciones integrales de señalética y wayfinding para
+              proyectos a gran escala en los sectores hotelero, industrial, habitacional,
+              corporativo, hospitalario, educativo y de movilidad vehicular.
+            </p>
+          </div>
+          <div className="dp-quienes-right">
+            <div className="dp-quienes-line"></div>
+            <div className="dp-quienes-content">
+              <span className="dp-quienes-sublabel">¿QUÉ NOS HACE DIFERENTES?</span>
+              <p className="dp-quienes-subtext">Cubrimos el ciclo completo de cada proyecto:</p>
+              <ul className="dp-quienes-list">
+                <li>Planeación, diseño y desarrollo</li>
+                <li>Manufactura</li>
+                <li>Instalación en sitio</li>
+              </ul>
+              <p className="dp-quienes-subtext" style={{ marginTop: '2rem' }}>
+                Creamos sistemas de comunicación visual que se integran
+                perfectamente con el concepto arquitectónico y la identidad
+                estética de cada desarrollo. No solo orientamos a las personas en
+                el espacio — establecemos una conexión con ellas a través del
+                equilibrio entre estética y funcionalidad.
+              </p>
+              <p className="dp-quienes-subtext" style={{ marginTop: '1.5rem' }}>
+                Nuestra fortaleza es ofrecer un servicio que respeta la identidad
+                de tu espacio, con manufactura que garantiza durabilidad y
+                calidad en cada pieza.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* D+P Project Showcase */}
       <section className="dp-showcase" data-testid="dp-showcase">
         <div className="dp-showcase-inner">
@@ -444,39 +484,6 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
               <li>Materiales sustentables</li>
               <li>Instalación profesional</li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* About D+P */}
-      <section className="about-section">
-        <div className="about-inner">
-          <div className="about-card">
-            <span className="about-label">QUIÉNES SOMOS</span>
-            <h3 className="about-title">El departamento especializado en Señalética y Wayfinding</h3>
-            <p className="about-text">
-              Convertimos la señalización en una experiencia visual única. Nos
-              enfocamos en soluciones integrales de señalética y wayfinding para
-              proyectos a gran escala en los sectores hotelero, restaurantero,
-              corporativo, hospitalario, educativo y de movilidad urbana.
-            </p>
-          </div>
-          
-          <div className="about-card" style={{ background: 'var(--dp-red)', color: 'white' }}>
-            <span className="about-label" style={{ color: 'rgba(255,255,255,0.7)' }}>¿QUÉ NOS HACE DIFERENTES?</span>
-            <p className="about-text" style={{ color: 'white', marginBottom: '1.5rem' }}>
-              Cubrimos el ciclo completo de cada proyecto:
-            </p>
-            <ul style={{ listStyle: 'none', fontSize: '0.9rem', lineHeight: '2' }}>
-              <li>→ Planeación, diseño y desarrollo</li>
-              <li>→ Manufactura</li>
-              <li>→ Instalación en sitio</li>
-            </ul>
-            <p className="about-text" style={{ color: 'rgba(255,255,255,0.9)', marginTop: '1.5rem' }}>
-              Creamos sistemas de comunicación visual que se integran
-              perfectamente con el concepto arquitectónico y la identidad
-              de marca.
-            </p>
           </div>
         </div>
       </section>
