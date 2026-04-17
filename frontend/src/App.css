@@ -1277,7 +1277,8 @@ body {
   position: absolute;
   bottom: -2rem;
   right: -10rem;
-  width: 150px;
+  width: 120px;
+  opacity: 0.5;
 }
 
 .dp-grid-pictogram svg {
