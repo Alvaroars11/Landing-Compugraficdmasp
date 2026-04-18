@@ -1928,17 +1928,12 @@ body {
   }
   
   .dp-hero .dp-tagline {
-    position: absolute;
-    top: -3rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
     display: block;
-    font-size: 0.6rem;
-    letter-spacing: 4px;
-    opacity: 0.55;
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+    opacity: 0.3;
     text-align: center;
-    z-index: 2;
+    margin-top: 0.5rem;
   }
   
   .dp-quienes-inner {
