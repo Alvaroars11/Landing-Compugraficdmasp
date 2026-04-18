@@ -2000,6 +2000,12 @@ body {
     font-size: 4rem;
   }
   
+  .dp-hero .dp-tagline {
+    font-size: 0.5rem;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+  }
+  
   .dp-title {
     font-size: 2.5rem;
   }
