@@ -4,11 +4,12 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { FloatingToggle } from "./components/FloatingToggle";
 import { ContactSection } from "./components/ContactSection";
+import { SectionSelector } from "./components/SectionSelector";
 import { CompugraficSection } from "./components/compugrafic/CompugraficSection";
 import { DPSection } from "./components/dp/DPSection";
 
 function App() {
-  const [activeSection, setActiveSection] = useState('dp');
+  const [activeSection, setActiveSection] = useState(null);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -17,6 +18,11 @@ function App() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleSelectSection = (section) => {
+    setActiveSection(section);
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  };
 
   const handleSwitchSection = (section) => {
     setActiveSection(section);
@@ -31,6 +37,10 @@ function App() {
     }
     setMenuOpen(false);
   };
+
+  if (activeSection === null) {
+    return <SectionSelector onSelect={handleSelectSection} />;
+  }
 
   return (
     <div className="App" data-testid="app-container">
