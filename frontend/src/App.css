@@ -1840,12 +1840,6 @@ body {
   
   .hero {
     padding: 6rem 1.5rem 3rem;
-    text-align: center;
-  }
-  
-  .hero-content {
-    text-align: center;
-    align-items: center;
   }
   
   .hero-title {
@@ -1854,10 +1848,6 @@ body {
   
   .dp-title {
     font-size: 2.2rem;
-  }
-  
-  .dp-hero .hero-content {
-    text-align: center;
   }
   
   .dp-description {
