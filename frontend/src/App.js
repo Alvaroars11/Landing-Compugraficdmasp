@@ -95,8 +95,8 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
       {/* Marquee Banner */}
       <div className="marquee-banner">
         <div className="marquee-content">
-          {[...Array(2)].map((_, i) => (
-            <div key={i} className="marquee-track" aria-hidden={i === 1}>
+          {['a', 'b'].map((id, i) => (
+            <div key={`cg-marquee-${id}`} className="marquee-track" aria-hidden={i === 1}>
               <span className="marquee-item">POP</span>
               <span className="marquee-item">ROUTER</span>
               <span className="marquee-item">IMPRESIÓN SOLVENTE</span>
@@ -501,8 +501,8 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
       {/* D+P Marquee Banner */}
       <div className="dp-marquee-banner">
         <div className="dp-marquee-content">
-          {[...Array(2)].map((_, i) => (
-            <div key={i} className="marquee-track" aria-hidden={i === 1}>
+          {['a', 'b'].map((id, i) => (
+            <div key={`dp-marquee-${id}`} className="marquee-track" aria-hidden={i === 1}>
               <span className="dp-marquee-item">INTERIOR</span>
               <span className="dp-marquee-item">ARQUITECTÓNICA</span>
               <span className="dp-marquee-item">VERTICAL</span>
