@@ -362,6 +362,12 @@ body {
   backface-visibility: hidden;
 }
 
+.marquee-track {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
 .marquee-item {
   font-size: 0.7rem;
   font-weight: 500;
