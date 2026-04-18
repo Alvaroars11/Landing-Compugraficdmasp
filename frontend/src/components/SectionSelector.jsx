@@ -8,7 +8,7 @@ export const SectionSelector = ({ onSelect }) => (
     >
       <div className="selector-content">
         <span className="selector-label">GRAN FORMATO · RETAIL</span>
-        <h1 className="selector-logo">compugrafic</h1>
+        <h1 className="selector-logo">Compugrafic</h1>
         <p className="selector-desc">
           Impresión en gran formato, visual merchandising,
           fachadas comerciales y marketing a gran escala.
