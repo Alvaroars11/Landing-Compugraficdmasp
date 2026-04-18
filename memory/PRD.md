@@ -9,32 +9,49 @@ Construir página web para empresa de gran formato (Compugrafic) con departament
 - **Empresas**: Requieren marketing a gran escala e impresos
 
 ## Architecture
-- **Frontend**: React 19 + Custom CSS
-- **Backend**: FastAPI (Python)
+- **Frontend**: React 19 + Custom CSS (modularizado)
+- **Backend**: FastAPI (Python) + tests pytest
 - **Database**: MongoDB
 - **Email**: Web3Forms API
-- **Hosting**: Emergent Platform
+- **Hosting**: Emergent Platform + dominio compugraficdmasp.com (Wix DNS)
 
-## What's Been Implemented (Jan 2026)
+## Code Structure (post-refactor Feb 2026)
+```
+frontend/src/
+├── App.js (57 líneas, contenedor)
+├── App.css
+├── data/images.js
+├── components/
+│   ├── Header.jsx, Footer.jsx, FloatingToggle.jsx
+│   ├── MarqueeBanner.jsx, ContactSection.jsx
+│   ├── compugrafic/ (Section, Hero, About, MissionVision, Services, Gallery)
+│   └── dp/ (Section, Hero, About, MissionVision, Process, Deliverables, Sketches, Gallery)
+backend/
+├── server.py
+└── tests/test_contact_api.py
+```
+
+## What's Been Implemented
 
 ### Compugrafic Section
 - [x] Hero con fondo GoPost, título "Hacemos que las ideas sucedan", 4 tarjetas de servicio clickeables
-- [x] Cenefa naranja con capacidades técnicas
+- [x] Cenefa naranja con capacidades técnicas (25s loop seamless)
 - [x] Quiénes Somos (sección naranja con stats 25+, 100%, MX, ∞)
 - [x] Misión y Visión (dos columnas con línea naranja)
 - [x] Nuestros Servicios (4 tarjetas detalladas)
-- [x] Algunos Proyectos - collage 14 fotos reales (Panamericanos, URREA, Liverpool, Click&Collect, Display Retail, Punto Sur, Valle Imperial, Tecnosur, Vivo47, PiSA, Sneakers, Electrolit, Caliente, PyMPSA)
+- [x] Algunos Proyectos - collage 14 fotos reales
 - [x] Formulario de contacto → ventas@compugrafic.com
 
 ### D+P Section
 - [x] Hero con logo d+p, flecha ONE WAY animada, fondo beige
+- [x] Hero móvil: watermark d+p + "SEÑALÉTICA / WAYFINDING" al pie
 - [x] Quiénes Somos con foto señalética de fondo
 - [x] Cenefa roja con tipos de señalética
 - [x] Misión y Visión (dos columnas)
 - [x] Proceso 7 etapas con nota de proyectos integrales
 - [x] Entregables (sección oscura con grid)
-- [x] Sketches/Tipologías (imagen isométrica de señalética)
-- [x] Algunos Proyectos - collage 12 fotos reales (Naves Industriales, Estacionamiento, Sanitarios, Jardín Botánico, Almacén, Identidad Edificio, Piso 2, WorldHotels, Señalización Sanitaria, Palo Alto, WorldHotels Roof, Mi Macro)
+- [x] Sketches/Tipologías (imagen isométrica)
+- [x] Algunos Proyectos - collage 12 fotos reales
 - [x] Formulario de contacto → dmasp.ventas@compugrafic.com
 
 ### Shared Features
@@ -44,21 +61,35 @@ Construir página web para empresa de gran formato (Compugrafic) con departament
 - [x] Formulario de contacto con Web3Forms email integration
 - [x] Footer con info@compugrafic.com
 - [x] Diseño responsive
+- [x] Menú hamburger móvil
 
-## Recent Changes (Feb 2026)
-- [x] Fix marquee/cenefa loop seamless: cambio de `inline-flex` a `flex` con `width: max-content`. Elimina el salto visible al reiniciar el loop mediante sub-pixel precision en el `translate(-50%)`.
+## Recent Changes
+
+### Feb 2026 — Refactor & polish
+- [x] Marquee loop seamless (display flex + width max-content, 25s)
+- [x] Logo d+p como watermark gigante detrás del texto en móvil
+- [x] Toggle flotante con medidas fijas (140px) y sin cortarse
+- [x] Refactor completo: App.js 1068→57 líneas, 18 componentes nuevos
+- [x] Keys estables en marquee (cg-marquee-a/b, dp-marquee-a/b)
+- [x] Datos extraídos a arrays iterables (servicios, pasos, proyectos, entregables)
+- [x] Tests pytest para backend (/app/backend/tests/test_contact_api.py)
 
 ## Credentials
-- Web3Forms API Key: d28f7e83-02f3-4dcd-bd9b-ffaa041b0e61
+- Web3Forms API Key: d28f7e83-02f3-4dcd-bd9b-ffaa041b0e61 (en backend/.env)
 
 ## Prioritized Backlog
+
 ### P1 (Próximo)
-- [ ] Mejorar navegación móvil (links se sobreponen en pantallas pequeñas)
-- [ ] SEO optimization (meta tags, sitemap, Open Graph)
 - [ ] Agregar Google Analytics
+- [ ] SEO optimization (meta tags, Open Graph, sitemap)
 
 ### P2 (Futuro)
 - [ ] Panel admin para ver mensajes de contacto
 - [ ] Integración WhatsApp Business
 - [ ] Blog/Noticias
 - [ ] Multi-idioma (EN/ES)
+- [ ] Servicio email propio (SendGrid/Resend) si Web3Forms queda corto
+
+### P3 (Seguridad/Hardening)
+- [ ] Mover WEB3FORMS_KEY a secretos de deployment (no commit)
+- [ ] Error handling más granular en /api/contact
