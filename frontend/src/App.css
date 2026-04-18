@@ -1900,6 +1900,7 @@ body {
   
   .dp-hero-inner {
     position: relative;
+    padding-bottom: 4rem;
   }
   
   .dp-hero-inner .dp-hero-right {
@@ -1928,12 +1929,18 @@ body {
   }
   
   .dp-hero .dp-tagline {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     display: block;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     letter-spacing: 5px;
-    opacity: 0.3;
+    opacity: 0.4;
     text-align: center;
-    margin-top: 0.5rem;
+    z-index: 2;
+    margin-top: 0;
   }
   
   .dp-quienes-inner {
