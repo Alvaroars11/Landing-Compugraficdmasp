@@ -4,6 +4,8 @@ import axios from 'axios';
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
+const TOAST_DISPLAY_DURATION_MS = 4000;
+
 export const ContactSection = ({ activeSection }) => {
   const [formData, setFormData] = useState({
     nombre: '',
@@ -46,7 +48,7 @@ export const ContactSection = ({ activeSection }) => {
 
   useEffect(() => {
     if (toast) {
-      const timer = setTimeout(() => setToast(null), 4000);
+      const timer = setTimeout(() => setToast(null), TOAST_DISPLAY_DURATION_MS);
       return () => clearTimeout(timer);
     }
   }, [toast]);

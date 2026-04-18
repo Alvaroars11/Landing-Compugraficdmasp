@@ -45,7 +45,7 @@ class TestContactEndpoint:
         assert response.status_code == 200
         
         data = response.json()
-        assert data["success"] == True
+        assert data["success"] is True
         assert "message" in data
         assert "Gracias" in data["message"]
         print(f"✓ Compugrafic contact submission: {data}")
@@ -66,7 +66,7 @@ class TestContactEndpoint:
         assert response.status_code == 200
         
         data = response.json()
-        assert data["success"] == True
+        assert data["success"] is True
         print(f"✓ D+P contact submission: {data}")
     
     def test_submit_contact_without_empresa(self):
@@ -84,7 +84,7 @@ class TestContactEndpoint:
         assert response.status_code == 200
         
         data = response.json()
-        assert data["success"] == True
+        assert data["success"] is True
         print(f"✓ Contact without empresa: {data}")
     
     def test_submit_contact_missing_required_fields(self):
@@ -211,7 +211,7 @@ class TestSectionSpecificBehavior:
         
         if matching:
             assert matching[0]["seccion"] == "compugrafic"
-            print(f"✓ Default section is compugrafic")
+            print("✓ Default section is compugrafic")
     
     def test_dp_section_explicit(self):
         """Test explicit D+P section assignment"""
@@ -233,7 +233,7 @@ class TestSectionSpecificBehavior:
         
         if matching:
             assert matching[0]["seccion"] == "dp"
-            print(f"✓ D+P section correctly assigned")
+            print("✓ D+P section correctly assigned")
 
 
 if __name__ == "__main__":
