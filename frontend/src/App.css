@@ -1894,8 +1894,8 @@ body {
   /* En móvil: logo d+p como watermark gigante detrás del texto */
   .dp-hero {
     position: relative;
-    min-height: 80vh;
-    padding-top: 8.5rem;
+    min-height: auto;
+    padding: 6rem 3rem 3rem;
   }
   
   .dp-hero-inner {
