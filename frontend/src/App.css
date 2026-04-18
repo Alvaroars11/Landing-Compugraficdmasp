@@ -1891,6 +1891,14 @@ body {
     gap: 2rem;
   }
   
+  /* En móvil: logo d+p arriba del texto en el hero */
+  .dp-hero-inner .dp-hero-right {
+    order: -1;
+  }
+  .dp-hero-inner .hero-content {
+    order: 0;
+  }
+  
   .dp-quienes-inner {
     grid-template-columns: 1fr;
   }
