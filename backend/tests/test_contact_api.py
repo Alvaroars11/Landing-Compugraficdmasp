@@ -7,7 +7,11 @@ import requests
 import os
 import uuid
 
+from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).resolve().parents[2] / 'frontend' / '.env')
 BASE_URL = os.environ.get('REACT_APP_BACKEND_URL', '').rstrip('/')
+assert BASE_URL, "REACT_APP_BACKEND_URL not set"
 
 class TestAPIRoot:
     """Test API root endpoint"""

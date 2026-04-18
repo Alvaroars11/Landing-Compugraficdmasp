@@ -1,0 +1,58 @@
+{
+  "summary": "Post-refactor regression testing for d+p | compugrafic dual-site. Backend: all 12 pytest tests pass (contact API, Compugrafic + DP submissions, Mongo persistence, validation). Frontend: desktop (1920x1080) and mobile (390x844) both load without errors. Toggle between Compugrafic/DP works from all 3 entry points (logo, floating toggle, navbar switch). Compugrafic gallery shows 14 images, DP gallery shows 12. Contact form submits successfully and clears fields, toast shown. Mobile hamburger menu opens/closes and navigates correctly. DP hero shows watermark, left-aligned text, and SEÑALÉTICA / WAYFINDING label. No console errors. Refactor appears to have preserved all behavior correctly.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "passed_tests": [
+    "Backend: API root /api/ returns 200 with correct message",
+    "Backend: POST /api/contact seccion=compugrafic -> 200 + persisted in MongoDB",
+    "Backend: POST /api/contact seccion=dp -> 200 + persisted in MongoDB",
+    "Backend: POST /api/contact without empresa -> 200 (optional field)",
+    "Backend: POST /api/contact missing required fields -> 422",
+    "Backend: POST /api/contact invalid email -> 422",
+    "Backend: POST /api/contact empty mensaje -> 422",
+    "Backend: GET /api/contact returns list with correct structure",
+    "Backend: Contact persistence verified via GET after POST",
+    "Backend: Default section = compugrafic",
+    "Backend: Explicit seccion=dp saved correctly",
+    "Frontend desktop: App loads, header, floating toggle, sections render",
+    "Frontend desktop: 14 Compugrafic gallery images, 12 D+P gallery images",
+    "Frontend desktop: Marquee/cenefa present",
+    "Frontend desktop: Toggle via navbar (switch-to-dp) applies dp-mode class",
+    "Frontend desktop: Toggle via floating toggle (footer-toggle-compugrafic) works",
+    "Frontend desktop: Toggle via logo (logo-dp/logo-compugrafic) works",
+    "Frontend desktop: Contact form submit shows success toast and clears fields",
+    "Frontend mobile: App loads at 390x844 with no errors",
+    "Frontend mobile: Hamburger menu-toggle opens overlay with 6 nav links",
+    "Frontend mobile: Clicking a menu link closes the overlay and navigates",
+    "Frontend mobile: switch-to-dp from mobile menu switches sections",
+    "Frontend mobile: D+P hero shows SEÑALÉTICA / WAYFINDING label and watermark",
+    "Frontend mobile: DP contact form submits successfully"
+  ],
+  "test_report_links": [
+    "/app/backend/tests/test_contact_api.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Backend /api/contact still catches EmailStr validation inside broad try/except — Pydantic returns 422 correctly at framework level, but any unhandled DB failure is masked as generic 500 with 'Error al enviar mensaje' (consider more granular errors).",
+    "WEB3FORMS_KEY hardcoded in committed .env (not ideal for a production secret — should be set via deployment secrets)."
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_contact_api.py (added dotenv load so REACT_APP_BACKEND_URL is picked up when running pytest from /app root)"
+  ],
+  "success_rate": {
+    "backend": "100% (12/12 pytest tests passed)",
+    "frontend": "100% (all critical flows pass on desktop 1920x1080 and mobile 390x844, zero console errors)"
+  },
+  "seed_data_creation": "Test contacts with name 'TEST REFACTOR' / 'TEST REFACTOR MOBILE' created via live contact form submissions (both Compugrafic and DP sections) during testing.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Refactor from 1068-line App.js to 57-line container + ~18 components preserved all behavior. All data-testid attributes retained. Backend test file located at /app/backend/tests/test_contact_api.py — run with: cd /app && python -m pytest backend/tests/test_contact_api.py -v. The test file auto-loads frontend/.env to pick up REACT_APP_BACKEND_URL. Web3Forms integration is live and sends real emails on each successful POST — tests use 'TEST REFACTOR' markers in name/message fields to make them identifiable for cleanup if needed."
+}
