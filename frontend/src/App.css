@@ -1975,18 +1975,18 @@ body {
   }
   
   .floating-toggle {
-    bottom: 1rem;
+    bottom: 4.5rem;
   }
   
   .floating-toggle-btn {
-    width: auto;
-    padding: 0.6rem 1.2rem;
+    width: 140px;
+    padding: 0.6rem 0.5rem;
     font-size: 0.75rem;
     white-space: nowrap;
   }
   
   .floating-toggle-btn small {
-    font-size: 0.55rem;
+    font-size: 0.45rem;
     letter-spacing: 1px;
   }
   
