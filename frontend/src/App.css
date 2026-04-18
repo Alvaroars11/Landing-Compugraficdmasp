@@ -353,7 +353,7 @@ body {
 
 .marquee-content {
   display: flex;
-  animation: marquee 30s linear infinite;
+  animation: marquee 15s linear infinite;
   white-space: nowrap;
 }
 
@@ -602,7 +602,7 @@ body {
 
 .dp-marquee-content {
   display: flex;
-  animation: marquee 30s linear infinite;
+  animation: marquee 15s linear infinite;
   white-space: nowrap;
 }
 
@@ -1626,6 +1626,63 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  z-index: 10000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-dark);
+  padding: 0.5rem;
+}
+
+.mobile-menu-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-dark);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.mobile-switch-dp {
+  color: var(--dp-red) !important;
+  font-weight: 600 !important;
+}
+
+.mobile-switch-cg {
+  color: var(--orange-primary) !important;
+  font-weight: 600 !important;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-overlay {
+    display: flex;
+  }
+}
+
 /* Hamburger Menu */
 .menu-toggle {
   display: none;
@@ -1718,6 +1775,7 @@ body {
   
   .menu-toggle {
     display: block;
+    z-index: 200;
   }
   
   .nav-links {
@@ -1727,17 +1785,37 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.97);
-    backdrop-filter: blur(10px);
+    background: #ffffff;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    z-index: 100;
+    z-index: 9999;
+    width: 100% !important;
+    margin-top: 0 !important;
+    flex-wrap: nowrap !important;
   }
   
   .nav-links.nav-open {
-    display: flex;
+    display: flex !important;
+  }
+  
+  .header.scrolled .nav-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .header.scrolled .nav-links.nav-open {
+    display: flex !important;
   }
   
   .nav-link {

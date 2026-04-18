@@ -984,6 +984,36 @@ function App() {
         </nav>
       </header>
 
+      {/* Mobile Menu Overlay */}
+      {menuOpen && (
+        <div className="mobile-menu-overlay" data-testid="mobile-menu-overlay">
+          <button className="mobile-menu-close" onClick={() => setMenuOpen(false)}>✕</button>
+          {activeSection === 'compugrafic' ? (
+            <>
+              <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="mobile-menu-link">NOSOTROS</a>
+              <a href="#mision-vision-cg" onClick={(e) => { e.preventDefault(); scrollToSection('mision-vision-cg'); }} className="mobile-menu-link">MISIÓN Y VISIÓN</a>
+              <a href="#servicios" onClick={(e) => { e.preventDefault(); scrollToSection('servicios'); }} className="mobile-menu-link">SERVICIOS</a>
+              <a href="#proyectos" onClick={(e) => { e.preventDefault(); scrollToSection('proyectos'); }} className="mobile-menu-link">PROYECTOS</a>
+              <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="mobile-menu-link">CONTACTO</a>
+              <button onClick={() => { setActiveSection('dp'); window.scrollTo({ top: 0, behavior: 'smooth' }); setMenuOpen(false); }} className="mobile-menu-link mobile-switch-dp">
+                D+P →
+              </button>
+            </>
+          ) : (
+            <>
+              <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} className="mobile-menu-link">NOSOTROS</a>
+              <a href="#mision-vision" onClick={(e) => { e.preventDefault(); scrollToSection('mision-vision'); }} className="mobile-menu-link">MISIÓN Y VISIÓN</a>
+              <a href="#proceso" onClick={(e) => { e.preventDefault(); scrollToSection('proceso'); }} className="mobile-menu-link">METODOLOGÍA</a>
+              <a href="#proyectos-dp" onClick={(e) => { e.preventDefault(); scrollToSection('proyectos-dp'); }} className="mobile-menu-link">PROYECTOS</a>
+              <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} className="mobile-menu-link">CONTACTO</a>
+              <button onClick={() => { setActiveSection('compugrafic'); window.scrollTo({ top: 0, behavior: 'smooth' }); setMenuOpen(false); }} className="mobile-menu-link mobile-switch-cg">
+                ← COMPUGRAFIC
+              </button>
+            </>
+          )}
+        </div>
+      )}
+
       {/* Main Content */}
       <main>
         {activeSection === 'compugrafic' ? (
