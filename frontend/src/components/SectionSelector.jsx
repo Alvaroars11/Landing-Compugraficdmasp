@@ -29,8 +29,7 @@ export const SectionSelector = ({ onSelect }) => (
         <span className="selector-label">SEÑALÉTICA · WAYFINDING</span>
         <h1 className="selector-logo">d<span>+</span>p</h1>
         <p className="selector-desc">
-          Soluciones integrales de señalización y wayfinding
-          desde el diseño creativo hasta la instalación final.
+          Soluciones integrales de señalización y wayfinding.
         </p>
         <span className="selector-cta">
           ENTRAR <span className="selector-arrow">→</span>
