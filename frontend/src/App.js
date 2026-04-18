@@ -8,7 +8,7 @@ import { CompugraficSection } from "./components/compugrafic/CompugraficSection"
 import { DPSection } from "./components/dp/DPSection";
 
 function App() {
-  const [activeSection, setActiveSection] = useState('compugrafic');
+  const [activeSection, setActiveSection] = useState('dp');
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
