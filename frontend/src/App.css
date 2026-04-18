@@ -181,6 +181,7 @@ body {
 /* Hero Section */
 .hero-wrapper {
   background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('https://customer-assets.emergentagent.com/job_sitio-listo-1/artifacts/4zdayfwn_81596149-5ff4-4f1e-950e-19c31e25911d.JPG') center/cover no-repeat;
+  overflow: hidden;
 }
 
 .hero {
@@ -192,6 +193,7 @@ body {
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -352,10 +354,12 @@ body {
 }
 
 .marquee-content {
-  display: inline-flex;
+  display: flex;
+  width: max-content;
   animation: marquee 18s linear infinite;
   white-space: nowrap;
   will-change: transform;
+  backface-visibility: hidden;
 }
 
 .marquee-item {
@@ -368,8 +372,8 @@ body {
 }
 
 @keyframes marquee {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
 }
 
 .service-card.with-image {
@@ -602,10 +606,12 @@ body {
 }
 
 .dp-marquee-content {
-  display: inline-flex;
+  display: flex;
+  width: max-content;
   animation: marquee 18s linear infinite;
   white-space: nowrap;
   will-change: transform;
+  backface-visibility: hidden;
 }
 
 .dp-marquee-item {

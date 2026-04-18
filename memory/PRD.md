@@ -45,6 +45,9 @@ Construir página web para empresa de gran formato (Compugrafic) con departament
 - [x] Footer con info@compugrafic.com
 - [x] Diseño responsive
 
+## Recent Changes (Feb 2026)
+- [x] Fix marquee/cenefa loop seamless: cambio de `inline-flex` a `flex` con `width: max-content`. Elimina el salto visible al reiniciar el loop mediante sub-pixel precision en el `translate(-50%)`.
+
 ## Credentials
 - Web3Forms API Key: d28f7e83-02f3-4dcd-bd9b-ffaa041b0e61
 
