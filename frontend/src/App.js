@@ -843,7 +843,11 @@ const ContactSection = ({ activeSection }) => {
           <a href="tel:+523338131707" className="contact-phone">(33) 3813 1707</a>
           <a href="tel:+523338131593" className="contact-phone">(33) 3813 1593</a>
           <br />
-          <a href="mailto:ventas@compugrafic.com" className="contact-email">ventas@compugrafic.com</a>
+          {activeSection === 'dp' ? (
+            <a href="mailto:dmasp.ventas@compugrafic.com" className="contact-email">dmasp.ventas@compugrafic.com</a>
+          ) : (
+            <a href="mailto:ventas@compugrafic.com" className="contact-email">ventas@compugrafic.com</a>
+          )}
         </div>
         
         <form className="contact-form" onSubmit={handleSubmit} data-testid="contact-form">
