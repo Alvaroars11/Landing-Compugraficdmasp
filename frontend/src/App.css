@@ -353,7 +353,7 @@ body {
 
 .marquee-content {
   display: flex;
-  animation: marquee 4s linear infinite;
+  animation: marquee 12s linear infinite;
   white-space: nowrap;
 }
 
@@ -602,7 +602,7 @@ body {
 
 .dp-marquee-content {
   display: flex;
-  animation: marquee 4s linear infinite;
+  animation: marquee 12s linear infinite;
   white-space: nowrap;
 }
 

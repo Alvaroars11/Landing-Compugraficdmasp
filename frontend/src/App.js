@@ -95,7 +95,7 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
       {/* Marquee Banner */}
       <div className="marquee-banner">
         <div className="marquee-content">
-          {[...Array(2)].map((_, i) => (
+          {[...Array(4)].map((_, i) => (
             <div key={i} style={{ display: 'flex' }}>
               <span className="marquee-item">POP</span>
               <span className="marquee-item">ROUTER</span>
@@ -501,7 +501,7 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
       {/* D+P Marquee Banner */}
       <div className="dp-marquee-banner">
         <div className="dp-marquee-content">
-          {[...Array(2)].map((_, i) => (
+          {[...Array(4)].map((_, i) => (
             <div key={i} style={{ display: 'flex' }}>
               <span className="dp-marquee-item">INTERIOR</span>
               <span className="dp-marquee-item">ARQUITECTÓNICA</span>
