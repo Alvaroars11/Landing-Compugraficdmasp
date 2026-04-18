@@ -1975,13 +1975,19 @@ body {
   }
   
   .floating-toggle {
-    bottom: 5rem;
+    bottom: 1rem;
   }
   
   .floating-toggle-btn {
-    width: 160px;
-    padding: 0.6rem 1.5rem;
-    font-size: 0.7rem;
+    width: auto;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+  
+  .floating-toggle-btn small {
+    font-size: 0.55rem;
+    letter-spacing: 1px;
   }
   
   .process-steps {
