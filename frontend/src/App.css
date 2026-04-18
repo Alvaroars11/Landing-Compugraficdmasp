@@ -1894,9 +1894,15 @@ body {
   /* En móvil: logo d+p arriba del texto en el hero */
   .dp-hero-inner .dp-hero-right {
     order: -1;
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
   }
   .dp-hero-inner .hero-content {
     order: 0;
+  }
+  .dp-hero .dp-logo-center {
+    text-align: center;
   }
   
   .dp-quienes-inner {
