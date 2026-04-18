@@ -353,7 +353,7 @@ body {
 
 .marquee-content {
   display: inline-flex;
-  animation: marquee 12s linear infinite;
+  animation: marquee 18s linear infinite;
   white-space: nowrap;
   will-change: transform;
 }
@@ -603,7 +603,7 @@ body {
 
 .dp-marquee-content {
   display: inline-flex;
-  animation: marquee 12s linear infinite;
+  animation: marquee 18s linear infinite;
   white-space: nowrap;
   will-change: transform;
 }
