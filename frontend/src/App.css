@@ -356,7 +356,7 @@ body {
 .marquee-content {
   display: flex;
   width: max-content;
-  animation: marquee 18s linear infinite;
+  animation: marquee 14s linear infinite;
   white-space: nowrap;
   will-change: transform;
   backface-visibility: hidden;
@@ -608,7 +608,7 @@ body {
 .dp-marquee-content {
   display: flex;
   width: max-content;
-  animation: marquee 18s linear infinite;
+  animation: marquee 14s linear infinite;
   white-space: nowrap;
   will-change: transform;
   backface-visibility: hidden;
