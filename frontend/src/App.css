@@ -1753,6 +1753,38 @@ body {
     font-size: 2.5rem;
   }
   
+  .dp-title {
+    font-size: 2.2rem;
+  }
+  
+  .dp-description {
+    font-size: 0.85rem;
+  }
+  
+  .dp-logo-large {
+    font-size: 8rem;
+  }
+  
+  .dp-hero-right {
+    padding-right: 0;
+  }
+  
+  .dp-arrow-track {
+    display: none;
+  }
+  
+  .quienes-title {
+    font-size: 2rem;
+  }
+  
+  .dp-quienes-title {
+    font-size: 2rem;
+  }
+  
+  .dp-quienes-left {
+    padding-right: 0;
+  }
+  
   .services-grid {
     grid-template-columns: 1fr;
   }
@@ -1764,6 +1796,35 @@ body {
   .quienes-inner {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .dp-quienes-inner {
+    grid-template-columns: 1fr;
+  }
+  
+  .dp-mv-inner {
+    grid-template-columns: 1fr;
+  }
+  
+  .cg-mv-inner {
+    grid-template-columns: 1fr;
+  }
+  
+  .dp-deliverables-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .dp-del-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dp-del-item {
+    border-right: none;
+  }
+  
+  .dp-del-item-full {
+    grid-column: span 1;
   }
   
   .services-cards {
@@ -1778,6 +1839,20 @@ body {
     grid-template-columns: 1fr;
   }
   
+  .gallery-grid-large {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 180px;
+  }
+  
+  .gallery-grid-large .gallery-item.featured {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  
+  .gallery-grid-large .gallery-item.wide {
+    grid-column: span 2;
+  }
+  
   .projects-gallery,
   .dp-showcase {
     padding: 4rem 1.5rem;
@@ -1785,6 +1860,25 @@ body {
   
   .section-title-dark {
     font-size: 2rem;
+  }
+  
+  .stats-watermark {
+    font-size: 10rem;
+    right: -20px;
+  }
+  
+  .floating-toggle {
+    bottom: 5rem;
+  }
+  
+  .floating-toggle-btn {
+    width: 160px;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.7rem;
+  }
+  
+  .process-steps {
+    grid-template-columns: 1fr 1fr;
   }
   
   .footer {
