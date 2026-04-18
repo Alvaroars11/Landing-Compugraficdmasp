@@ -352,9 +352,10 @@ body {
 }
 
 .marquee-content {
-  display: flex;
+  display: inline-flex;
   animation: marquee 12s linear infinite;
   white-space: nowrap;
+  will-change: transform;
 }
 
 .marquee-item {
@@ -367,8 +368,8 @@ body {
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-25%); }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
 .service-card.with-image {
@@ -601,9 +602,10 @@ body {
 }
 
 .dp-marquee-content {
-  display: flex;
+  display: inline-flex;
   animation: marquee 12s linear infinite;
   white-space: nowrap;
+  will-change: transform;
 }
 
 .dp-marquee-item {

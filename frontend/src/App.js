@@ -95,8 +95,19 @@ const CompugraficSection = ({ onSwitchToDP, onContactClick }) => {
       {/* Marquee Banner */}
       <div className="marquee-banner">
         <div className="marquee-content">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} style={{ display: 'flex' }}>
+          {[...Array(2)].map((_, i) => (
+            <div key={i} style={{ display: 'inline-flex', flexShrink: 0 }}>
+              <span className="marquee-item">POP</span>
+              <span className="marquee-item">ROUTER</span>
+              <span className="marquee-item">IMPRESIÓN SOLVENTE</span>
+              <span className="marquee-item">GRAN FORMATO</span>
+              <span className="marquee-item">IMPRESIÓN UV</span>
+              <span className="marquee-item">RECORTE</span>
+              <span className="marquee-item">PLOTTER</span>
+              <span className="marquee-item">LAMINACIÓN</span>
+              <span className="marquee-item">ESTRUCTURA</span>
+              <span className="marquee-item">CANTEADO</span>
+              <span className="marquee-item">ILUMINACIÓN</span>
               <span className="marquee-item">POP</span>
               <span className="marquee-item">ROUTER</span>
               <span className="marquee-item">IMPRESIÓN SOLVENTE</span>
@@ -501,8 +512,20 @@ const DPSection = ({ onSwitchToCompugrafic, onContactClick }) => {
       {/* D+P Marquee Banner */}
       <div className="dp-marquee-banner">
         <div className="dp-marquee-content">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} style={{ display: 'flex' }}>
+          {[...Array(2)].map((_, i) => (
+            <div key={i} style={{ display: 'inline-flex', flexShrink: 0 }}>
+              <span className="dp-marquee-item">INTERIOR</span>
+              <span className="dp-marquee-item">ARQUITECTÓNICA</span>
+              <span className="dp-marquee-item">VERTICAL</span>
+              <span className="dp-marquee-item">HABITACIONAL</span>
+              <span className="dp-marquee-item">HORIZONTAL</span>
+              <span className="dp-marquee-item">DIRECCIONAL</span>
+              <span className="dp-marquee-item">IDENTIDAD</span>
+              <span className="dp-marquee-item">INDUSTRIAL</span>
+              <span className="dp-marquee-item">INFORMATIVA</span>
+              <span className="dp-marquee-item">NORMATIVA</span>
+              <span className="dp-marquee-item">RESTRICTIVA</span>
+              <span className="dp-marquee-item">PREVENTIVA</span>
               <span className="dp-marquee-item">INTERIOR</span>
               <span className="dp-marquee-item">ARQUITECTÓNICA</span>
               <span className="dp-marquee-item">VERTICAL</span>
