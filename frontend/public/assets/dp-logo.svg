@@ -5,21 +5,21 @@
      preserveAspectRatio="xMidYMid meet">
   <rect width="1200" height="900" fill="#C8C4BB"/>
 
-  <!-- Logo d+p todo al mismo peso thin (se centra perfecto) -->
-  <text x="600" y="540"
+  <!-- Logo d+p — tamaño reducido, centrado vertical y horizontal -->
+  <text x="600" y="470"
         font-family="Playfair Display, serif"
-        font-size="520"
+        font-size="340"
         font-weight="300"
         fill="#E8391A"
         text-anchor="middle">d+p</text>
 
-  <text x="600" y="700"
+  <text x="600" y="560"
         font-family="Inter, Helvetica, Arial, sans-serif"
-        font-size="36"
+        font-size="26"
         font-weight="500"
         fill="#3A3835"
         text-anchor="middle"
-        letter-spacing="14">
+        letter-spacing="10">
     SEÑALÉTICA / WAYFINDING
   </text>
 </svg>
