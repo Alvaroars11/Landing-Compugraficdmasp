@@ -18,12 +18,12 @@
     d
   </text>
 
-  <!-- + dibujado a mano para que coincida con el grosor fino de d y p -->
+  <!-- + dibujado a mano: brazos largos y delgados, estilo cruz elegante -->
   <g fill="#E8391A">
-    <!-- barra horizontal -->
-    <rect x="540" y="378" width="120" height="38"/>
-    <!-- barra vertical -->
-    <rect x="581" y="337" width="38" height="120"/>
+    <!-- barra horizontal larga -->
+    <rect x="480" y="385" width="240" height="24"/>
+    <!-- barra vertical larga -->
+    <rect x="588" y="265" width="24" height="240"/>
   </g>
 
   <text x="805" y="540"
