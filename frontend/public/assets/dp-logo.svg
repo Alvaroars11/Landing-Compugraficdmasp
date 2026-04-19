@@ -6,34 +6,16 @@
   <!-- Fondo beige identitario D+P -->
   <rect width="1200" height="900" fill="#C8C4BB"/>
 
-  <!-- Logo d+p -->
-  <!-- d y p en Playfair Display thin -->
-  <text x="395" y="540"
+  <!-- Logo d+p — idéntico al de la sección D+P del sitio, opacidad 100% -->
+  <text x="600" y="540"
         font-family="Playfair Display, serif"
         font-size="520"
         font-weight="300"
         fill="#E8391A"
         text-anchor="middle"
-        dominant-baseline="alphabetic">
-    d
-  </text>
-
-  <!-- + dibujado a mano: brazos largos y delgados, estilo cruz elegante -->
-  <g fill="#E8391A">
-    <!-- barra horizontal larga -->
-    <rect x="480" y="385" width="240" height="24"/>
-    <!-- barra vertical larga -->
-    <rect x="588" y="265" width="24" height="240"/>
-  </g>
-
-  <text x="805" y="540"
-        font-family="Playfair Display, serif"
-        font-size="520"
-        font-weight="300"
-        fill="#E8391A"
-        text-anchor="middle"
-        dominant-baseline="alphabetic">
-    p
+        dominant-baseline="alphabetic"
+        letter-spacing="-10">
+    <tspan>d</tspan><tspan font-weight="400">+</tspan><tspan>p</tspan>
   </text>
 
   <!-- Tagline -->
@@ -43,8 +25,7 @@
         font-weight="500"
         fill="#3A3835"
         text-anchor="middle"
-        letter-spacing="14"
-        opacity="0.75">
+        letter-spacing="14">
     SEÑALÉTICA / WAYFINDING
   </text>
 </svg>
