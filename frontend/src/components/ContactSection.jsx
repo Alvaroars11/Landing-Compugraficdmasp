@@ -173,7 +173,10 @@ export const ContactSection = ({ activeSection }) => {
       </div>
 
       {toast && (
-        <div className={`toast ${toast.type}`} data-testid="toast-message">
+        <div
+          className={`toast ${toast.type} ${activeSection === 'dp' ? 'toast-dp' : ''}`.trim()}
+          data-testid="toast-message"
+        >
           {toast.message}
         </div>
       )}

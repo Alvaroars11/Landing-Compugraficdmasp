@@ -2093,6 +2093,14 @@ body {
   background: #dc3545;
 }
 
+.toast.toast-dp {
+  background: var(--dp-red);
+}
+
+.toast.toast-dp.error {
+  background: #dc3545;
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(100%);
