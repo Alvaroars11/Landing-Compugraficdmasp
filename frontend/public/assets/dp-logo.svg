@@ -6,16 +6,34 @@
   <!-- Fondo beige identitario D+P -->
   <rect width="1200" height="900" fill="#C8C4BB"/>
 
-  <!-- Logo d+p — todo en peso delgado uniforme -->
-  <text x="600" y="530"
+  <!-- Logo d+p -->
+  <!-- d y p en Playfair Display thin -->
+  <text x="395" y="540"
         font-family="Playfair Display, serif"
         font-size="520"
         font-weight="300"
         fill="#E8391A"
         text-anchor="middle"
-        dominant-baseline="alphabetic"
-        letter-spacing="-10">
-    <tspan>d</tspan><tspan font-size="380" dx="5">+</tspan><tspan dx="5">p</tspan>
+        dominant-baseline="alphabetic">
+    d
+  </text>
+
+  <!-- + dibujado a mano para que coincida con el grosor fino de d y p -->
+  <g fill="#E8391A">
+    <!-- barra horizontal -->
+    <rect x="540" y="378" width="120" height="38"/>
+    <!-- barra vertical -->
+    <rect x="581" y="337" width="38" height="120"/>
+  </g>
+
+  <text x="805" y="540"
+        font-family="Playfair Display, serif"
+        font-size="520"
+        font-weight="300"
+        fill="#E8391A"
+        text-anchor="middle"
+        dominant-baseline="alphabetic">
+    p
   </text>
 
   <!-- Tagline -->
