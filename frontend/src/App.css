@@ -2304,6 +2304,25 @@ body {
     font-size: 5rem;
   }
   .selector-desc {
+
+.contact-info .contact-instagram {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info .contact-instagram .ig-icon {
+  flex-shrink: 0;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.contact-info .contact-instagram:hover .ig-icon {
+  transform: scale(1.1);
+}
+
     font-size: 0.9rem;
     margin-bottom: 1.75rem;
   }
