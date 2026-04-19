@@ -6,8 +6,7 @@
   <!-- Fondo beige identitario D+P -->
   <rect width="1200" height="900" fill="#C8C4BB"/>
 
-  <!-- Logo d+p -->
-  <!-- dos pesos: d y p en 300, el + en 400 (idéntico a la web) -->
+  <!-- Logo d+p — todo en peso delgado uniforme -->
   <text x="600" y="530"
         font-family="Playfair Display, serif"
         font-size="520"
@@ -16,7 +15,7 @@
         text-anchor="middle"
         dominant-baseline="alphabetic"
         letter-spacing="-10">
-    <tspan>d</tspan><tspan font-weight="400" dx="5">+</tspan><tspan dx="5">p</tspan>
+    <tspan>d</tspan><tspan font-size="380" dx="5">+</tspan><tspan dx="5">p</tspan>
   </text>
 
   <!-- Tagline -->
