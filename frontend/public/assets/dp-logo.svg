@@ -3,32 +3,16 @@
      viewBox="0 0 1200 900"
      width="1200" height="900"
      preserveAspectRatio="xMidYMid meet">
-  <!-- Fondo beige identitario D+P -->
   <rect width="1200" height="900" fill="#C8C4BB"/>
 
-  <!-- Logo d+p — agrupado y centrado al canvas -->
-  <g transform="translate(600 0)">
-    <text x="-155" y="540"
-          font-family="Playfair Display, serif"
-          font-size="520"
-          font-weight="300"
-          fill="#E8391A"
-          text-anchor="middle">d</text>
-    <text x="0" y="540"
-          font-family="Playfair Display, serif"
-          font-size="520"
-          font-weight="400"
-          fill="#E8391A"
-          text-anchor="middle">+</text>
-    <text x="155" y="540"
-          font-family="Playfair Display, serif"
-          font-size="520"
-          font-weight="300"
-          fill="#E8391A"
-          text-anchor="middle">p</text>
-  </g>
+  <!-- Logo d+p todo al mismo peso thin (se centra perfecto) -->
+  <text x="600" y="540"
+        font-family="Playfair Display, serif"
+        font-size="520"
+        font-weight="300"
+        fill="#E8391A"
+        text-anchor="middle">d+p</text>
 
-  <!-- Tagline centrado al canvas (mismo eje que el logo) -->
   <text x="600" y="700"
         font-family="Inter, Helvetica, Arial, sans-serif"
         font-size="36"
