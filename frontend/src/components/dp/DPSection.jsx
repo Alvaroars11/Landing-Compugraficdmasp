@@ -10,7 +10,7 @@ import { MarqueeBanner } from '../MarqueeBanner';
 const MARQUEE_ITEMS = [
   'INTERIOR', 'ARQUITECTÓNICA', 'VERTICAL', 'HABITACIONAL', 'HORIZONTAL',
   'DIRECCIONAL', 'IDENTIDAD', 'INDUSTRIAL', 'INFORMATIVA', 'NORMATIVA',
-  'RESTRICTIVA', 'PREVENTIVA',
+  'RESTRICTIVA', 'PREVENTIVA', 'BRAILLE',
 ];
 
 export const DPSection = () => (
