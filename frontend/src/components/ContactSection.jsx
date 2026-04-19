@@ -1,10 +1,21 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
+const WEB3FORMS_KEY = process.env.REACT_APP_WEB3FORMS_KEY;
+const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
 const TOAST_DISPLAY_DURATION_MS = 4000;
+
+const SECTION_CONFIG = {
+  compugrafic: {
+    subject: 'Nuevo contacto — Compugrafic (Gran Formato)',
+    email: 'ventas@compugrafic.com',
+    label: 'Compugrafic',
+  },
+  dp: {
+    subject: 'Nuevo contacto — D+P (Señalética / Wayfinding)',
+    email: 'dmasp.ventas@compugrafic.com',
+    label: 'D+P',
+  },
+};
 
 export const ContactSection = ({ activeSection }) => {
   const [formData, setFormData] = useState({
@@ -27,19 +38,44 @@ export const ContactSection = ({ activeSection }) => {
     e.preventDefault();
     setLoading(true);
 
+    const config = SECTION_CONFIG[activeSection] ?? SECTION_CONFIG.compugrafic;
+
+    const body = new FormData();
+    body.append('access_key', WEB3FORMS_KEY);
+    body.append('subject', config.subject);
+    body.append('from_name', `${formData.nombre} — ${config.label}`);
+    body.append('name', formData.nombre);
+    body.append('email', formData.email);
+    body.append('empresa', formData.empresa || '—');
+    body.append('seccion', config.label);
+    body.append('destino', config.email);
+    body.append('message', formData.mensaje);
+    body.append('botcheck', '');
+
     try {
-      const response = await axios.post(`${API}/contact`, {
-        ...formData,
-        seccion: activeSection,
-        destinoEmail: activeSection === 'dp' ? 'dmasp.ventas@compugrafic.com' : 'ventas@compugrafic.com'
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
+        method: 'POST',
+        body,
       });
 
-      setToast({ message: response.data.message, type: 'success' });
-      setFormData({ nombre: '', email: '', empresa: '', mensaje: '' });
+      const data = await response.json();
+
+      if (data.success) {
+        setToast({
+          message: '¡Gracias! Tu mensaje fue enviado. Te contactaremos pronto.',
+          type: 'success',
+        });
+        setFormData({ nombre: '', email: '', empresa: '', mensaje: '' });
+      } else {
+        setToast({
+          message: data.message || 'Error al enviar mensaje. Intenta de nuevo.',
+          type: 'error',
+        });
+      }
     } catch (error) {
       setToast({
         message: 'Error al enviar mensaje. Intenta de nuevo.',
-        type: 'error'
+        type: 'error',
       });
     } finally {
       setLoading(false);
@@ -115,6 +151,15 @@ export const ContactSection = ({ activeSection }) => {
             onChange={handleChange}
             required
             data-testid="input-mensaje"
+          />
+          {/* Honeypot anti-spam */}
+          <input
+            type="checkbox"
+            name="botcheck"
+            className="hidden"
+            style={{ display: 'none' }}
+            tabIndex="-1"
+            autoComplete="off"
           />
           <button
             type="submit"
