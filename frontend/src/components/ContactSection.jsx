@@ -107,7 +107,18 @@ export const ContactSection = ({ activeSection }) => {
           <a href="tel:+523338131593" className="contact-phone">(33) 3813 1593</a>
           <br />
           {activeSection === 'dp' ? (
-            <a href="mailto:dmasp.ventas@compugrafic.com" className="contact-email">dmasp.ventas@compugrafic.com</a>
+            <>
+              <a
+                href="https://instagram.com/dmasp.mx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-email contact-instagram"
+                data-testid="dp-instagram"
+              >
+                @dmasp.mx
+              </a>
+              <a href="mailto:dmasp.ventas@compugrafic.com" className="contact-email">dmasp.ventas@compugrafic.com</a>
+            </>
           ) : (
             <a href="mailto:ventas@compugrafic.com" className="contact-email">ventas@compugrafic.com</a>
           )}
