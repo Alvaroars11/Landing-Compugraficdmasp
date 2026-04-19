@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 900"
+     width="1200" height="900"
+     preserveAspectRatio="xMidYMid meet">
+  <!-- Fondo beige identitario D+P -->
+  <rect width="1200" height="900" fill="#C8C4BB"/>
+
+  <!-- Logo d+p -->
+  <!-- dos pesos: d y p en 300, el + en 400 (idéntico a la web) -->
+  <text x="600" y="530"
+        font-family="Playfair Display, serif"
+        font-size="520"
+        font-weight="300"
+        fill="#E8391A"
+        text-anchor="middle"
+        dominant-baseline="alphabetic"
+        letter-spacing="-10">
+    <tspan>d</tspan><tspan font-weight="400" dx="5">+</tspan><tspan dx="5">p</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="700"
+        font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="36"
+        font-weight="500"
+        fill="#3A3835"
+        text-anchor="middle"
+        letter-spacing="14"
+        opacity="0.75">
+    SEÑALÉTICA / WAYFINDING
+  </text>
+</svg>
