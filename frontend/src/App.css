@@ -2334,20 +2334,21 @@ body {
 
 /* ============================================================
    D+P — Servicios (Wayfinding / Fabricación / Instalación)
+   Versión extendida con pictogramas
    ============================================================ */
-.dp-services-block {
-  padding: 6rem 3rem;
+.dp-services-extended {
+  padding: 6rem 3rem 4rem;
   background: var(--white);
 }
 
-.dp-services-inner {
+.dp-services-extended-inner {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.dp-services-title {
+.dp-services-main-title {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 400;
   line-height: 1.15;
   margin-top: 1rem;
@@ -2355,64 +2356,208 @@ body {
   color: var(--text-dark);
 }
 
-.dp-services-subtitle {
-  font-size: 0.95rem;
+.dp-services-main-subtitle {
+  font-size: 1rem;
   line-height: 1.7;
   color: var(--text-light);
-  max-width: 560px;
+  max-width: 600px;
+  margin-bottom: 5rem;
+}
+
+/* Bloque de servicio individual */
+.dp-service-block {
+  margin-bottom: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(58, 56, 53, 0.12);
+}
+
+.dp-service-block:first-of-type {
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Header del servicio */
+.dp-service-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "num title"
+    "num desc";
+  column-gap: 3rem;
+  row-gap: 0.75rem;
+  margin-bottom: 4rem;
+  align-items: start;
+}
+
+.dp-service-num {
+  grid-area: num;
+  font-family: 'Playfair Display', serif;
+  font-size: 5.5rem;
+  font-weight: 300;
+  color: var(--dp-red);
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+
+.dp-service-big-title {
+  grid-area: title;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: 1;
+  letter-spacing: -1px;
+  padding-top: 0.5rem;
+}
+
+.dp-service-description {
+  grid-area: desc;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  max-width: 760px;
+  margin-top: 0.75rem;
+}
+
+/* Bloque de pictogramas */
+.dp-picto-block {
   margin-bottom: 4rem;
 }
 
-.dp-services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-}
-
-.dp-service-card {
-  border-top: 3px solid var(--dp-red);
-  padding-top: 1.75rem;
-  position: relative;
-}
-
-.dp-service-number {
+.dp-picto-label {
   display: block;
-  font-family: 'Playfair Display', serif;
-  font-size: 3.25rem;
-  font-weight: 300;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 3.5px;
   color: var(--dp-red);
-  line-height: 1;
-  margin-bottom: 1.25rem;
-  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
-.dp-service-title {
+.dp-picto-grid {
+  display: grid;
+  gap: 3rem 2.5rem;
+}
+
+.dp-picto-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dp-picto-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dp-picto-item {
+  text-align: center;
+}
+
+/* Pictograma (óvalo oscuro con ícono blanco) */
+.dp-picto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 128px;
+  border-radius: 50%;
+  background: var(--text-dark);
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.dp-picto-item:hover .dp-picto {
+  transform: translateY(-4px);
+  background: var(--dp-red);
+}
+
+.dp-picto-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.75rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--text-dark);
-  margin-bottom: 1rem;
-  letter-spacing: -0.5px;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
 }
 
-.dp-service-text {
-  font-size: 0.92rem;
-  line-height: 1.75;
+.dp-picto-text {
+  font-size: 0.88rem;
+  line-height: 1.65;
   color: var(--text-light);
+  max-width: 280px;
+  margin: 0 auto;
 }
 
-@media (max-width: 900px) {
-  .dp-services-grid {
+/* Responsive */
+@media (max-width: 960px) {
+  .dp-picto-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .dp-services-extended {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .dp-services-main-title {
+    font-size: 2rem;
+  }
+
+  .dp-services-main-subtitle {
+    margin-bottom: 3rem;
+  }
+
+  .dp-service-block {
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+  }
+
+  .dp-service-header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "num"
+      "title"
+      "desc";
+    column-gap: 0;
+    row-gap: 0.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .dp-service-num {
+    font-size: 3.5rem;
+  }
+
+  .dp-service-big-title {
+    font-size: 2rem;
+    padding-top: 0;
+  }
+
+  .dp-service-description {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+
+  .dp-picto-grid-4,
+  .dp-picto-grid-3 {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
-  .dp-services-title {
-    font-size: 2rem;
+
+  .dp-picto-label {
+    font-size: 0.7rem;
+    letter-spacing: 2.5px;
+    margin-bottom: 2rem;
   }
-  .dp-services-subtitle {
-    margin-bottom: 2.5rem;
+
+  .dp-picto {
+    width: 80px;
+    height: 108px;
   }
-  .dp-services-block {
-    padding: 4rem 1.5rem;
+
+  .dp-picto-block {
+    margin-bottom: 3rem;
   }
 }
+
