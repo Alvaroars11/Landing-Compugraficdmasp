@@ -81,7 +81,7 @@ export const DPServices = () => (
         Tres pilares que<br />garantizan resultados
       </h2>
       <p className="dp-services-main-subtitle">
-        Contamos con una amplia gama de soluciones.
+        Soluciones modulares de señalética, pensadas para adaptarse a la escala y alcance de cada proyecto.
       </p>
 
       {/* WAYFINDING */}
