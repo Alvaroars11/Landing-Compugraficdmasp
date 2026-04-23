@@ -80,10 +80,6 @@ export const DPServices = () => (
       <h2 className="dp-services-main-title">
         Tres pilares que<br />garantizan resultados
       </h2>
-      <p className="dp-services-main-subtitle">
-        Tres servicios independientes que se pueden contratar por separado o en conjunto.
-        Elige el que tu proyecto requiere y nosotros nos encargamos del resto.
-      </p>
 
       {/* WAYFINDING */}
       <article className="dp-service-block" data-testid="service-wayfinding">
