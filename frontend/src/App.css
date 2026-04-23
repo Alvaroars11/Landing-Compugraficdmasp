@@ -2507,7 +2507,7 @@ body {
 
 @media (max-width: 768px) {
   .dp-services-extended {
-    padding: 4rem 1.5rem 3rem;
+    padding: 4rem 1.25rem 3rem;
   }
 
   .dp-services-main-title {
@@ -2530,39 +2530,70 @@ body {
       "title"
       "desc";
     column-gap: 0;
-    row-gap: 0.5rem;
-    margin-bottom: 3rem;
+    row-gap: 0.25rem;
+    margin-bottom: 2.5rem;
   }
 
   .dp-service-num {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .dp-service-big-title {
-    font-size: 2rem;
-    padding-top: 0;
+    font-size: 2.2rem;
+    padding-top: 0.25rem;
   }
 
   .dp-service-description {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
     margin-top: 1rem;
   }
 
+  /* 2 columnas en móvil (más compacto que 1) */
   .dp-picto-grid-4,
   .dp-picto-grid-3 {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.25rem 1rem;
+  }
+
+  /* Último ítem de grid-3 centrado en móvil (queda solo en su fila) */
+  .dp-picto-grid-3 .dp-picto-item:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 260px;
+    margin: 0 auto;
   }
 
   .dp-picto-label {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     letter-spacing: 2.5px;
     margin-bottom: 2rem;
+    padding: 0 1rem;
+    line-height: 1.5;
   }
 
   .dp-picto {
-    width: 80px;
-    height: 108px;
+    width: 68px;
+    height: 90px;
+    margin-bottom: 1rem;
+  }
+
+  .dp-picto svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .dp-picto-title {
+    font-size: 0.98rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .dp-picto-text {
+    font-size: 0.8rem;
+    line-height: 1.55;
+    max-width: none;
+    padding: 0 0.25rem;
   }
 
   .dp-picto-block {
