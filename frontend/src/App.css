@@ -150,7 +150,7 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--orange-primary);
+  color: var(--dp-red);
 }
 
 .nav-switch-cg {
@@ -1680,6 +1680,11 @@ body {
   border: none;
   cursor: pointer;
   font-family: inherit;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu-link:hover {
+  color: var(--dp-red);
 }
 
 .mobile-switch-dp {
