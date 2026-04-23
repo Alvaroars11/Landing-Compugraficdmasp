@@ -95,7 +95,7 @@ export const Header = ({ activeSection, onSwitchSection, scrolled, menuOpen, onT
       </header>
 
       {menuOpen && (
-        <div className="mobile-menu-overlay" data-testid="mobile-menu-overlay">
+        <div className={`mobile-menu-overlay ${activeSection === 'dp' ? 'dp-mode' : ''}`} data-testid="mobile-menu-overlay">
           <button className="mobile-menu-close" onClick={onToggleMenu}>✕</button>
           <NavLinkList
             links={links}

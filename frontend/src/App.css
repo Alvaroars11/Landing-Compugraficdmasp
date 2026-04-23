@@ -1684,6 +1684,10 @@ body {
 }
 
 .mobile-menu-link:hover {
+  color: var(--orange-primary);
+}
+
+.mobile-menu-overlay.dp-mode .mobile-menu-link:hover {
   color: var(--dp-red);
 }
 
