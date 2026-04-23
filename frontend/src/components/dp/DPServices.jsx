@@ -81,7 +81,8 @@ export const DPServices = () => (
         Tres pilares que<br />garantizan resultados
       </h2>
       <p className="dp-services-main-subtitle">
-        De principio a fin: concepto, manufactura e instalación bajo un mismo equipo.
+        Tres servicios independientes que se pueden contratar por separado o en conjunto.
+        Elige el que tu proyecto requiere y nosotros nos encargamos del resto.
       </p>
 
       {/* WAYFINDING */}
