@@ -1,8 +1,7 @@
 import { DPHero } from './DPHero';
 import { DPAbout } from './DPAbout';
 import { DPMissionVision } from './DPMissionVision';
-import { DPProcess } from './DPProcess';
-import { DPDeliverables } from './DPDeliverables';
+import { DPServices } from './DPServices';
 import { DPSketches } from './DPSketches';
 import { DPGallery } from './DPGallery';
 import { MarqueeBanner } from '../MarqueeBanner';
@@ -19,8 +18,7 @@ export const DPSection = () => (
     <DPAbout />
     <MarqueeBanner items={MARQUEE_ITEMS} variant="dp" />
     <DPMissionVision />
-    <DPProcess />
-    <DPDeliverables />
+    <DPServices />
     <DPSketches />
     <DPGallery />
   </div>

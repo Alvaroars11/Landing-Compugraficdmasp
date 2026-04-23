@@ -10,7 +10,7 @@ const CG_LINKS = [
 const DP_LINKS = [
   { href: '#nosotros', id: 'nosotros', label: 'NOSOTROS' },
   { href: '#mision-vision', id: 'mision-vision', label: 'MISIÓN Y VISIÓN' },
-  { href: '#proceso', id: 'proceso', label: 'METODOLOGÍA' },
+  { href: '#servicios', id: 'servicios', label: 'SERVICIOS' },
   { href: '#proyectos-dp', id: 'proyectos-dp', label: 'PROYECTOS' },
   { href: '#contacto', id: 'contacto', label: 'CONTACTO' },
 ];

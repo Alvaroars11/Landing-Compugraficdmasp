@@ -3,7 +3,7 @@
      viewBox="0 0 1200 900"
      width="1200" height="900"
      preserveAspectRatio="xMidYMid meet">
-  <rect width="1200" height="900" fill="#C8C4BB"/>
+  <rect width="1200" height="900" fill="#FFFFFF"/>
 
   <!-- Logo d+p — tamaño reducido, centrado vertical y horizontal -->
   <text x="600" y="470"
