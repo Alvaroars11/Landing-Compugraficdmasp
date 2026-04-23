@@ -80,6 +80,9 @@ export const DPServices = () => (
       <h2 className="dp-services-main-title">
         Tres pilares que<br />garantizan resultados
       </h2>
+      <p className="dp-services-main-subtitle">
+        Contamos con una amplia gama de soluciones.
+      </p>
 
       {/* WAYFINDING */}
       <article className="dp-service-block" data-testid="service-wayfinding">
