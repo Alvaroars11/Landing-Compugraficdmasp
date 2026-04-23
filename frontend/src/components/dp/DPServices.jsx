@@ -2,7 +2,7 @@ const SERVICES = [
   {
     n: 1,
     title: 'Wayfinding',
-    text: 'Sistemas integrales de orientación visual que guían, informan y conectan a las personas con los espacios. Diseñamos la estrategia completa de señalización: desde el análisis de flujos hasta la tipología final de cada pieza, alineando funcionalidad con identidad de marca.',
+    text: 'Diseño de orientación que hace fluir cualquier espacio. Creamos sistemas visuales claros, intuitivos y accesibles que guían a cada persona por tu instalación, reducen la confusión y refuerzan la identidad de tu marca. Desde hoteles y hospitales hasta plazas y corporativos, cada solución se desarrolla a medida con un enfoque universal, estético y duradero.',
   },
   {
     n: 2,
