@@ -2,7 +2,7 @@ const SERVICES = [
   {
     n: 1,
     title: 'Wayfinding',
-    text: 'Diseño de orientación que hace fluir cualquier espacio. Creamos sistemas visuales claros, intuitivos y accesibles que guían a cada persona por tu instalación, reducen la confusión y refuerzan la identidad de tu marca. Desde hoteles y hospitales hasta plazas y corporativos, cada solución se desarrolla a medida con un enfoque universal, estético y duradero.',
+    text: 'Diseño de orientación que hace fluir cualquier espacio. Creamos sistemas visuales claros, intuitivos y accesibles que guían a cada persona por tu instalación, reducen la confusión y refuerzan la identidad de tu marca. Desde plazas, desarrollos verticales y horizontales, universidades, viales, hospitales, hoteles, escuelas, aeropuertos y más —cada solución se desarrolla a medida con un enfoque universal, estético y duradero.',
   },
   {
     n: 2,
