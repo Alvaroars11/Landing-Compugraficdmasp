@@ -1,7 +1,7 @@
 import { IMAGES } from '../../data/images';
 
 const PROJECTS = [
-  { key: 'p1',  src: IMAGES.compugrafic.panamericanos,        alt: 'Lona Panamericanos 2011 - Arcos del Milenio',  category: 'Impresos Gran Formato',    title: 'Panamericanos 2011',    desc: 'Lona espectacular en edificio - Guadalajara', size: 'featured', test: 'gallery-item-1' },
+  { key: 'p1',  src: IMAGES.compugrafic.panamericanos,        alt: 'Rotulación de vinil Panamericanos 2011 - Arcos del Milenio',  category: 'Impresos Gran Formato',    title: 'Panamericanos 2011',    desc: 'Rotulación de vinil en edificio - Guadalajara', size: 'featured', test: 'gallery-item-1' },
   { key: 'p2',  src: IMAGES.compugrafic.urreaStand,           alt: 'Stand URREA - Expo',                            category: 'Marketing Gran Escala',   title: 'URREA',                 desc: 'Stand para exposición',                        size: '',         test: 'gallery-item-2' },
   { key: 'p3',  src: IMAGES.compugrafic.terminalZapopan,      alt: 'Liverpool - Letrero iluminado',                 category: 'Fachadas Comerciales',    title: 'Liverpool',             desc: 'Letrero volumétrico iluminado',                size: '',         test: 'gallery-item-3' },
   { key: 'p4',  src: IMAGES.compugrafic.fachadasComerciales,  alt: 'Click & Collect - Letrero iluminado',           category: 'Fachadas Comerciales',    title: 'Click & Collect',       desc: 'Letrero interior iluminado',                   size: '',         test: 'gallery-item-4' },
