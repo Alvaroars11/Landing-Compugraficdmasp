@@ -1,16 +1,19 @@
 import { useState, useEffect } from 'react';
 
-const WEB3FORMS_KEY = process.env.REACT_APP_WEB3FORMS_KEY;
+const WEB3FORMS_KEY_CG = process.env.REACT_APP_WEB3FORMS_KEY;
+const WEB3FORMS_KEY_DP = process.env.REACT_APP_WEB3FORMS_KEY_DP;
 const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
 const TOAST_DISPLAY_DURATION_MS = 4000;
 
 const SECTION_CONFIG = {
   compugrafic: {
+    key: WEB3FORMS_KEY_CG,
     subject: 'Nuevo contacto — Compugrafic (Gran Formato)',
     email: 'ventas@compugrafic.com',
     label: 'Compugrafic',
   },
   dp: {
+    key: WEB3FORMS_KEY_DP,
     subject: 'Nuevo contacto — D+P (Señalética / Wayfinding)',
     email: 'dmasp.ventas@compugrafic.com',
     label: 'D+P',
@@ -41,7 +44,7 @@ export const ContactSection = ({ activeSection }) => {
     const config = SECTION_CONFIG[activeSection] ?? SECTION_CONFIG.compugrafic;
 
     const body = new FormData();
-    body.append('access_key', WEB3FORMS_KEY);
+    body.append('access_key', config.key);
     body.append('subject', config.subject);
     body.append('from_name', `${formData.nombre} — ${config.label}`);
     body.append('name', formData.nombre);
